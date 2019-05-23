@@ -1,0 +1,220 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/erker/git/energy/presentation/energy.org
+
+
+* other effects too, but these are very uncertain
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2019-04-09 Tue 21:27
+  :ARCHIVE_FILE: ~/git/energy/presentation/energy.org
+  :ARCHIVE_CATEGORY: energy
+  :END:
+
+results in cold places depend on how wind and evapotranspiration is modeled.
+
+I dug into this work and realized the uncertainty especially 
+
+
+* wind 
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2019-04-09 Tue 22:47
+  :ARCHIVE_FILE: ~/git/energy/presentation/energy.org
+  :ARCHIVE_OLPATH: How do they do it?
+  :ARCHIVE_CATEGORY: energy
+  :END:
+#+ATTR_REVEAL: :frag (fade-out appear)
+- complex
+- simplified 
+#+ATTR_REVEAL: :frag appear
+[[../figs/heisler_1990_windreduceredo_2.png]]
+--Heisler, G. M. (1990)
+
+
+* But what about sequestration?
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2019-04-10 Wed 16:03
+  :ARCHIVE_FILE: ~/git/energy/presentation/energy.org
+  :ARCHIVE_CATEGORY: energy
+  :END:
+
+C sequestration $\hspace{60pt}$ C emissions
+#+ATTR_REVEAL: :frag appear
+$\approx 35 \frac{kg}{yr} \hspace{80pt} \approx 9 \frac{kg}{yr}$
+#+ATTR_REVEAL: :frag appear
+$\Downarrow \hspace{90pt}  {\color{red}\uparrow}$
+
+
+
+* But what about sequestration?
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2019-04-10 Wed 16:03
+  :ARCHIVE_FILE: ~/git/energy/presentation/energy.org
+  :ARCHIVE_CATEGORY: energy
+  :END:
+
+C sequestration $\hspace{60pt}$ C emissions
+#+ATTR_REVEAL: :frag appear
+$\Downarrow \hspace{90pt}  {\color{red}\uparrow}$ 
+#+ATTR_REVEAL: :frag appear
+$\approx 35 \frac{kg}{yr} \hspace{80pt} {\color{red}\approx 9 \frac{kg}{yr}}$
+
+
+
+* But what about sequestration?
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2019-04-10 Wed 16:03
+  :ARCHIVE_FILE: ~/git/energy/presentation/energy.org
+  :ARCHIVE_CATEGORY: energy
+  :END:
+
+C sequestration $\hspace{60pt}$ C emissions
+$\Upownarrow \hspace{90pt}  {\color{red}\uparrow}$
+$\approx 35 \frac{kg}{yr} \hspace{80pt} \approx 9 \frac{kg}{yr}$
+#+ATTR_REVEAL: :frag appear
+$\hspace{160pt}$ fossilized
+
+
+#+ATTR_REVEAL: :frag appear
+atmosphere $\leftrightarrow$ biosphere $\hspace{80pt}$ fossilized
+
+atmosphere $\leftrightarrow$ biosphere $\hspace{80pt}$ fossilized
+
+
+* But what about sequestration?
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2019-04-10 Wed 16:03
+  :ARCHIVE_FILE: ~/git/energy/presentation/energy.org
+  :ARCHIVE_CATEGORY: energy
+  :END:
+
+C sequestration $\hspace{60pt}$ C emissions
+#+ATTR_REVEAL: :frag appear
+$\Downarrow \hspace{90pt}  \uparrow$
+#+ATTR_REVEAL: :frag appear
+$\approx 35 \frac{kg}{yr} \hspace{80pt} \approx 9 \frac{kg}{yr}$
+
+
+* How Trees affect Building Energy Use
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2019-04-10 Wed 16:04
+  :ARCHIVE_FILE: ~/git/energy/presentation/energy.org
+  :ARCHIVE_CATEGORY: energy
+  :END:
+
+#+BEGIN_NOTES
+We've known the basics of this since the mid 20th century.
+#+END_NOTES
+
+** shading
+** summer solstice
+[[./figs/longer_summer_solstice.gif]]
+
+** winter solstice
+[[./figs/longer_winter_solstice.gif]]
+
+** wind 
+
+Complex.
+
+#+BEGIN_NOTES
+"Trees act as windbreaks that lower the ambient wind speed, which may
+lower or raise a building’s cooling- energy use depending on its
+physical characteristics. In certain climates, tree shelterbelts are
+used to block hot and dust-laden winds. In addition to energy-saving
+potentials, this will improve comfort conditions out- doors within the
+city. Through wind shielding, trees affect a building’s energy balance
+in three ways:
+
+1. Lower wind speed on a building shell slows the dissipation of heat
+   from sunlit surfaces. This in turn produces higher sunlit surface
+   temperatures and more heat gain through the building shell. This
+   detrimental phenomenon (during the sum- mer) is significant only
+   for uninsulated buildings.
+
+2. Lower wind speed results in lower air infiltration into
+   buildings. The reduction in infiltration has a major impact on
+   reducing cooling-energy require- ments for old and leaky houses.
+
+3. Lower wind speed reduces the effectiveness of open windows during
+   the summer, resulting in increased reliance on mechanical
+   cooling." - akbari 2002.
+
+#+END_NOTES
+** evapotranspiration 
+
+
+
+
+
+
+* misconceptions:
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2019-04-10 Wed 18:56
+  :ARCHIVE_FILE: ~/git/energy/presentation/energy.org
+  :ARCHIVE_CATEGORY: energy
+  :END:
+** I'm absolved of my sin of cutting down my tree....
+** 
+** other studies
+they find as far north as canada still benefits of trees, how so?
+
+
+
+* ESSA
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2019-04-10 Wed 22:09
+  :ARCHIVE_FILE: ~/git/energy/presentation/energy.org
+  :ARCHIVE_CATEGORY: energy
+  :END:
+
+#+BEGIN_NOTES
+email list serv for like minded environmental type students at UW to
+sell their twin matresses, house plants, old bikes, scobys,
+vermicompost, etc. to one another.  Also a great place to find an
+apartment to rent, especially sunny and bright ones.
+
+
+
+"The Nelson Institute for Environmental Studies maintains the
+Environmental Studies Student Association (ESSA) listserv. This
+listserv was founded by students, and is now managed as a student
+service by Nelson Institute staff. The primary purpose is to foster
+informal communication and community among students and alumni. ESSA
+is a forum for topics on student housing, items for sale, information
+about non-political environmental local gatherings or events, and
+discussions of environmental issues. The listserv is open to all
+persons interested."
+
+#+END_NOTES
+** email search: "essa sunny | bright"
+#+ATTR_REVEAL: :frag appear
+[[./figs/sunny.png]]
+
+
+** email search "essa tree"
+#+ATTR_REVEAL: :frag appear
+#+attr_html: :width 900
+[[./figs/essa_tree.png]]
+
+
+* references
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2019-04-12 Fri 09:07
+  :ARCHIVE_FILE: ~/git/energy/presentation/energy.org
+  :ARCHIVE_CATEGORY: energy
+  :END:
+Heisler, G. M. (1990). Mean wind speed below building height in
+residential neighborhoods with different tree
+densities. volume 96. Proceedings of the American Society of Heating,
+Refrigeration and Air conditioning Engineers.
+
+* trade-offs
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2019-04-12 Fri 09:07
+  :ARCHIVE_FILE: ~/git/energy/presentation/energy.org
+  :ARCHIVE_CATEGORY: energy
+  :END:
+
+sunshine $\longleftrightarrow$ trees
+

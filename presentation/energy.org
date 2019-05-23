@@ -1,0 +1,501 @@
+#+TITLE: Trees and trade-offs 
+#+Subtitle:Trees in many US cities may indirectly increase atmospheric carbon 
+#+AUTHOR: Tedward Erker
+#+EMAIL: erker@wisc.edu
+#+REVEAL_TITLE_SLIDE_TEMPLATE: <h1>%t</h1><h5>%a</h5><p>%e</p>
+#+OPTIONS: toc:nil num:nil date:t email:nil
+#+OPTIONS: reveal_center:f reveal_progress:t reveal_history:t reveal_control:t
+#+OPTIONS: reveal_mathjax:t reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil h:4
+#+OPTIONS: reveal_width:1200 reveal_height:850
+#+OPTIONS: reveal_title_slide:t
+#+OPTIONS: reveal_single_file:nil
+#+OPTIONS: toc:nil
+#+OPTIONS: html5-fancy:t
+#+HTML_DOCTYPE: html5
+#+REVEAL_TRANS:fade
+#+REVEAL_MARGIN: 0.001
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_THEME: black
+#+REVEAL_POSTAMBLE: <p> Created by Erker </p>
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./figs/IMG_20180809_085802073_dark.jpg
+* Trees
+#+attr_html: :height 600
+[[./figs/magnolia.jpg]]
+
+#+BEGIN_NOTES
+If you are sitting in the audience of the wisconsin ecology spring
+symposium, there is a good chance someone at some point in your life
+has called you a tree hugger.  If you are like me you enjoy being in
+their presence and you came of age hearing about all the benefits they
+provide us.  Cleaner air, reduced storm water runoff, carbon sequestration
+
+#+END_NOTES
+
+** Million trees
+[[./figs/Screenshot 2019-04-08 21.11.11.png]]
+#+attr_html: :width 1200 
+| [[./figs/Screenshot 2019-04-08 21.18.05.png]] | [[./figs/Screenshot 2019-04-08 21.15.26.png]] |
+
+#+BEGIN_NOTES
+Cities have also heard of these benefits and have tried to capture
+them in million tree planting campaigns.
+#+END_NOTES
+
+** Offset climate change
+#+ATTR_REVEAL: :frag (appear appear appear)
+- Capture atmospheric carbon dioxide,
+- reduce building energy use, and thereby
+- reduce carbon emissions from fossil-fuel based power plants.
+
+#+BEGIN_NOTES
+This is the ecosystem effect that I investigating in this talk and 
+I will be questioning whether trees actually do provide this service
+in cold parts of the US.
+
+the generality of
+which I will be questioning.
+
+Preventing Carbon Emissions
+First benefit on NYC million trees website
+this is the first benefit listed on their website.
+
+#+BEGIN_QUOTE
+
+Urban trees help offset climate change by 
+#+END_QUOTE
+#+ATTR_REVEAL: :frag appear
+--- Million Trees NYC
+#+END_NOTES
+
+* trees & building energy use
+#+ATTR_REVEAL: :frag (appear appear appear)
+- Shade
+- Wind speed reduction
+- Evapotranspiration
+
+#+BEGIN_NOTES
+there are 3 main ways that trees reduce building energy use:
+we've known since mid 20th century the rough idea.
+
+#+END_NOTES
+
+** summer shading
+[[./figs/longer_summer_solstice.gif]]
+
+** winter shading
+[[./figs/longer_winter_solstice.gif]]
+
+** COMMENT wind 
+
+complex
+
+** COMMENT evapotranspiration 
+#+ATTR_REVEAL: :frag appear
+cooling in growing season
+
+#+BEGIN_NOTES
+#+ATTR_REVEAL: :frag appear
+optimistic
+#+END_NOTES
+** Net effect?
+#+ATTR_REVEAL: :frag appear
+heating penalty $\hspace{50pt}$ cooling benefit
+#+ATTR_REVEAL: :frag appear
+ $\uparrow  \hspace{90pt}           \downarrow$
+#+ATTR_REVEAL: :frag appear
+ $\uparrow  \hspace{90pt}           \Downarrow$
+#+ATTR_REVEAL: :frag appear
+ $\Uparrow  \hspace{90pt}           \downarrow$
+#+ATTR_REVEAL: :frag appear
+ $?         \hspace{90pt}           ?$
+
+
+#+BEGIN_NOTES
+What is the net effect of trees on C emissions from building energy
+use?  Varies by location.....  At some climate there's a switch.
+
+When you have two effects that are opposing, it is really important to
+reduce uncertainty around each one so that you know what the net
+effect is.
+
+
+My key question:
+
+Do trees near houses in a colder place like Madison cause them to emit more or
+less C?
+
+#+END_NOTES
+
+* Certainty 
+#+ATTR_REVEAL: :frag appear
+#+attr_html: :width 800
+[[./figs/akbari_2002_header.png]]
+#+ATTR_REVEAL: :frag appear
+#+attr_html: :width 800
+[[./figs/nowak_e_2017_header.png]]
+
+#+BEGIN_NOTES
+
+These papers have provided scientific backing for million tree campaigns.
+
+Certainty in the face of uncertainty
+
+decades of papers based on uncertainty especially in wind and evapotranspiration.
+
+akbari in canada found results because of very large wind reductions.
+
+#+END_NOTES
+
+*  uncertainty
+#+ATTR_REVEAL: :frag appear
+#+attr_html: :height 500
+[[./figs/penn_mobilehome_dewalle1983.png]]
+
+#+BEGIN_NOTES
+Uncertainty due to 
+1) wind
+2) evapotranspiration
+
+lack of validattion of models
+
+Empirical research in "cold" places
+Because we have these trade offs, we need to reduce uncertainty.
+#+END_NOTES
+
+* Data
+#+ATTR_REVEAL: :frag appear
+#+attr_html: :width 800
+[[./figs/MGE_screenshot_ChancellorsHouse.png]]
+#+BEGIN_NOTES
+convert these to Carbon emissions.
+#+END_NOTES
+#+REVEAL: split
+[[./figs/qgis_bing.png]]
+#+REVEAL: split
+[[./figs/qgis_bing_footprints.png]]
+#+REVEAL: split
+[[./figs/qgis_bing_footprints_regions.png]]
+#+REVEAL: split
+[[./figs/qgis_bing_footprints_regions_treecover.png]]
+
+* Model formula
+#+ATTR_REVEAL: :frag appear
+log(carbon) ~ tree cover + building covariates + neighborhood
+#+ATTR_REVEAL: :frag appear
+electicity, gas, and total carbon emissions
+#+BEGIN_NOTES
+separate model for each C emissions.
+#+END_NOTES
+
+* Tree canopy effect
+#+ATTR_REVEAL: :frag appear
+#+attr_html: :height 400
+[[./figs/treeCombined_avg_C_coefs_dark_pct.png]]
+
+#+BEGIN_NOTES
+Note that the units are percent per 100m^2 of canopy.
+
+gas increase .5 - 1%, elec decrease .1 - .3% ish.  
+#+END_NOTES
+
+#+REVEAL: split
+[[./figs/carbon_Percent_coef_dark.png]]
+
+#+BEGIN_NOTES
+These are the coefficients for 100m^2 of tree cover.
+
+
+Not all the coeffients make strong mechanistic/physical sense.  But if
+you summarize across all regions the effect is very clear
+statistically.
+
+That said, I wanted to see if this might be true more genearlly.  or
+is madison and my study an anomaly?
+#+END_NOTES
+
+* Madison Anomaly?
+#+ATTR_REVEAL: :frag appear
+#+attr_html: :width 800
+[[./figs/akbari_2002_header.png]]
+
+#+BEGIN_NOTES
+
+an issue with study, madison 
+
+Akbari and Konopacki 2002
+They reported the average.  But if you look at their model, there is
+significant geographical nuance
+
+40% of US
+
+NYC million trees likely different C outcome than LA
+
+It's not that surprising given the climatic variabliity of our country
+that there isn't a one size fits all approach.  Trees aren't even
+native to LA and planting them strains limited water resources.
+
+#+END_NOTES
+
+#+REVEAL: split
+[[./figs/akbari_konopacki_2005_netkgC_wCities_dark.png]]
+
+#+BEGIN_NOTES
+we actually have known this for a while, but it's been ignored in
+  favor of the average.
+
+#+END_NOTES
+
+* But what about sequestration?
+#+ATTR_REVEAL: :frag appear
+C sequestration $\hspace{60pt}$ C emissions
+#+ATTR_REVEAL: :frag appear
+$\approx 34 \frac{kg}{yr} \hspace{80pt} \approx 10 \frac{kg}{yr}$
+#+ATTR_REVEAL: :frag appear
+atmosphere $\leftrightarrow$ biosphere $\hspace{30pt}$ lithosphere
+${\color{red} \rightarrow}$ atmosphere
+
+#+BEGIN_NOTES
+ash tree with 100m^2 canopy in the near east of a house.
+#+END_NOTES
+
+#+reveal: split
+[[./figs/festival_ash.jpg]]
+https://isthmus.com/news/news/condemned-trees-in-festival-foods-construction/
+
+#+BEGIN_NOTES
+So I should cut down trees?, probably not
+
+Only if you buried the wood or turned it into something that one decay
+for a long time.
+#+END_NOTES
+
+* Relax, Trees don't matter^*
+
+#+BEGIN_NOTES
+While our results are intriguing because the direction of the effect
+is not what you might expect, the magnitude of effect is none or
+small, depending on location
+
+Tree in a bad spot isn't causing too much harm, but also planting a
+tree won't significantly offset your emissions.
+
+there are other things you can do that are far more effective that
+worrying about trees... getting energy efficient appliances or hang
+drying your clothes, for example
+upgrading your refigerator could save around 25 kg C/year
+air drying clothes over 100 kg
+be smart about thermostat
+
+Also, reducing C emissions is just one of the benefits trees provide.
+
+#+END_NOTES
+
+#+REVEAL: split
+#+attr_html: :height 600
+[[./figs/magnolia.jpg]]
+
+#+BEGIN_NOTES
+just one of many benefits
+#+END_NOTES
+
+
+#+REVEAL: split
+[[./figs/akbari_konopacki_2005_netkgC_wCities_dark.png]]
+
+#+BEGIN_NOTES
+conclude by showing this figure again....
+
+On average across the country trees likely reduce C emissions, but we have
+shown that existing simulation models actually predict significant
+geographic variability in the effect of tree on C emissions that is
+often disregarded.  Our work provides the first empirical
+corroboration of such simulations in a cool climate city.  While the
+effect of trees on C emissions is ultimately small relative to other
+interventions, our work could have major implications for tree
+planting programs in other cool climate cities where about 40% of the
+US population lives.
+
+#+END_NOTES
+
+* Thank you
+#+attr_html: :width 300
+[[./figs/wdnr.jpg]]
+#+attr_html: :width 300
+[[./figs/1237px-NASA_logo.svg.png]]
+#+attr_html: :width 300
+[[./figs/color-center-reverse-UWlogo-print.png]]
+
+* wind
+
++complex+    simplified
+
+#+REVEAL: split
+[[../figs/heisler_1990_windreduceredo_1.png]]
+--Heisler, G. M. (1990)
+#+REVEAL: split
+[[../figs/heisler_1990_windreduceredo_2.png]]
+--Heisler, G. M. (1990)
+#+REVEAL: split
+[[../figs/heisler_1990_windreduceredo_3.png]]
+--Heisler, G. M. (1990)
+
+#+BEGIN_NOTES
+wind especially for leaky houses can decrease cooling need and
+increase heating need.  trees good in winter, bad in summer (opposite
+for shading).
+
+"Trees act as windbreaks that lower the ambient wind speed, which may
+lower or raise a building’s cooling- energy use depending on its
+physical characteristics. In certain climates, tree shelterbelts are
+used to block hot and dust-laden winds. In addition to energy-saving
+potentials, this will improve comfort conditions out- doors within the
+city. Through wind shielding, trees affect a building’s energy balance
+in three ways:
+
+1. Lower wind speed on a building shell slows the dissipation of heat
+   from sunlit surfaces. This in turn produces higher sunlit surface
+   temperatures and more heat gain through the building shell. This
+   detrimental phenomenon (during the sum- mer) is significant only
+   for uninsulated buildings.
+
+2. Lower wind speed results in lower air infiltration into
+   buildings. The reduction in infiltration has a major impact on
+   reducing cooling-energy require- ments for old and leaky houses.
+
+3. Lower wind speed reduces the effectiveness of open windows during
+   the summer, resulting in increased reliance on mechanical
+   cooling." - akbari 2002.
+
+#+END_NOTES
+
+* other thoughts
+** median effect
+[[./figs/mediantree_netC_effect_spatial_l_dark.png]]
+** space earth
+:PROPERTIES:
+:REVEAL_EXTRA_ATTR: data-background-video="/Users/erker/git/energy/presentation/figs/night_lights_5.mov"; 
+:END:
+
+#+BEGIN_NOTES
+Urban Humanity
+
+Viewing the earth from space, the lights of our cities are
+unmistakable.  The fact that most of us humans are now urban dwellers
+heightens the importance of urban ecology as a field of study that
+strives to make our cities and by extension the planet more livable.
+
+#+END_NOTES
+
+
+
+
+
+** if I'm asked:
+#+BEGIN_NOTES
+Depressing but realistic conclusion that planting trees in cold parts
+of the country is an activity that almost always results in the
+emission of fossilized C getting to atmosphere.  Tiime and effort
+should be spent elsewhere.
+
+#+END_NOTES
+** Urban trees $\longleftrightarrow$ human behavior 
+
+#+BEGIN_NOTES
+A single urban tree has a much stronger impact on the carbon cycle
+than a non-urban counterpart because an urban tree induces or
+reduces more C emitting human behaviors than a rural one does.  Both
+trees sequester carbon from the atmosphere, but the urban tree
+requires more management (planting, watering, pruning, removal,
+chipping) and, by modifying the microclimate, it can alter building
+energy use and the associated C emissions (*ACE*) from power plants.
+#+END_NOTES
+* Judges comments
+
+Personally, I was proud of how I did.  I prepared a bunch and hit
+pretty much everything that I wanted to as I wanted to.  I did not get
+in the top 2 of 7 talks, but it was a great opportunity to share my
+work and get things together for this part of my defense.  The
+feedback from the judges was also great.
+
+
+I thought my work was really good and I was confident, even hoping I
+would win.  But these events are a reminder of just how many smart and
+talented people there are
+
+
+| Judge | Score (/90) | Percent |
+|-------+-------------+---------|
+|     1 |          70 |    77.7 |
+|     2 |          68 |    75.6 |
+|     3 |          85 |    94.4 |
+|   sum |         223 |         |
+#+TBLFM: @5$2=vsum(@2$2..@4$2) 
+
+|                      |                               | Judge 1 | Judge 2 | Judge 3 |      mean |
+|----------------------+-------------------------------+---------+---------+---------+-----------|
+| general talk         | visually appealing            |       7 |       7 |      10 |         8 |
+|                      | framing o problem             |       8 |       8 |       9 | 8.3333333 |
+|                      | effective analysis            |       8 |       7 |      10 | 8.3333333 |
+|                      | compelling research           |       8 |       8 |       8 |         8 |
+|                      | overall quality               |       8 |       7 |       9 |         8 |
+| presenter assessment | engages audience              |       7 |       7 |       9 | 7.6666667 |
+|                      | thorough explanation          |       9 |       8 |      10 |         9 |
+|                      | effectively answers questions |       7 |       8 |      10 | 8.3333333 |
+|                      | talk timing/balance           |       8 |       8 |      10 | 8.6666667 |
+#+TBLFM: $6=vsum($3..$5) / 3
+
+
+
+I'm surprised more didn't find it visually appealing, but maybe they
+are just harsher.  I'm a good explainer.
+
+
+I accept that chance can play a large role in scoring.  Judge 1 and 2
+were close in scoring, but judge 3 scored me very highly.  I'd have to
+look across presentations to see if this was ......
+
+
+What I would change:
+1) Thinking about how to make it more visually appealing, I like the
+   simplicity/minimalism/plainness and I like the dark background which
+   makes colors pop, but maybe remove the all caps from the titles.
+   Maybe make more of the images background images (magnolia, festival
+   foods) rather than inserts.
+2) 
+
+
+** Judge 1
+"interesting contrast of winter vs summer shading. presented the
+overall issue and need for more understanding but I would have
+appreciated a clear research question from the outset.  Would have
+preferred a bit more detail about the model built: intriguing results
+and nice explanation of those figures.  Nice job putting the Madison
+example in larger context.  Good explanation at the end of how this
+matters big picture."
+
+"Good pacing of presentation. slides were relatively plain but clear,
+and maps/figures were well done and well presented."
+
+Lots of nice feedback, thanks
+
+improvemnets/ suggestions
+- clear research question from outset
+- more detail on the model
+  - I should for sure do this.  I omitted because of time and I think
+    I misjudged my audience.  Maybe I don't find it all that
+    interesting of a model so I gloss over it, but I owe it to my
+    audience to explain more.  Log(C) so multiplicative model which
+    can be interpreted as precent change.  Used pca to compress
+    building covariates, random intercept for neighborhoods (school districts).
+7/10 on visually appealing
+
+** Judge 2
+"Very good questions, broad approach to problem"
+
+** Judge 3
+"Excellent! Nice analysis, great visuals.  The final results aren't
+exactly super exciting, but it's nonetheless worth work and you've
+done it well."
+
+

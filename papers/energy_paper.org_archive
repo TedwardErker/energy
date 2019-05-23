@@ -1,0 +1,1770 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/erker/git/energy/papers/energy_paper.org
+
+
+* components to include
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-12 Thu 15:59
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Story
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+- why important?
+  - absolute carbon cost and absolute dollar cost
+  - relative carbon cost
+  - get cost of million trees LA, NYC, madison's budget
+  - while the C source may not be large, the fact that we think trees
+    are a sink makes recognizing this important.
+  -
+
+As the earth experiences climate change, our species is experiencing
+urbanization, two trends...
+
+Cities
+
+The carbon budget of the urban forest is not important because it's
+magnitude.  But
+
+1) The modeled results show that trees increase C emissions for the
+   majority of the country
+2) There is considerble/some uncertainty in the modeled results,
+   especially re: wind effects (I think).  We have data that validate
+   modeled results for Madison, WI.
+
+Archived entries from file /Users/erker/git/energy/papers/energy_paper.org
+
+
+* how to keep story small
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-12 Thu 15:59
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Story
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+- just carbon
+- focus on building energy use.
+
+* Equation
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-12 Thu 16:17
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+
+Components
+
+C_management
+C_sequestration
+C_decomposition
+C_BuildingEnergyUse
+ - factors that affect e use that are affected by trees
+   - radiation
+     - shortwave
+     - longwave cite:huang_e_1987
+   - wind
+   - humidity
+   - temperature
+   -
+
+identify which papers are related to which component
+
+
+* Overview
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-18 Wed 09:02
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Results
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+We found statistically significant relationships between canopy cover
+and carbon emissions.  The amount of variation explained by canopy was
+very small, less than 0.5%.
+
+update [2018-07-18 Wed], I'm only going to mention the relatively
+small effect/explantory power of trees at the end.  The focus here is
+that there is an effect.
+
+
+* this for 100m^2
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-18 Wed 15:49
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Results/Effect removing exisiting tree cover on a median house
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+
+Standardizing the area, 100m^2 of tree cover in each region around
+this typical house would result in a savings of 6.8 kg C (95% CI:
+3,10) due to decreased electricity use, but a penalty of 24 kg C (95%
+CI: 23, 27) due to increased electricity use.  Our combined model
+estimated the net effect is to increase C emissions by about 17 (95%
+CI: 13, 23) kg per year.
+
+
+* organizing thoughts
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-18 Wed 15:59
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Results
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+start big picture, then narrow down to details
+
+1) Trees affect C emissions from energy use
+2) On average they increase C emmissions
+3) C emissions from Heating increased more than C emissions from
+   Cooling Decreased
+4) Location matters:
+   1) Near trees have stronger effects than far trees
+   2) for heating (gas), trees to east and south cause greatest increase
+   3) for cooling, trees to south and north cause greatest decrease,
+      to west a slight decrease, and to east perhaps an increase.
+5) Cost; because C in gas is cheaper than C in electric, although C is
+   increased on average, cost there is little effect.  Trees in near
+   east may have slight increase in cost.
+
+
+
+* Canopy effect on carbon emissions associated with electricity use
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-18 Wed 15:59
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Results
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+For the model with log of C emissions from electricity use as the
+response, table [[elec_avg_canopy_coef]] shows the coefficients for a change from
+0 to 100% canopy cover in the regions around a house.  Figure
+[[fig:C_elec_avg_coef_circle]] presents them graphically.  Only 2 regions
+are statistically significant at the \( \alpha \) = 0.05 level: East
+of a building from 0-10m and from 10-20m. Though the direction of
+their coeffients are opposite.  The region west of a building from
+0-10m is significant at the \( \alpha \) = 0.10 level
+
+
+* Canopy effect on carbon emissions associated with natural gas use
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-18 Wed 15:59
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Results
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+For the model with log of C emissions from electricity use as the
+response, table [[gas_avg_canopy_coef]] shows the coefficients for a change from
+0 to 100% canopy cover in the regions around a house.  Figure
+[[fig:C_gas_avg_coef_circle]] presents them graphically.  Most regions
+have no effect; 2 are significant at the \(\alpha = 0.05\) level:
+South and East 20-30m; 1 is significant at the \(\alpha = 0.10 \)
+level: North 0-10m.
+
+
+* Canopy effect on carbon emissions associated with electricity and natural gas use combined
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-18 Wed 15:59
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Results
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+For the model with log of C emissions from combined electric and gas
+use as a response, table [[gas_and_elec_avg_canopy_coef]] shows the
+coefficients for a change from 0 to 100% canopy cover in the regions
+around a house. Figure [[fig:C_gas_and_elec_avg_coef_circle]] presents
+them graphically.  No regions are statistically significant at the
+\(\alpha = 0.05\) level and only 1 is significant at \(\alpha = 0.10\)
+level: North 20-30m.
+
+
+* come up with a way to put the units of kg C into perspective.  How many trees is 1000 kg C?  A cord of wood?? etc...
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-18 Wed 15:59
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Results
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+
+
+* For a typical (median or mean) house, what is the estimated effect on C emissions?
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-18 Wed 15:59
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Results
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+
+* COMMENT stuff
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-19 Thu 16:42
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Discussion/results in light of larger C cycle
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+We don't agree with studies from the forest service that have wind
+only being a benefit.  exception is nowak 2010
+The forest service work does not ever predict trees increase C because
+of how it is modelled, negative effects are simply omitted.  The
+exception I've found is cite:nowak_etal_2010
+cite:nowak_e_2017 cite cite:nowak_etal_2010 which says:
+"Based on average state energy costs in
+February 2009, trees in Chicago are
+estimated to reduce energy costs from
+residential buildings by $360,000 annually.
+Trees are estimated to slightly increase the
+amount of carbon released by fossil-fuel
+based power plants. However, this estimated
+increase in emissions (1,200 tons) is more
+than offset by annual carbon sequestration by
+trees (25,200 tons)."
+cite:nowak_e_2017 cite how the trees save money, but don't mention how
+they increase C emissions.  In their table 4, IL has significant
+heating and cooling savings.  Something is not consistent...
+
+lithosphere biosphere idea
+ management emissions ,nowak_e_02
+
+in one application of the UFORE/iTree model to chicao
+cite:nowak_etal_2010, the detrimental effects of shading did not
+outweigh the beneficial effects of wind and evapotranspiration (even
+with a model that might be optimistic.
+
+
+We add geographic nuance to cite:akbari_2002 title
+
+reviews like cite:pataki_e_06 note this was a gap, but others don't
+include that trees effects could be detrimental cite:roy_etal_2012
+(they note work that shows trees increase C via management and
+landscaping, but not building E use).
+review: citep:weissert_etal_2014 - don't recognize trees could increase C
+emissions.
+
+
+cite:pataki_e_06 - also note there is considerable uncertainty
+regarding this process of trees on E use
+
+
+Newer, better insulated and less leaky homes are less affected by
+changes in the microclimate, while buildings designed for solar gain
+espeially sensitive to shading on south facing walls.
+
+
+
+* COMMENT old
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-19 Thu 16:46
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Discussion
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+Canopy cover explains less than 0.5% of the variation in carbon
+emissions.  As a strategy to reduce building emissions, altering
+canopy cover will have little effect.  However, canopy cover does have
+statistically significant effects on emissions and these effects are
+also ecologically significant - on the order of magnitude of the C
+sequestration by tree canopy.
+
+Models were built on the log scale, so coefficients are multiplicative
+and can be roughly interpreted as the percent change in emissions
+associated with changing from 0 to 100% canopy cover in a region around a
+building.  For example, a coefficient of 0.02 when back transformed to
+the scale of the original data gives e^0.02 = 1.020201, an increase of
+about 2%.  The absolute effect changes with the base level of energy
+used. So canopy has a smaller effect on small houses and a larger
+effect on large houses.  The median C emissions for the houses in the
+study is 173.48 kg C/ mo, 2% of this 3.47 kg C/ mo or 41.6 kg C /yr.
+So coefficients of 0.02 indicate that adding trees to this region
+cause a change in emisssions of 41.6 kg C/year in the median case.
+
+The regions that significantly affected C emissions sometimes agreed
+with my hypotheses, but were often surprising.  For C emissions from
+electricity use, regions close to the buildings had strong negative
+effects, as expected.  However, the region to the east and between
+10-20m had the strongest effect and it was positive.  This was
+unexpected and the cause is not clear.  For C emissions from gas use
+regions to the south and east and far from buildings had positive
+effects.  Unexpectedly the region just north of buildings had a
+positive coefficient.  In addition to some of these surprise
+relationships, many regions that I expected to have stronger effects
+did not.
+
+There are a number of next steps for this research.  I need to do more
+work to explain the unexpected pattern in model coefficients, perhaps
+by adding more covariates such as the location of nearby buildings and
+environmental covariates such as elevation and distance to the lakes.
+I need to apply the model to the actual distribution of tree canopy
+around buildings to estimate whether the effect of our positive or
+negative on C emissions.  I need to add the dollar value associated
+with this energy use.  Since the price of energy depends on the season
+and time of day it is used, there is not a linear relationship between
+cost of energy and C emissions.  Therefore canopy may have a stronger
+or weaker relationship with energy cost than with C emissions.
+Finally, I need to work to parse out the postive effect of canopy on C
+emissions from gas and the negative effect of canopy on C emissions
+from electricity use.  How might switching to electric heat or
+switching the mix of fuels to generate electricity shift the balance?
+
+
+
+
+lithosphere biosphere distinction
+
+
+
+
+
+* COMMENT cut text
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-19 Thu 20:28
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Introduction
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+In Pennsylvania, cite:dewalle_e_1983 found a mobile
+home in a deciduous forest used less energy for heating and cooling in
+both the summer (via shading) and winter (via wind reduction), but
+that in an evergreen grove heating energy use increased in winter.  In
+Miami, cite:parker_1983 found that by strategiclly placing trees near a
+mobile home, electricity use was reduced by 58% on hot days and 25% on
+average cite:meier_1990.  In Tucson, AZ, cite:mcpherson_e_1989 found
+shade trees placed around three quarter size model houses reduced
+electricity use for AC about as much as irrigated turf grass, while
+using less water.  In Sacramento, CA, cite:akbari_e_1997 found 16
+shade trees placed around 2 houses reduced electricity use by 26% and
+47%.  Also in Sacramento, CA, cite:donovan_Butry_2009 used regression
+to explain electricity use for 460 houses with the surrounding tree
+cover.  They found on average trees to the west and south reduce
+electic use by 5.2%, trees to the north increase it by 1.5%, for a net
+reduction of 3.7%.
+
+* COMMENT stuff
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-19 Thu 20:28
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Introduction
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+
+Reduced wind speeds can
+cause both increased or decreased heating or cooling energy use
+depending on the season and weather conditions.
+
+Trees modify human behavior.
+
+"in 1987...  cite:mcpherson_e_1988... " acutally maybe this isn't the
+best way to do this because mcpherson has written much more since that
+include this information and more.
+
+cite:thayer_maeda_1985
+
+We need to focus on carbon.
+Also where most americans live.
+
+I need to know if Itree takes climate into account (hdd and cdd).
+
+- convert cost to energy.  Then take the energy and assume the range
+  of possible C emissions (heating from different sources, electric
+  from different sources) to set the bookends to cover all the places
+  that acutally get their energy from a mix of places.
+
+- Carbon is the key thing.
+- The urban forest is a C source (over much of the US)
+-
+
+In addition to using cite:mcpherson_e_1988 to show that trees cause
+emissions.  I could probably do the same with Simpson's Look-up
+table.  I might be able to get national, population weighted estimates
+using his lookup table: cite:simpson_2002
+
+
+
+I should think about replicating the modelling study so that I can
+plot in space the line between C source and sink.
+
+4 panel figure: each panel is a map showing the strength of the C
+source or sink due to a tree near a building.  Each panel will be a
+cardinal direction.
+
+
+
+"the typical introduction of a paper about urban trees gives a laundry
+list of their benefits and ecosystem services....
+
+
+This paper replicates the results from a modelling exercise 30 years
+ago that showed trees increase building energy use, but the
+significance was overlooked.
+
+bias for positivity: ecosystem services over disservices (I can
+probably find a relevant citation in a paper that talks aboud disservices).
+
+make sure i'm not making a straw man
+
+many times the paper is just giving examples of dnisservcies (not
+trying to exhaustively list them).  Therefore it's not always fair to
+blame them for excluding that trees can potentially increase energy
+use as a disservice.  However, it is fair if that paper includes
+energy use reduction as a service..
+- for a similar reason it's not exactly fair to crticize papers that
+  are just talking baout ecosystem services.  But the fact that many
+  exist that don't consider the disservices show the immaturity of the science.
+
+
+Bigger picture is that we need to consider all of the ways that trees
+affect the carbon cycle.
+
+We have had the understanding that trees can have both positive and
+negative effects on air quality for a long time.  It is time that we
+bring that nuance to the effect on the carbon cycle.
+
+
+
+
+1)
+
+* COMMENT Limitations of past work
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-19 Thu 20:28
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Introduction
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+1) Modelled, little/no empirical validation
+   1) cite:mcpherson_e_1988, only accounted for shading and wind (not
+      temp difference)  Having observational data integrates all the effects.
+2) Electricity not heating.
+   1) "most studies have estimated a net decrease in energy use and
+      subsequent CO2 emissions from electricity generation resulting
+      from placing trees near buildings (Huang et al., 1987; Akbari &
+      Taha, 1992; Akbari et al., 1997; Akbari, 2002; Akbari &
+      Konopacki, 2005)." "However, many of these calculations are
+      based on model simula- tions that include untested assumptions
+      about urban vegetation and surface processes. Some field
+      measure- ments support reduced summertime temperatures near
+n      urban forest canopies (Taha et al., 1991; Spronken-Smith et al.,
+      2000; Mueller & Day, 2005), but additional direct measurements
+      are needed to quantify more complex effects, such as increases
+      in both latent and sensible heat fluxes due to low forest albedo
+      (Grimmond et al., 1996)." cite:pataki_e_06
+   2) cite:donovan_Butry_2009
+3) Geographically biased
+   1) US map of locations of where energy use papers are published
+      1) what cities are included in the study
+   2) US map of Population
+   3) US map of Space Conditioning (AC and Heat)
+   4) Figure showing proportion of population that lives in AC and
+      Heating dominated clilmates, and the location of papers
+      1) unit of observation is a state (I think that's the smallest
+         unit I can get this data for); x = heatin, y = ac, color = if
+         a paper published in that state; size = population of the state.
+4) The electric and geographic bias is worse because we live in a
+   cold, heating dominated country on average:
+   1) https://www.eia.gov/consumption/residential/reports/2009/state_briefs/pdf/wi.pdf
+
+
+* Effect of trees on energy bills
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-19 Thu 20:44
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Results
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+While trees increase C emissions, they have a smaller effect on energy
+bills.  This is because the cost of C derived from electricity (
+$/kgC) is more than the cost of C derived from gas ( $/kgC), which
+weights the savings effect of trees on electricity.  For the median house in our
+sample with an annual energy bill of $1800, 100m^2 of tree cover in
+each of the regions is estimated to only increase the bill by $3.54
+(95% CI: $0.27, $6.82).
+
+
+* stuff
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-20 Fri 08:46
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Discussion/Future work
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+
+Without height information our work Our work is limited in proposing
+optimal tree planting because it is based on current tree
+distribution.
+
+  The
+distribution of trees around buildings was not experimentally altered
+and so while we have high confidence saying houses with more trees use
+more energy than houses with fewer trees (controlling for
+
+observational nature of the data set and
+
+shortcomings
+ - tree height
+ - even with 25,000 houses there is a lot of noise in data.  Clearly
+   trees are not the strongest drivers of e use and ACE
+
+gives an idea of how existing tree cover is affecting things, but less
+strength in proposing optimal tree plantings.  Given what we know
+about the mechanisms by which trees affect energy use,
+
+height of trees is a big thing.  Future work could include more
+detailed analysis of tree shadow/shading if we had lidar.
+
+Newer, better insulated and less leaky homes are less affected by
+changes in the microclimate, while buildings designed for solar gain
+espeially sensitive to shading on south facing walls.
+
+
+We add geographic nuance to cite:akbari_2002 title
+
+the magnitude of the effect is not so important, but the magnitude of
+our uncertainty or mistaken certainty.
+
+* omit
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-20 Fri 16:42
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Results/Effect of trees on building associated C emissions
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+We
+estimated 100m^2 of tree cover within 20m and to the north, west, and
+south of a building decreased C emissions associated with electricity
+use by .3, .2, .4 percent, respectively.  While near east tree cover
+increased C emissions from electricity by .3 percent.  For C emissions
+from gas use, trees in the north, east, south, and west all increased
+emissions by .4, .7, .8, and .3 percent, respectively.
+
+
+* COMMENT other
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-21 Sat 12:27
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Results/Effect of exisiting tree cover on a typical house
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+
+Because the
+increase in C emissions for gas was greater than the decrease in
+emissions for electricity, the net effect was that trees in all
+regions increased C emissions, with trees in the near east increasing
+emissions the most (.4 percent).
+
+
+* COMMENT other
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-23 Mon 16:05
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Results/Effect of exisiting tree cover on a typical house
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+
+While 100m^2 of tree cover has a smaller effect in a far region (as
+seen in figure [[fig:tree_effect]], there is more cover in far
+regions. Figure [[fig:median_tree_effect]] shows the estimated net effect
+on ACE when median tree cover in each region is multiplied by its
+coefficient.
+
+
+
+
+* COMMENT pataki_etal_200
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-24 Tue 10:40
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Discussion/Future work
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+
+state the net effect of trees on GHG emissions
+could be a moderate increase or decrease with high uncertainty, but
+they do not recognize that one of the ways tree may increase GHG is by
+increasing ACE.
+
+
+* COMMENT  I need to ask jun if this is the appropriate way to pool these estimates.
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-25 Wed 09:16
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Results/Effect of exisiting tree cover on a typical house
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+
+When I fit a model with just less than 20m as the only grouping of
+tree cover, the estimated percent increase is .17%
+
+when i fit a model with the 4 near regions, then average the estimates
+the estimated percent increase is .56%
+
+what gives?
+
+which is more reliable?  both are sig diff from 0.
+
+Could be due to weighting with the N and S regions being larger than
+the E and W.  I think this is it.  Find the area of these regions and
+see if a weighted average works out.
+
+I'm pretty sure its the difference in area so the weighting.  Right
+now I think everything is appropriately done.
+
+
+* explaining why divide space around buildings thusly
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-07-25 Wed 10:01
+  :ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+  :ARCHIVE_OLPATH: Methods
+  :ARCHIVE_CATEGORY: energy_paper
+  :END:
+
+1) aggregated to reduce multicollinearity
+2) also makes sense.  the south region is approximately the region of
+   the building that gets sun year round, the north region is never
+   gets direct sunlight, and the east and west regions get more or
+   less light depending on the season.
+
+angles are 57, 123, 237, 303, off by 1 degree from below.
+
+#+begin_src R
+22.5 + seq(0,360,45)
+#+end_src
+
+#+RESULTS:
+: [1]  22.5  67.5 112.5 157.5 202.5 247.5 292.5 337.5 382.5
+
+| solstace | rise/set | azimuth |
+|----------+----------+---------|
+| summer   | rise     |   55.85 |
+| summer   | set      |  303.99 |
+| winter   | rise     |  121.91 |
+| winter   | set      |  237.99 |
+
+
+
+* COMMENT text:3,000 words, excluding methods
+:PROPERTIES:
+:ARCHIVE_TIME: 2018-09-24 Mon 10:28
+:ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+:ARCHIVE_CATEGORY: energy_paper
+:END:
+
+
+* COMMENT Title
+:PROPERTIES:
+:ARCHIVE_TIME: 2018-09-24 Mon 10:43
+:ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+:ARCHIVE_CATEGORY: energy_paper
+:END:
+Tree Canopy Cover affects Building Energy Use and Associated Carbon
+Emissions in expected but ignored ways.
+
+For much of the U.S. shade trees are an atmospheric C source by increasing
+residential building energy use
+** COMMENT 75 characters
+
+* COMMENT Plan
+:PROPERTIES:
+:ARCHIVE_TIME: 2018-09-24 Mon 10:43
+:ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+:ARCHIVE_CATEGORY: energy_paper
+:END:
+1) Brainstorm elements of the story
+2) read articles in target journal (Nature, Nature Sustainability) to
+   get examples of writing style and how to craft a story.
+3) Craft story that will have greatest impact.
+
+
+* COMMENT Story
+:PROPERTIES:
+:ARCHIVE_TIME: 2018-09-24 Mon 10:43
+:ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+:ARCHIVE_CATEGORY: energy_paper
+:END:
+** [2018-07-06 Fri] revised story
+- why important
+- how substantial advance
+- immediate, far-reaching implications
+
+
+- importance
+  - Cost of trees
+    - high profile tree planting programs: million tree campaigns - NYC, LA
+    - also annual urban forestry budgets
+    - aesthetic value of trees
+  - Urban Trees affect Carbon
+    - sources or sinks?
+  - Despite apparent certainty (many publications, reviews showing certainty, iTree in thousands
+    of cities and communities), uncertainty is actually very high.
+    - few empirical studies
+    - complexity of the phenomenon
+    - simulations that we know are incomplete and wrong
+      - incomplete: akbari et al only model direct shading and temp
+        reductions; no long wave radiation effects, no wind effects
+      - incomplete: mcpherson et al don't allow for reduced wind to increase
+        cooling needs.  They include windbreak effects for urban
+        houses where those effect may not exist.
+    - it's not just the magnitude of the effect, but also the
+      direction because there are opposing forces.
+    - bias towards hotter cities (chicago is considered unusual in
+      cite:akbari_konopacki_2005, but it is near the mode of the CDD HDD
+      space of the US population)
+    - wind
+      - both groups based on cite:heisler_1990, with 4 data points
+    - temperature
+      - potential ET.
+    - effects are optimistic
+      - akbari et al assume incredbible amounts of trees planted and
+        only in energy efficient locations.
+      - cite:akbari_2002 title of this paper doesn't allow for the
+        opposite or geography nuance.
+    - uncertainties are not reported because it really is so large
+      (there's uncertainty at almost every step).
+- Advance
+  - here we provide the first empirical effect of trees on residential
+    building energy use that includes heating data and is city-wide.
+  - what do we find exactly?
+- implications
+  - Trees may actually increase C emissions related to building energy
+    use for much of the U.S.
+  - decision making based on simulations should be considered with their uncertainty and d
+  - we need to assess other cities with the focus on C not the UHI and trees.
+
+
+
+... in a cold climate city typical of
+much of the US that trees increase C emissions more than they decrease
+emissions on average (however this is location dependent).  And
+reinterpreting previously published work we show that about 40% of
+Americans live where trees are a net C source.
+
+
+*** COMMENT stuff
+Uncertainty of balance, especially re: wind
+- without wind - simulations show chicago is different story
+  - if it weren't for wind effects, many more studies from FS would
+    show trees increase C emissions  (TALK ABOUT CHICAGO, CANDADA HERE).  Wind is highly uncertain.
+    - cite:jo_mcpherson_2001
+    - cite:mcpherson_e_1994
+    - cite:nowak_etal_2010
+    - cite:akbari_taha_1992
+      - this paper about canada also uses cite:heisler_1990 data, but
+        a different equation that is exponetial instead of inverse.
+        Still has 3 parameters.
+      - cite:huang_e_1990
+from cite:heisler_1990
+
+[[file:../../../org/attachments/Story/Screenshot 2018-07-12 12.43.44_2018-07-12_12-44-24.png]]
+
+from cite:huang_e_1990
+
+[[file:../../../org/attachments/Story/Screenshot 2018-07-12 12.45.04_2018-07-12_12-45-14.png]]
+
+leaf-on: U = Uo (.292 +.728e-·0424C)
+bare: U = Uo (.356 + .644e-·0397C)
+
+#+begin_src R
+  y <- 100x / (24 + 1.1x)
+#+end_src
+
+One of the points changed from summer to winter.......  thinking about
+it more this is probably because that point just has buildings, no
+trees.  That's why the canopy cover is so low.
+
+There is no cold climate validation.  Wind reduction is what makes
+trees beneficial in cold climates, but it's foundation is weak.
+
+- effect of wind on AC can be positive or negative. ... someone
+  said that...... who....
+- reduced wind was assumed to only be positive cite:mcpherson_simpson_03
+- cite:mcpherson_e_1988 - wind reduction is not a benefit for
+  cooling (but this method is considered outdated by more recent papers)
+- cite:mcpherson_rowntree_1993
+- "In hot climates, reduced wind speeds may save energy by reducing
+  infiltration of hot outside air for some air-conditioned
+  buildings"
+  - parker 1982
+  - cited in cite:mcpherson_e_1988, they found the opposite of
+    parker, but then people later discounted the 1988 methods e.g cite:simpson_mcpherson_1998
+- wind speed reduction saved both ac and heating in
+  cite:jo_mcpherson_2001, without wind effect , chicago trees (at
+  least on these 2 blcoks) would be C source. -existing tree cover
+
+with hot, cooling-dominated
+climates benefiting largely from shade and cold, heating-dominated
+climates benefitting from the reduction in wind speed
+cite:mcpherson_simpson_99.
+
+we need more data.
+
+| effect             | USFS                                                                                                   | LBNL                                                                                             |
+|--------------------+--------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------|
+| shade              | Simpson's approximations, off by as much as 10%                                                        | assume 4 trees planted to west and south; transmissivity is .1 in summer .9 in winter (too high) |
+| wind               | follow cite:heisler_1990 (3 parameters, 4 data points), and wind breaks (not existent in cities)       | not included in microclimate                                                                     |
+| evapotranspiration | guesstimated from some other studies (maybe a bit optimistically) and arbitraily adjusted for humidity | Unclear; if they follow cite:huang_e_1987, it's potential ET and crop based relationship         |
+|                    |                                                                                                        |                                                                                                  |
+
+In the discussions of papers the negative effects of trees are
+mentioned, but models might omit them or be overly optimisitc for the
+positive effects.
+
+LBNL - method of extrapolation from 5 test cities might have a lot of noise.
+
+- donovan might be best (but sacramento and just
+electricity);  The balance between the positivie and negative effects
+trees have on heating and cooling is what we really don't understand.
+
+the key question is not how trees affect building energy use, but
+where the balance is.  How do the counteracting forces balance?  Where
+is the line in climate space?
+
+
+modelling
+- shade
+- wind (some had it then, it was dropped)
+  - cite:parker_1983 - note importance of wind for cooling.
+  - cite:akbari_e_1997 - their trees reduce sun and wind, but there is
+    still net reduction, actually more than their models predicted.
+  - the heiseler equation for summer is used to describe how trees in
+    winter reduce wind.  probably off by about 10% given the figure in heisler.
+- evapotranspiration
+
+cite:akbari_e_1997 - only test of simulations - off by two fold.
+
+ours is the first heat data also.
+
+using trees to alter energy use goes back to 1940s cite:bates_1945
+
+cite:nowak_e_2017 - apply energy model to the whole (maybe just much
+of) the US.  Building on a weak foundation.
+
+uncertainty
+- lack of data
+- simulations
+
+heating versus cooling
+
+in cite:akbari_2002 - philly
+cite:nowak_etal_2010 - chicago increase
+
+results from cite:donovan_Butry_2009 donovan show that trees to north may increase electric
+use in summer (not included in simultions)
+.
+
+All this means that
+
+Because management activities cause a transfer of fossilized carbon to the
+atmosphere/biosphere system, unless the amount of C
+
+cite:akbari_2002 - even with ideal planting conditions for energy use,
+they don't think these benefits alone justify the cost.  But these
+benefits are what are key to the forest being a C sink.  (that's not
+fully logical because C and $ aren't the same).
+
+Work from two research groups has found that the sum of these
+sometimes counteracting forces on C emissions by trees is by in large
+a reduction, and this research has been the scientific foundation upon
+which tree planting campaigns have been based.  The first group is the
+....
+
+akbari's group gives upper boundary of indirect savings
+cite:akbari_konopacki_2005 - "It is important to notice that in all our
+previous calculationsweassumedthatallurbansurfaceswould be modified to
+the levels discussed above. This provided an upper boundary for
+estimates of indirect saving potentials. "
+
+
+there's adifference between ideally placed trees and how trees really
+are: see the chicago studies.
+
+** key ideas
+- The carbon budget of the urban forest.
+- urban trees influence our behavior.
+- Though we have known that urban trees are sources of C for decades,
+  we ignore this in literature.
+- write out the C budget for urban trees and then highlight the most
+  important parts.
+  - the parts that interact with the lithosphere are most important if
+    we consider timescales longer than the time it takes for all the
+    carbon a tree has sequestered to return back to the atmosphere
+    (the order of 10s to 100s of years for almost all trees).
+    - I should verify this for treated lumber
+    - how long to our wooden frame buildings last?
+  - unless there is a permanent expansion of stored wood (more area forested
+  - magnitude of trees effect on C emissions is small compared to
+    other changes that could happen on building (more efficient
+    appliances, better insulation), but compared to sequestration and storage
+
+
+- We have known for a long time that trees can actually cause increase
+  in C emissions in some places
+- But we have ignored it
+- Here we show that for Madison this is the case
+- and argue that this is more typical of the relationship between
+  trees and building C emissions than elsewhere.
+
+- There is far greater uncertainty that we think
+  - reviews miss the key effects of trees
+  - bias by climate
+  - the effect via wind?  many papers mention the effect in winter,
+    but cite:mcpherson_e_1988 show the strong effect in summer.
+- I think this is the first observational data on heating energy use.
+  And on top of that in a city that is closer to the typical climate
+  of the US than other cities studied.
+
+** brain storm
+- what is the relevant timescale for a C budget?
+  - how many tree lifetimes?
+  - 100 years?
+  - 300 years?
+  - at what point will the economy be so different or new technologies
+    have developed to make this calculation nonsense?
+- There has been a lot of work accounting for the amount of carbon
+  stored and sequestered in the US - though not perfect it gives a
+  good idea.
+  - but this is actually not the most important part of the carbon
+    budget of the urban forest.
+  - Human management of the urban forest and it's ability in turn modify
+    human behavior via building energy use is the important part
+- what is the role of urban soils?
+  - consider the tree contribution
+- trees can affect air temperature and humidity which alters energy use.
+- propose a simple but coherent model as a first step
+- I need to get some numbers
+  - for some typical/representative individual trees
+    - sequestration
+    - storage
+    - management emissions
+      - planting
+      - pruning
+      - removal
+    - building energy use (this is an interaction w/ existing climate).
+      - shading
+      - wind
+      - evapotrans
+    - soil?
+  - for some municipalities
+    - number of trees managed
+    - budget
+    - amount spent on fuel.
+    - convert this into dollars and C per tree.
+- just as sequestration and storage is a function of climate (precip,
+  growing season length, etc), the effect of trees on C emissions
+  associated with building energy use is a function of climate.
+  - also type of building
+  - location of trees relative to building.
+    - look at madison data to see if there are any trends
+      - yes there appears to be.
+- find literature from million trees NYC that says trees save C
+  emissions. (because in that climate they may not).
+- shift to more C efficient electricity makes the effect of trees on
+  reducing C from a/c less.
+- wind is key.  Look at the UFORE publications for northern cities.
+  This seems to make the trees reduce energy use, but I think/want to
+  investigate the validity of the wind assumption. look at cite:mcpherson_simpson_99
+- How many papers consider the increase in humidity that is associated
+  with trees?
+- a key part is the uncertainty associated with each part of the
+  equation.
+  - for example cite:simpson_2002 's look-up table is within
+    +/- 10% of more detailed simulation.  This adds error on top of error.
+  - wind, uncertain.  how does wind affect hot climates?  do others
+    find whaat cite:mcpherson_e_1988 found?
+  - Think about creating a figure similar to cite:pataki_etal_2011
+  - But UFORE and ITREE makes people think we are far more certain.
+- should I include the methane emissions from power plants also?
+  There is carbon in them as well, but it's a relatively small amount
+  and makes things more complex.  but i should think about it.
+- a key thing is weighting by population.  For most people, what is
+  the effect of trees?
+- Trees can have the strongest effect on cooling C emissions, but most
+  of the country has more heating related emissions.
+- from cite:thayer_maeda_1985 and cite:mcpherson_e_1988 it seems trees
+  can cause increases in C emissions in a number of circumstances.  What
+  are the assumptions that later work makes to show trees reduce
+  emissions moreso?
+- Humidity really is a huge part of the equation.
+- We have known about the negatives of trees
+  for heating for a long time (cite:thayer_maeda_1985,heisler_86).
+  But Many papers (from mcpherson and simpson) show that the positive
+  effects of trees reducing cooling load out weights the negative of
+  increasing heating load.  What if the balance isn't quite what these
+  simulations suggest?
+- climate things to consider
+  - temp
+  - wind
+  - clouds and when clouds occur in day
+  - solar radiation (this could encompase clouds)
+  - humidity
+- I also need to consider that many of the houses in Madison may not
+  have AC.  This could be a reason why the electric savings is not as
+  much.  cite:simpson_mcpherson_1998 take this into account - see fig 3.
+- I'm not saying anything that other researchers don't already know.
+- key point in cite:simpson_mcpherson_1998 about how the wind effects
+  in cite:mcpherson_e_1988 may not be realistic because the wind was
+  modelled in the absence of shading.  So no wind and the building is
+  getting hit by solar radiation instead of no wind and the building
+  is being shaded.  There is likely an interaction.
+- So far I see two groups modeling: mcpherson, simpson, heisler et al.  and
+  akbari, huang, taha et al.
+- I need to look for recent papers that have tried to model this
+  stuff.  But I don't think they exist, becuase none of the recent
+  reviews have seen them.
+- the different approaches taken for modelling wind reductions might
+  explain differeences between cite:mcpherson_e_1988 and
+  cite:huang_e_1990.  cite:mcpherson_e_1988 don't model the affect of
+  trees on wind; just model the effect of wind on E use and say they
+  think wind might be reduced by 75% in a neighborhood with dense
+  vegetation.  This is not too far from what cite:heisler_1990 found.
+- we know that trees have both postiive and negative effects on energy
+  balance.  Simulations suggest that net, trees are good (reduce
+  energy).  But in many climates this amount is very little.  And if
+  we account for the uncertainty, the effect could very well be
+  negative.
+- what is the sensitivity of the simulations to building
+  characteristics?  Location of trees? etc?  Furnace and A/C
+  efficiency?  Energy Source?
+- there is considerable uncertainty in the relationship between tree
+  cover and wind speed.
+- this is interesting because there are so many opposing effects
+  (shading versus wind; heating versus cooling)...it's a fine balance.
+- For my data, I may or may not be including Evapotranspiration, since
+  at larger scales at which ET may act there may not be enough
+  variability or range in ET.  Maybe there is, but the signal might be
+  weak.  it would be hard to parse out this contribution.
+- million trees also planted in LA for 1984 olympics, but many didn't
+  survive cite:akbari_taha_1992.  Interesting especially since
+  cite:huang_e_1987 (which akbari and taha are authors on too) found
+  that trees have little benefit in LA since energy demands are
+  already so low.
+- realizing that trees don't do that much good for the environment, at
+  least relative to reducing emissions from transportation and
+  buildings, is a bummer.  Having to share that is like telling a hard
+  truth to a good friend.
+- is the wind part of the ufore model peer reviewed?  I need to find
+  this if it exisits....
+- simulating the effects of trees on wind is hard, but not as hard as
+  the effects on humidity and temp.  cite:mcpherson_e_1994.
+  - they struggle with the temp effect especially.
+  - may be one more reason why empirical data is needed.
+- the significance is not in the magnitude of the effect, but in the
+  magnitude of our uncertainty (unknown unknown.)
+- it's my impression, and i might be wrong, that almost all the papers
+  tht cite these energy papers just do so as evidence of ecosystem
+  services.  They aren't a part of a critical debate trying to improve
+  our estimates or understanding.
+- my work doesn't take into account the broad scale effects of trees
+  on the urban climate which might affect energy use.
+  - much of this work like from akbari is in hot places where reducing
+    the uhi is good.
+  - is there anyone who has shown that a uhi in winter reduces heating
+    energy use?
+  - the deciduousness of trees is nice here, in summer there's the ET
+    which cools when needed.  in winter deciduousness allows light to
+    heat hard surfaces.
+- i've tried very hard to show that trees aren't as beneficial in cold
+  places as we often think.  If it turns out that they really are
+  beneficial, then I'd be even a stronger supporter.
+- That wind primarily affects heating seems like a misconception
+  (actually not, it is generally true, but miami is a notable exception).
+  - cite:simpson_mcpherson_1996 say this
+  - papers that show wind has stronger effect on cooling than heating:
+    - cite:mcpherson_e_1988 - maybe their method is old.
+    -
+  - is there a paper that shows wind has stronger effect on heating
+    than cooling? yes cite:huang_e_1990
+    - ../figs/huang_e_1990_windC.png
+    - for all cities but miami, wind has stronger effect on heating
+      than on cooling.  For Phoenix, the differeence is smaller.  For
+      most cities, the heating effect is many times the cooling effect.
+- the work that the forest service has done to quantify the costs
+  and benefits of trees is pretty incredible.  I'm pretty impressed.
+- there has been decades of work on this subject and many
+  publications, but all this seems to build on relatively few studies.
+- the vast majority of studies are simulations
+- in the case of cite:akbari_e_1997
+- tree ecosystem services have be calculated in XXX cities.  Many
+  cities investing large amounts of money in green infrastructure.
+  There have been dozens of publications on the matter.  But when it
+  comes to energy use there is acutally large uncertainty.  We have
+  very few measured studies and they aren't represnetative.  WE have
+  simulation studies, but we know they can be off by large amounts
+  (two-fold).  The margin between trees being a net cause of ghg
+  emissions and sink of ghg emission (via building e use) is within
+  this uncertainty certainly.  We simply don't know because we don't
+  have the data to say so, yet we act as though we are certain.
+  - the forest service researchers are very aware that sometimes trees
+    can be negative, but sometimes that is glossed over.  Maybe it
+    depends on their audience?
+- dollar savings from trees for electricity can be even greater if the
+  region has peak rates (high price) during times of most use, summer.
+- there's a lot of work built on a small foundation, because building
+  the foundation is very challenging/expensive.
+- the wind equation from cite:heisler_1990 used by cite:simpson_1998
+  and I think itree folks, is based on 4 data points (neighborhoods)
+  and contrained to cross the origin.  It has 3 parameters.
+  - Could I get the data and fit a model and report the uncertainty?
+    This might be hard to do because the uncertainty come from the
+    model form part.  It's not the regular regression uncertainty.
+  - But there may be a way to quantify this, though I'm not sure how
+    helpful it would be.
+- that trees increase nighttime temps might actally be worth
+  publishing.  Read pg 101 of cite:mcpherson_e_1994
+- temperature reduction due to trees ET could also be greatly improved.
+  - little empirical data
+  - potential evapotranspiration instead of actual.
+    - use crop et
+  - grass versus tree ET
+- the distribution of heating and cooling equipment in homes is important.
+- highlight the great and large amount of work that the forest service
+  has done, but the large uncertainty that remains.
+- "heating penalty can be substatial even in cooling dominated regions" cite:mcpherson_simpson_99
+- how cite:mcpherson_simpson_99 adjust for humidity of regions is an
+  example of how we know about how differences might affect energy
+  use, but we don't have data and so we make our best guess
+  - [[file:~/git/notes/notes.org::*they%20account%20for%20humidity%20effects%20on%20temp%20reduction%20effect,%20but%20where%20they%20get%20these%20numbers%20I%20don't%20know][they account for humidity effects on temp reduction effect, but where they get these numbers I don't know]]
+- I could have a section where I talk about papers that have looked at
+  chicago, since it is a heating dominated city that is very populous
+  and there have be a number of publications on
+  it. cite:jo_mcpherson_2001, cite:mcpherson_e_1994, ...
+- pools of carbon
+- "heating penalty can be substatial even in cooling dominated
+  regions" - cite:mcpherson_simpson_99
+- it could be that the simulations are right, I don't know if my data
+  refute them?
+- as noted in cite:akbari_2002 there are case studies of cooling
+  energy use impacts: (actual measurements)
+  - cite:akbari_e_1997
+  - cite:parker_1983
+  - is donovan antoher one? cite:donovan_Butry_2009
+- some of the greatest cooling for cities from trees is in arid
+  environments, like LA.  There has been more concern recently about
+  the associated water use.  Planting less water hungry trees means
+  less cooling though.  the cooling is a direct result of water loss
+  to the atmosphere.  I pataki might have a paper about water.
+- both research groups depend on cite:heisler_1990 for wind.
+- cite:akbari_2002 - in philly trees increase energy use in
+  residential buildings.
+- What is the distribution of cities in HDD and CDD space included in
+  the cite:akbari_2002 paper?
+  - more cdd
+    - los angeles
+    - fort worth
+    - houston
+    - miami
+    - phoenix
+  - more hdd
+    - atlanta
+    - chicago
+    - new york city
+    - philadelphia
+    - washington dc
+- key point is that for the country one size doesn't fit all regarding trees.
+- the ctcc in 2008 talks about uncertainty.  they say that
+  cite:akbari_e_1997 is the only paper they know of that has actually
+  assessed simulations of effect of trees on building energy use.
+- given that we know cite:nowak_e_02, that in the long run the
+  management of trees causes C emissions, transfer from lithosphere to
+  atmosphere/biosphere; we need them to offset this transfer.  This is
+  why their effect on building emisssions is so important.
+  - also this: A life cycle carbon dioxide inventory of the Million
+    Trees Los Angeles Program https://www.fs.usda.gov/treesearch/pubs/46311
+- trees need to be re-fossilized if we are going to use fossil fuels
+  to care for them and they aren't going to offset enough C emissions.
+  - making near permanent wood products is a step towards this.
+- trees are less effective in the cloudy and more humid parts of the
+  country cite:taha_e_99
+- cost benefits:
+  - cite:donovan_Butry_2009 - ideally placed tree saves consumer $45
+    in summer electricty over couse of 100 years.  what about
+    management costs?
+  - cite:akbari_2002 - see section on how uhi and energy benefits
+    probably don't justify the costs.
+- everyone should have a big tree to the west of their house if it
+  doesn't negatively impact a neighbor's house (regardless of climate).
+- trees can have a very strong effect in hot places.
+- trees are not bad, it just shows they aren't as good as we thought
+  they were.  Chopping down trees won't help us much either (even if
+  all the wood is prevented from decomposing).  Trees just don't
+  affect energy much and with improved building standards they are
+  affecting buildings even less.  We need to focus on more important
+  things or plant trees for other reasons, recognizing they may be a C source.
+- more energy is used for heating than cooling in the US
+- I could figure out how many times cite:mcpherson_simpson_99 was
+  cited and how many times the papers that cited it were cited to get
+  an idea of the impact.  Same with cite:akbari_2002.
+
+** NEXT Todos
+- [X] check if itree considers climate
+  - if they follow cite:mcpherson_simpson_99, I think they do in a
+    coarse way.  they have 11 regions.  see pg 156.
+- [X] find million trees LA NYC literature that says trees reduce C
+  emissions, the urfore paper does too.
+- [ ] get urban forest budget and fuel expenses for city of Madison.
+- [ ] find a partner who knows about modeling building energy use.
+  - why don't we have more houses built to capture solar gain.
+  - are the results from 1985 still valid today?
+- [ ] find a partner who knows about C budgeting
+- [X] get the range of kg C per kwh in the U.S. I have the southern WI.
+- [ ] what if I find all the UFORE publications for cities and
+  separate out C transfers by pool (take into account difference
+  between lithosphere and biosphere).
+  - work that follows cite:mcpherson_simpson_99 (check what the major
+    peer reviewed citations are that the ufore papers use)...
+- [ ] organize files I downloaded from the EPA, eGrid and screenshots
+- [ ] try to get the raw data from cite:mcpherson_e_1988 used to
+  create figures.  Especially because there are discrepancies between
+  the text and the figures.
+- [X] verify that salt lake city gets energy from NWPP not RMPA.
+- [ ] I'll need to test the sensitivity to the different CO2/mwh by regions
+- [ ] check what akbari is up to.
+** COMMENT recycle text
+
+While almost all studies that follow the cite:mcpherson_simpson_99
+methology find that trees reduce ACE on average (e.g
+cite:nowak_e_2017), one exception is cite:nowak_etal_2010, who found
+that trees in Chicago increased ACE.  They then state, "However, this
+estimated increase in emissions (1,200 tons) is more than offset by
+annual carbon sequestration by trees (25,200 tons)."
+
+
+The role of C/kwh:
+as seen in [[fig:akbari_konopacki_2005]], whether trees are beneficial or
+detrimental is largely a function of climate, but also of the C
+content in a kWh for different subregions of the grid.
+
+NY state has higher ACE because their electricity is cleaner (less C/kwh), Illinois
+and Missouri have lower ACE because their electricity is dirtier (more
+C/kwh).
+
+It's a sad irony that as electricity becomes cleaner, trees become
+less beneficial, even detrimental cite:jo_mcpherson_2001.
+
+
+* COMMENT Work I want to cite or at least be aware of.  50 citations allowed
+:PROPERTIES:
+:ARCHIVE_TIME: 2018-09-24 Mon 10:43
+:ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+:ARCHIVE_CATEGORY: energy_paper
+:END:
+
+| citation                     | what                                                                                                                                                                                                                                                                                                                           | Where                                                                                                                                       | via                                                 | method                                                  | energy                | peer reviewed? |                                                                |
+|------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+---------------------------------------------------------+-----------------------+----------------+----------------------------------------------------------------|
+| cite:kramer_kozlowski_1960   | cite:huang_e_1987 cite them for energy of tree evaporating 100 gallons                                                                                                                                                                                                                                                         |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+| cite:dewalle_e_1983          | mobile home in deciduous forest: less energy in summer and winter.  in pine forest: more energy in winter.  tough to compare bc weather conditions different.  wind reduction may be more negative for cooling in more southern places with higher humidity and air temps                                                      | pennsylvania                                                                                                                                |                                                     |                                                         |                       |                |                                                                |
+| cite:parker_1983             | a single miami mobile home that was childcare center.  electricity reduction of 58%.                                                                                                                                                                                                                                           | miami, FL                                                                                                                                   |                                                     | measured                                                | cooling (electric)    |                |                                                                |
+| cite:hutchison_taylor_1983   | a review/summary of our knowledge to this point on the topic.  I should read the whole thing.                                                                                                                                                                                                                                  |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+| cite:thayer_maeda_1985       | I converted $ to kg C to show trees on south of house increase emissions in 3 of 5 California cities                                                                                                                                                                                                                           | Truckee, Eureka, Santa Barbara, Sacramento, Palm Springs, CA                                                                                | south shading                                       | simulation                                              | heating & cooling     |                | old paper                                                      |
+| cite:heisler_86              | trees on south are not good (they block more radiation in the heating season than they do in the cooling season).  on the west trees are especially good.                                                                                                                                                                      | State College, PA; Grand Lake, CO                                                                                                           | shading, south and west                             | measured tree shading and radiation reduction on houses | no.                   | yes            |                                                                |
+| cite:huang_e_1986            | more about general climate than trees.  But their look at humidity is important.  However, they don't investigate the effect of trees on humidity.                                                                                                                                                                             |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+| cite:huang_e_1987            | what they use for wind and PET has considerable uncertainty (and they recognize it).  Key finding: LA doesn't benefit much from trees.  Because they use potential ET, reductions in temp are the maximum possible and reductions in e use are high.                                                                           | Los Angeles, CA; Sacramento, CA; Phoenix, AZ; Lake Charles, LA                                                                              | shading, wind reduction, and evapotranspiration     | simulation of urban climate, DOE 2.1C for buildings     | cooling               | yes            |                                                                |
+| cite:hoyano_1988             | row of trees put in front of west wall of house.  Temperature reduction measured                                                                                                                                                                                                                                               | Tokyo, Japan                                                                                                                                | west shading                                        |                                                         | no                    | yes            |                                                                |
+| cite:mcpherson_e_1988        | I converted $ to kg C to show trees via shading increase emissons in cold cities.                                                                                                                                                                                                                                              | Madison, WI; Salt Lake City, UT; Miami, FL; Tucson, AZ                                                                                      | shading; wind                                       | simulation MICROPAS                                     | heating & cooling     |                | madison is one of cities, wind in hot cities is important      |
+| cite:mcpherson_e_1989        | suggest longwave radiation is important, they consider water costs, actual measurements (albeit on models).                                                                                                                                                                                                                    | Tucson, AZ                                                                                                                                  |                                                     | measurement (but model buildings)                       | cooling               | yes            |                                                                |
+| cite:meier_1990              | review of landscaping effects on AC.  Focus on near buildings and actual measurements.                                                                                                                                                                                                                                         |                                                                                                                                             |                                                     | review                                                  | cooling               |                |                                                                |
+| cite:heisler_1990            | wind reductions; high canopy summer: 46% reduction; low canopy summer 28% reduc; low canopy winter 14% reduc; 21-24% reduc by buildings.                                                                                                                                                                                       | State College, PA.                                                                                                                          | wind                                                | measured                                                | no                    |                |                                                                |
+| cite:huang_e_1990            | tree effect on wind from cite:heisler_1990; tree transmissivity 10% in summer, 70% in winter;                                                                                                                                                                                                                                  | 7 representative US climates: Chicago, Miami, Minneapolis, Phoenix, Pittsburgh, Sacramento, Washington                                      | wind, shading                                       | simulation                                              |                       |                |                                                                |
+| cite:heisler_1991            | wind break.  find savings in both heating and cooling regardless of climate.  not exactly relevant because it is windbreaks                                                                                                                                                                                                    | mostly great plains, north to south: Minot, ND; Huron, SD; Grand Island, NE; Topeka, KS; Wichita Falls; TX; Minneapolis, MN; Harrisburg, PA | wind                                                | simulation                                              | heating & cooling     | no             |                                                                |
+| cite:sailor_e_1992           | cite:mcpherson_simpson_99 misuse temp reductions. not the most rigorous, but interesting.  look at figures.  Shows effect of trees varies with weather (windiness).  On average trees reduce wind, temp, and cooling degree days.  But also increasing wind decreases temperatures.                                            | Sacramento, CA                                                                                                                              | wind and temp                                       | measured                                                | no (temp and wind)    | no             |                                                                |
+| cite:akbari_taha_1992        | 4 heating dominated *Canadian* cities; also looked at albedo; wind shielding is what drives the reduction in energy use (heating).  In cold climates WIND reduction key. There is no or hardly any cooling demand.                                                                                                             | Toronto, Edmonton, Montreal, Vancouver                                                                                                      | shading, wind, evapotranspiration                   | simulation                                              | heating & cooling     | yes            |                                                                |
+| cite:myrup_e_1993            | trees effect on urban climate; regress wind speed by canopy height.  Not great method I'd say (not sufficnet data), but notable.                                                                                                                                                                                               | Davis, CA                                                                                                                                   | shading, wind,                                      |                                                         |                       |                |                                                                |
+| cite:mcpherson_rowntree_1993 | READ                                                                                                                                                                                                                                                                                                                           |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+| cite:mcpherson_e_1994        | first paper that starts talking about carbon.  Assume trees effects on energy following Jo and Wilkin 1994, an unpublished report.  Impossible to evaulate how good methods are.  cite:jo_mcpherson_2001 seems to be the later publication of methods                                                                          | Chicago                                                                                                                                     | not done in this paper, based on unpublished report |                                                         |                       |                |                                                                |
+| cite:taha_e_1996             | READ; methods for temp reduction from planting trees. used by cite:konopacki_akbari_2000,konopacki_akbari_2002,akbari_2002,                                                                                                                                                                                                    |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+| cite:simpson_mcpherson_1996  | though they don't report the numbers, they say shading from trees can increase cost (C emissions) in cool climates, like cite:thayer_maeda_1985 did too.  Mostly though tree reduce emissions.  they don't make it easy to separate electric from gas                                                                          | 11 climates in California                                                                                                                   | shading                                             | simulation                                              | heating and cooling   | yes            |                                                                |
+| cite:akbari_e_1997           | actual measurements and experiment (add trees to two buildigns); shading and wind reductions fro; Simulations were off by as much as two fold.                                                                                                                                                                                 | Sacramento, CA                                                                                                                              |                                                     | measurement 2 buildings                                 | cooling               |                |                                                                |
+| cite:sailor_1998             | regional air temperature reductions, not related to energy                                                                                                                                                                                                                                                                     | hypothetical cities across range of latitudes                                                                                               |                                                     | simulation                                              | no (temp is response) |                |                                                                |
+| cite:simpson_mcpherson_1998  | modelling is nfot newf.  use of real buildings and real planted trees is. direection of tree effects is like cite:mcpherson_e_1988, see comment about how cite:mcpherson_e_1988 wind is unrealistic                                                                                                                            | sacramento                                                                                                                                  |                                                     |                                                         |                       |                |                                                                |
+| cite:simpson_1998            | There is no new modelling in this paper, they just take building distribution and tree cover and apply previous relationships cite:simpson_mcpherson_1998.  Appendix is great.  they explain wind and temp modellin process. sensitivity analysis shows high uncertainty                                                       | sacramento county                                                                                                                           | shading, air temp (ET), wind                        |                                                         |                       |                |                                                                |
+| cite:rosenfeld_e_1998        |                                                                                                                                                                                                                                                                                                                                |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+| cite:mcpherson_simpson_99    | Big Co2 reduction publication. no lithosphere biosphere atmosphere distinction.  wind breaks not modeled to affect AC use. READ THOROUGHLY                                                                                                                                                                                     |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+| cite:taha_e_99               | what became of cite:taha_e_1996                                                                                                                                                                                                                                                                                                |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+|                              | planted trees for maximum impact                                                                                                                                                                                                                                                                                               |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+| cite:jo_mcpherson_2001       | Shading causes increase in C emissions for chicago because heating dominated and low C electricity (nuclear).  Net effect is trees reduce C, but there is large uncertainty with wind and temp reductions. Wind reduction reduces cooling needs, this is new for micropas, I'm not sure where it came from.                    | chicago                                                                                                                                     | shading, air temp, wind                             | simulation                                              | heating & cooling     | yes            |                                                                |
+| cite:mcpherson_simpson_2001  | this is the report that became cite:mcpherson_simpson_03; follow previous work from the forest service. results are pretty much what has been found so far.                                                                                                                                                                    |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+| cite:jo_2002                 | this paper in Korea.  Not relevant here, but maybe in the future.                                                                                                                                                                                                                                                              |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+| cite:simpson_2002            | look up table for effect of tree shading on E use. I think these might be the peer reviewed publicatino of tables used in cite:mcpherson_simpson_99 (but not sure).  The indirect effects appear to combine albedo with vege increase.                                                                                         |                                                                                                                                             | shading                                             |                                                         |                       |                |                                                                |
+| cite:akbari_2002             | Good description of how trees affect buildings, see notes; planting of millions of trees in cities, cooling effect reports is for hottest cell (so maybe optimistic).  In Philly trees caused increased energy use. energy savings and smog reductions themselves don't justify planting trees given the cost.  a review paper | review                                                                                                                                      |                                                     |                                                         |                       |                |                                                                |
+| cite:mcpherson_simpson_03    | full technical report is cite:mcpherson_simpson_2001; results are pretty much what has been found so far. LA is south coast climate and this paper (or ones like it) was used to justify tree planting.  cite:huang_e_1987 found trees had little effect on e use in LA; but cite:akbari_2002 does find benefit in LA          |                                                                                                                                             |                                                     |                                                         |                       |                | don't talk about negative consequences of trees reducing wind. |
+| cite:akbari_konopacki_2003   | this became cite:akbari_konopacki_2005. Has lots of nice table showing effect of CDD on elec and heating savings according to their model.                                                                                                                                                                                     |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+| cite:akbari_konopacki_2005   | culmination of urban heat island group's work. extend estimates of savings to pretty much all cities.  The estimates are pretty rough though.                                                                                                                                                                                  |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+| cite:donovan_Butry_2009      | trees on north increase AC use.  Do simulations predict this?, After 100 years, an ideally placed tree the summer electricity benefits are only $45 for the homeowner!  What about management costs?                                                                                                                           | sacramento                                                                                                                                  |                                                     |                                                         |                       |                |                                                                |
+| cite:hirano_fujita_2016      |                                                                                                                                                                                                                                                                                                                                |                                                                                                                                             |                                                     | simulation                                              |                       |                |                                                                |
+| cite:nowak_e_2017            |                                                                                                                                                                                                                                                                                                                                |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+|                              | http://www.energyatlas.ucla.edu/analysis/                                                                                                                                                                                                                                                                                      |                                                                                                                                             |                                                     |                                                         |                       |                |                                                                |
+
+heating and cooling energy in LA: http://www.energyatlas.ucla.edu/about/overview
+
+https://www.fs.usda.gov/treesearch/pubs/53420
+
+does cite:akbari_konopacki_2005 deal with wind reduction for cooling?
+
+Summarizing some thoughts so far:
+
+iTree depends on:
+1) cite:mcpherson_simpson_99 primarily
+   1) windbreak - heisler et al. 1979
+   2) wind reduction - cite:heisler_1990 - 4 points and 3 parameters
+      1) cite:akbari_taha_1992 - they use this wind relationship.
+         find in canada that it drives the savings
+      2) later work by akbari excludes the wind effect, which in hot
+         places would likely increase energy use.  in cite:akbari_2002
+         he talks about the effect of wind, but it is only simulated
+         in cite:akbari_taha_1992, not their later work.  They mention
+         they have unpublished work that shows evergreens to north of
+         buildings would be good.
+      3) cite:mcpherson_simpson_99 also use heisler 1990 as base.
+         1) they also don't allow the reduction of wind to increase
+            cooling costs.  It only affects heating costs
+      4) so there is a miss match between how we know the process
+         works and how we model and report results.
+   3) temperature reduction - there are a range of papers that they
+      cite that show about .5 - 2 degree C reduction with 10% increase
+      in tree cover.  The
+      1) cite:simpson_1998 's sensitivity analysis show that the
+         cooling savings from temperature reduction from trees could
+         be half or 3 times within the range of reasonable parameter
+         values for the effect of trees on temperature and sensitivity
+         of buildings to that temperature
+      2) cite:huang_e_1987 Potential Evapotranspiration and crops.
+         Sets the very upper limit of cooling.
+      3) cite:konopacki_akbari_2002, and similar papers, all get their
+         methods from cite:taha_e_1996
+      4) those that have actually measured air temperature
+         1) cite:sailor_e_1992 - not peer reviewed.  "Sailor and
+            others (1992) estimated a decrease of 0.36  ̊C/10 percent
+            cover increase on the basis of regression analysis of
+            measurements at 15 residential locations scattered
+            throughout Sacramento. Cover was determined for  ̃40 ha
+            areas surrounding each measurement location; substantial
+            scatter was observed in the data." - cite:mcpherson_simpson_99
+            1) there really was a lot of noise
+         2)
+   4) look up tables used in iTree can be off by +/- 10% from the more
+      detailed simulations, which themselves have unknown uncertainty.
+   5) do the figures in cite:akbari_konopacki_2005 show the
+      variability
+
+2 groups:
+1) Forest Service (mcpherson, simpson, heisler); -
+   1) advocate for trees
+   2) so potential tree bias
+2) Heat Island Group Environmental Energy Technologies Division,
+   Lawrence Berkeley National Laboratory
+   1) trying to find ways to reduce the urban heat island.
+   2) so potential hot city bias.
+
+
+
+
+
+
+
+
+
+Root problem: uncertainty: simulations not agreeing, models built on
+little data (because hard and expensive to get).
+
+We have good reason to think simulations are wrong by a fair bit.
+
+
+see this for how many trees were feasbile to plant in million trees
+LA:  https://www.fs.usda.gov/treesearch/pubs/29402
+far less than akbari susggest to get the cooling benefits.
+
+
+
+
+I think the iTree may be over generous, especially regarding wind
+effects which can only reduce energy.  but other papers don't have
+that.  I think wind is just hard to model.  they have wind breaks, but
+would those really matter in cities?
+
+"heating penalty can be substatial even in cooling dominated
+regions" - cite:mcpherson_simpson_99
+
+
+iTree depends on lots of parameters that are maybe reasonable, but
+maybe not because they aren't backed up by data.  e.g the temperature
+effect of trees.
+
+If there weren't opposing forces (trees having opposite effects on
+heating and cooling via shade and wind), this wouldn't matter as
+much.  But changing
+
+
+trees affect via:
+
+1) shading - blocking shortwave solar radiation
+   1) simulation studies show that shading can increase carbon
+      emissions in cold, heating dominated climates
+   2) cite:heisler_86,thayer_maeda_1985,mcpherson_e_1988
+   3)
+
+
+
+When the sensitivity analyses (e.g. cite:simpson_1998) show
+
+
+
+
+a recent empirical study:
+http://soac.fbe.unsw.edu.au/2011/papers/SOAC2011_0258_Final.pdf
+
+cite:roy_etal_2012
+cite:pataki_e_06
+
+
+http://www.itreetools.org/streets/resources/Streets_CTG/PSW_GTR199_Midwest_CTG.pdf
+- in the midwest, the majority of the benefits from trees are energy
+  savings (56%), next is property value increase (24%).  This kinda
+  surprises me, since I think in other papers I've seen that property
+  value increase is the great majority
+
+cite:givoni_1991 - this is a good review from a long time ago. covers papers i've read
+about temperature.  nothing about energy use.
+
+
+
+cite:pataki_e_06 - see notes and page 4
+
+cite:nowak_e_02 - management causes emissions that, in the long run
+the trees can never reverse.  However, this is sometimes ignored or
+glossed over:  FIND EXAMPLES . Management is not the only ghg
+emissions associated with the urban forest: also tree's effect on
+building energy use.
+cite:mcpherson_e_2015  - just looked at 50 years out;  they note
+importance of wood products instead of mulch
+,luck_e_2014
+
+
+
+https://www.sciencedirect.com/science/article/pii/S2212095513000084
+- only electric/cooling?
+- in akure nigeria (maybe they never use heat anyway and this isn't
+  notatble)
+
+need to find papers that don't mention heating in places where heating
+is important.
+
+do mention:
+https://www.sciencedirect.com/science/article/pii/S036013231400081X#sec3
+
+
+
+maybe we do know that trees can increase heating use (there are 125
+papers that cite cite:mcpherson_e_1988 and most seem to note that
+fact), but I don't think this is put in terms of carbon.
+
+cite:akbari_2002
+
+cite:mcpherson_simpson_99
+- see pg 212
+
+cite:mcpherson_simpson_03
+
+cite:pataki_e_06
+
+cite:pataki_etal_2011 - they don't mention the potential for trees to
+increase energy use.  (though i really like the paper).  Even this
+paper which takes a critical look at services and disservices misses
+the potential for trees to increase C due to icreased heating.  They
+say the effect of trees on ghg emissions has high uncertainty, but it
+is even higher than they recognize.
+
+cite:haase_e_14
+
+cite:roy_etal_2012
+
+cite:gomez-baggethun_barton_2013
+
+cite:dobbs_e_2011
+
+cite:nowak_e_2013
+
+cite:livesley_e_2016
+
+cite:pincetl_etal_2012
+
+cite:lyytimaeki_sipila_2009
+
+cite:tyrvaeinen_2001
+- shade is an disserivce, but not for the reason of increasing
+  buidling energy use.  Finland, a northern pace.
+
+cite:doehren_haase_2015
+ - don't have emissions
+Maintaining green spaces generates costs (financial, energy,
+opportunities)
+
+
+cite:seamans_2013
+ - has a bit on papers that have reviewed ecosystem services.
+
+cite:cohen_2004
+ - "Trees hold a powerful place in American constructions of what is good in nature and the environment."
+ - This is a key point.  It is not easy to talk about situations in
+   which they may not be.
+ - cite:thayer_maeda_1985 call them "sacred elements"
+ - their aethetic value is XX% (a huge percent) of their total value.
+
+cite:song_e_2018
+
+
+https://www.sciencedirect.com/science/article/pii/S0378778896010031
+
+cite:luederitz_e_2015
+
+an "Atlas award-winning study"
+Implementing and managing urban forests: A much needed conservation strategy to increase ecosystem services and urban wellbeing
+https://www.elsevier.com/connect/atlas/Urban-forests-make-megacities-more-environmentally-sustainable
+
+they used itree canopy.
+
+cite:bodnaruk_e_2017
+
+"Assessing the Cooling Benefits of Tree Shade by an Outdoor Urban Physical Scale Model at Tempe, AZ"
+
+Where to plant urban trees? A spatially explicit methodology to explore ecosystem service tradeoffs
+
+conference paper:
+?https://www.researchgate.net/publication/264279349_TREES_PROVIDE_ENERGY_SAVING_BENEFITS_TO_ADJACENT_BUILDINGS_FOR_A_SMALL_WATER_COST"
+
+** urban wood utilization as a solution
+https://s3.amazonaws.com/academia.edu.documents/30774882/CA_Urban_Wood_Waste_Rpt.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1528736892&Signature=kg8VFtRdlPuniLtQ1o4mOZadqUQ%3D&response-content-disposition=inline%3B%20filename%3DCalifornia_Urban_Wood_Green_Waste_Utiliz.pdf
+http://wisconsinurbanwood.org/
+https://delta-institute.org/delta/wp-content/uploads/Urban-Wood-BMP.pdf
+https://csfs.colostate.edu/cowood/urban-wood-utilization/
+
+* COMMENT Journal: Aim high
+:PROPERTIES:
+:ARCHIVE_TIME: 2018-09-24 Mon 10:44
+:ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+:ARCHIVE_CATEGORY: energy_paper
+:END:
+** Nature first
+- Initial Submission: https://www.nature.com/nature/for-authors/initial-submission
+- https://www.nature.com/nature/for-authors/formatting-guide
+- https://www.nature.com/authors/index.html
+
+
+whose conclusions represent a substantial advance in understanding of
+an important problem and have immediate, far-reaching implications.
+
+A typical Article contains about 3,000 words of text and,
+additionally, five small display items (figures and/or tables) with
+brief legends, reference list and methods section if applicable.
+
+They do not normally exceed 5 pages of Nature and, as a guideline,
+allow up to 50 references. (One page of undiluted text is about 1,300
+words.)
+
+1) Why is what I'm doing important?
+   - We are an urban species
+   - Urban environment is key to our well-being
+   - Cities invest substantially in green infrastructure
+     - to achieve health, aesthetic, and global ghg emission reductions
+   - is
+2) How is it a substatial advance?
+*** initial submission
+Title.Titles must fit on two lines in print (75 characters including
+spaces for Articles and 90 for Letters) and should avoid technical
+terms, abbreviations and active verbs.
+
+
+Authors. Corresponding author(s) should be identified with an asterisk.
+
+Abstract. Provide a general introduction to the topic and a brief
+non-technical summary of your main results and their implication.
+
+
+Text length and formatting. Attention to the following details can
+help expedite publication if we invite a revision after external
+review.
+
+
+Letters: a referenced ~200 word introductory paragraph; main text of
+no more than 1,500 words and 4 display items (figures, tables); as a
+guideline, up to 30 references. Section headings are not used.
+
+
+Articles: an abstract of approximately 150 words, unreferenced; main
+text of no more than 3,500 words and 6 display items (figures,
+tables); as a guideline, up to 50 references. Section headings should
+be used and subheadings may appear in 'Results'. Avoid 'Introduction'
+as a heading.
+
+
+Please consult Nature's content types for final length and formatting requirements of other article types.
+
+Methods. The Methods section appears in most online original research
+articles and should contain all elements necessary for interpretation
+and replication of the results. Methods should be written as concisely
+as possible and typically do not exceed 3,000 words but may be longer
+if necessary. Methods-only references do not count against your
+reference limit. We encourage you to deposit any step-by-step
+protocols used in your study in Protocol Exchange, an open resource
+maintained by Nature Research. These protocols are linked to the
+Methods section upon publication.
+
+
+References. These may only contain citations and should list only one
+publication with each number. Include the title of the cited article
+or dataset.
+
+
+
+*** Article (full text instructions)
+Articles
+Articles are original reports whose conclusions represent a
+substantial advance in understanding of an important problem and have
+immediate, far-reaching implications. They do not normally exceed 5
+pages of Nature and, as a guideline, allow up to 50 references. (One
+page of undiluted text is about 1,300 words.)
+
+
+Articles have a summary, separate from the main text, of up to 150
+words, which does not have references, and does not contain numbers,
+abbreviations, acronyms or measurements unless essential. It is aimed
+at readers outside the discipline. This summary contains a paragraph
+(2-3 sentences) of basic-level introduction to the field; a brief
+account of the background and rationale of the work; a statement of
+the main conclusions (introduced by the phrase 'Here we show' or its
+equivalent); and finally, 2-3 sentences putting the main findings into
+general context so it is clear how the results described in the paper
+have moved the field forwards.
+
+
+Articles are typically 3,000 words of text, beginning with up to 500
+words of referenced text expanding on the background to the work (some
+overlap with the summary is acceptable), before proceeding to a
+concise, focused account of the findings, ending with one or two short
+paragraphs of discussion.
+
+
+The text may contain a few short subheadings (not more than six in
+total) of no more than 40 characters each (less than one line of text
+in length).
+
+Articles typically have 5 or 6 display items (figures or tables).
+
+** PNAS second
+- http://www.pnas.org/page/authors/submission
+- http://www.pnas.org/page/authors/purpose-scope
+** Landscape and Urban Planning third
+** who to get to review?
+Stephanie Pincetl, spincetl@ioes.ucla.edu
+Diane E Pataki, diane.pataki@utah.edu
+Hashem Akbari, hashem.akbari@concordia.ca
+
+people on the cite:pataki_etal_2011 paper.
+akbari.
+
+
+* COMMENT Figures / tables to include ideas:
+:PROPERTIES:
+:ARCHIVE_TIME: 2018-09-24 Mon 10:45
+:ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+:ARCHIVE_CATEGORY: energy_paper
+:END:
+
+1) table showing each of the ways that trees affect building E use
+   (heating and cooling) and C emissions.  The magnitude, direction,
+   and certainty. with citations.
+2) a figure showing something of the study design.  I'm not sure what
+   this would look like or if it is important.
+
+show hdd vs cdd and a hexbin of US population (from census blocks) as
+background.
+
+plot us cities on top
+
+6 of top 10 cities are in CDD > HDD
+
+but X% of the US population lives in HDD > CDD.
+
+What are the cities where effect on trees on energy use has been done?
+
+Also a figure showing energy use for AC and Heating by state/region.
+Can I convert this into carbon emissions?
+
+
+* COMMENT presentation ideas
+:PROPERTIES:
+:ARCHIVE_TIME: 2018-09-24 Mon 10:45
+:ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+:ARCHIVE_CATEGORY: energy_paper
+:END:
+essa list, always posts for sunny houses.  Do you ever think those are
+being posted in especially shady neighborhoods?  Why say sunny? I
+think it's because many apts aren't that sunny?  Why aren't they
+sunny? Other buildings and trees.  We value trees, but we also value
+sunlight.  Keep that in mind.  (this would need to be made incredibly
+eloquent and concise).  Find picture of house that is "sunny" and
+google map where it is surrounded by trees.
+
+trees change our behavior (by changing how our houses use energy)
+
+
+
+
+"Have you ever had to sit down with the love of your life and tell
+them that they aren't doing all they can to help fight climate
+change?"
+I'm not talking about a heart to heart with your significant other, or
+an awkward thanksgiving dinner.  I'm talking about my love, urban
+trees.
+
+I am obsessed with trees in cities.
+
+Beautiful.  We control them, but in some ways they affect us back.
+Energy Use.
+
+That's what I'm talking about with the trees and climate change.  The
+key point of my talk is that the trees near our houses in Madison are
+actually causing us to use more energy and this is leading to more C
+emissions.
+
+The rest of my talk I'm going to explain how I came to this conclusion
+and the nuance behind the bottom line.
+
+1) methods
+2) more detailed results.
+3) so what/discussion.
+
+
+* COMMENT far w cover shades more in winter, increasing C; near W cover shades more in summer decreasing C.
+:PROPERTIES:
+:ARCHIVE_TIME: 2018-09-24 Mon 10:48
+:ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+:ARCHIVE_OLPATH: Results/Effect of existing tree cover on a typical house
+:ARCHIVE_CATEGORY: energy_paper
+:END:
+
+* COMMENT can be up to 3000 words
+:PROPERTIES:
+:ARCHIVE_TIME: 2018-09-24 Mon 10:48
+:ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+:ARCHIVE_OLPATH: Methods
+:ARCHIVE_CATEGORY: energy_paper
+:END:
+
+
+* COMMENT instructions
+:PROPERTIES:
+:ARCHIVE_TIME: 2018-09-24 Mon 10:49
+:ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+:ARCHIVE_OLPATH: Summary
+:ARCHIVE_CATEGORY: energy_paper
+:END:
+#+BEGIN_QUOTE
+
+Articles have a summary, separate from the main text, of up to 150
+words, which does not have references, and does not contain numbers,
+abbreviations, acronyms or measurements unless essential. It is aimed
+at readers outside the discipline. This summary contains a paragraph
+(2-3 sentences) of basic-level introduction to the field; a brief
+account of the background and rationale of the work; a statement of
+the main conclusions (introduced by the phrase 'Here we show' or its
+equivalent); and finally, 2-3 sentences putting the main findings into
+general context so it is clear how the results described in the paper
+have moved the field forwards.
+
+#+END_QUOTE
+
