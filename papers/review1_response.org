@@ -19,14 +19,16 @@
 
 * Summary of Changes
 
+- 3's comments about big picture.  My stance should be more
+  collaborative.  highlight the complementary nature of my work to the
+  modeling approaches.
 
 
 * Response to Reviewer Comments
 
-REFEREE REPORT(S): 
-Referee: 1 
+** Referee: 1 
 
-COMMENTS TO THE AUTHOR(S) 
+
 See the separate file. [Review report ERC-100072.pdf] 
 
 Comments:
@@ -78,18 +80,18 @@ Comments:
     assumptions in previous studies).
 
 
-Referee: 2 
+** Referee: 2 
 
 COMMENTS TO THE AUTHOR(S) 
-The paper summarizes the results of a statistical analysis. 
+- The paper summarizes the results of a statistical analysis. 
 
-No data or results are shown and the reader has to rely on the authors for their conclusions. 
+- No data or results are shown and the reader has to rely on the authors for their conclusions. 
 
-The physics of the claim that trees increase CO2 emission is not explained and modeled. 
+- The physics of the claim that trees increase CO2 emission is not explained and modeled. 
 
-One cannot understand the basis of the conclusions with supporting data. 
+- One cannot understand the basis of the conclusions with supporting data. 
 
-Referee: 3 
+** Referee: 3 
 
 COMMENTS TO THE AUTHOR(S) [See also ER_system_appendPDF_proof_hi.pdf] 
 Nice paper. Comments are on the attachment. The paper needs some
