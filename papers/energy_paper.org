@@ -17,6 +17,7 @@
 
 #+RESULTS:
 \setrunninglinenumbers \modulolinenumbers[1] \linenumbers
+
 * Abstract
 
 Urban trees are a critical part of the "green infrastructure" intended
