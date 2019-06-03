@@ -1,0 +1,612 @@
+#+TITLE:Trees in many US cities may indirectly increase atmospheric carbon 
+#+AUTHOR: Tedward Erker^*, Philip A. Townsend
+#+email: erker@wisc.edu
+#+PROPERTY: header-args:R :session *R* :cache no :results output :exports both :tangle yes :eval yes
+#+OPTIONS: toc:nil num:nil date:t
+#+LATEX_HEADER: \usepackage[margin=1in]{geometry}
+#+LATEX_HEADER: \usepackage{natbib}
+#+LATEX_HEADER: \usepackage{chemformula}
+#+LaTeX_HEADER: \RequirePackage{lineno} \def\linenumberfont{\normalfont\small\tt}
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=black, citecolor=black, urlcolor=black}
+#+latex_header: \usepackage{setspace} \doublespacing
+#+LATEX_CLASS_OPTIONS: [12pt]
+------------
+#+begin_src emacs-lisp :exports none
+(setq org-latex-caption-above nil)
+#+end_src
+
+#+RESULTS:
+\setrunninglinenumbers \modulolinenumbers[1] \linenumbers
+
+* Abstract
+
+Urban trees are a critical part of the "green infrastructure" intended
+to make our growing cities more sustainable in an era of climate
+change.  The potential for urban trees to modify microclimates and
+thereby reduce building energy use and the associated carbon emissions
+is a commonly cited ecosystem service used to justify million tree
+planting campaigns across the country.  However, what we know of this
+ecosystem service comes primarily from unvalidated simulation studies.
+
+Using the first dataset of actual heating and cooling energy use
+combined with tree cover data, we show that that contrary to the
+predictions of the most commonly used simulations, trees in a cool
+climate city increase carbon emissions from residential building
+energy use. This is driven primarily by near east (< 20m from
+building) tree cover. Further analysis of urban areas in the US shows
+that this is likely the case in cool climates throughout the country,
+encompassing approximately 39% of the US population and 62% of its
+area (56%, excluding Alaska). Our results add geographic nuance to
+quantification of the effect of urban trees on the carbon budget and
+could have major implications for tree planting programs in cool
+climates.
+
+\pagebreak
+
+* Introduction
+
+Two global trends of the 21st century, climate change and increasing
+urbanization, have deepened our need to make cities more sustainable,
+and urban trees are championed as a means to that end. Several large
+cities in the U.S. have recently committed to large tree planting
+programs (see Million Trees New York City and Million Trees Los
+Angeles). Spending hundreds of millions of dollars, these cities hope
+that the environmental benefits, particularly the reduction in
+building energy use and the associated carbon (*C*) emissions from
+power plants, will outweigh the cost citep:young_2011.
+
+A single urban tree has a much stronger impact on the carbon cycle
+than a non-urban counterpart because an urban tree induces or
+reduces more C emitting human behaviors than a rural one does.  Both
+trees sequester carbon from the atmosphere, but the urban tree
+requires more management (planting, watering, pruning, removal,
+chipping) and, by modifying the microclimate, it can alter building
+energy use and the associated C emissions (*ACE*) from power plants.
+
+Trees primarily alter micro climates by 1) shading, 2) reducing wind
+speed, and 3) cooling via transpiration.  With the exception of
+transpirative cooling, which is mostly active in summer, these effects
+can both increase or decrease ACE.  Shading to the west of buildings
+greatly reduces summer cooling loads, but shading to the south of
+buildings, even by deciduous trees, may increase winter heating loads
+citep:heisler_86.  Reduced wind speeds have complex effects. They: 1)
+decrease convective heat loss, which is beneficial for winter heating
+but detrimental for summer cooling, 2) decrease air infiltration which
+decreases both heating and cooling energy use, and 3) decrease natural
+ventilation, increasing the need for mechanical cooling
+citep:huang_e_1990.
+
+Whether the net effect of trees is to increase or decrease ACE depends
+on the balance of beneficial and detrimental effects on heating and
+cooling energy use. This is largely mediated by the location of tree
+cover, the prevailing climate (e.g. number of heating- and cooling-
+degree days), building characteristics, occupant behavior and the
+carbon content of a kWh, which varies across the country depending on
+the fuel mix in the electrical grid.
+
+Decades worth of research primarily by two research groups, the US
+Forest Service's ([[https://www.fs.fed.us/psw/topics/urban_forestry/][USFS]]) Southwest Research Station Urban Ecosystems
+and Processes group and the Lawrence Berkeley National Lab Heat Island
+Group ([[https://heatisland.lbl.gov/][LBNL]]), have reported that, on average, trees reduce C
+emissions.  In 2002, citeauthor:akbari_2002 published a paper
+summarizing their group's findings: "Shade trees reduce building
+energy use and CO_2 emissions from power plants".  In 1999,
+citeauthor:mcpherson_simpson_99 wrote a technical report that was the
+basis of the [[https://www.itreetools.org/][iTree software]], which has been used by thousands of
+communities around the U.S. to estimate ACE avoided.  Their
+methodology was recently applied to estimate the effects of trees on
+ACE for the entire conterminous US citep:nowak_e_2017.  Despite the
+number of publications on the topic, the length of time we have been
+researching the matter, and the many large cities with massive tree
+planting initiatives, our uncertainty about the effects of trees on
+building energy use is actually quite high
+citep:pataki_e_06,mcpherson_simpson_99.  The effect of trees on nearby
+building energy use is difficult and expensive to measure directly and
+complex to model.
+
+Direct measures of the effect of trees on building energy use are
+rare, focused on cooling energy use, and limited in their ability to
+be extrapolated.  To our knowledge, there are the only 5 studies that
+test the effect of trees on measured building energy use data
+citep:akbari_e_1997,donovan_Butry_2009,dewalle_e_1983,parker_1983,mcpherson_e_1989.
+Only two of these studies were of actual houses (not mobile homes nor
+models) and both are from Sacramento, CA and did not measure heating
+energy use citep:akbari_e_1997,donovan_Butry_2009.  Only one of the
+studies was from a cool, heating dominated climate (typical of much of
+the US) and it studied a single mobile home in a forest citep:dewalle_e_1983.
+
+Given the challenges inherent in collecting direct measurements,
+simulation studies are useful attempts to extend our understanding of
+how trees affect building energy use and ACE.  But these simulations
+necessarily contain simplifications and generalizations which are
+sometimes unrealistic or untestable due to lack of data.
+
+The work from LBNL assumes: millions more trees are planted in an
+urban area (extremely ambitious); trees are planted to the west and
+south of buildings (ideal placement for reducing cooling loads); and
+winter tree canopy transmissivity is 0.9 (0.7 is more realistic,
+citealp:heisler_86). In later work, microclimate wind effects are
+ignored citep:akbari_konopacki_2005, and in earlier work, they use a
+three parameter equation fit to four data points to estimate how wind
+speed is reduced by canopy cover
+citep:heisler_1990,huang_e_1990. Finally, the LBNL work uses potential
+evapotranspiration to predict cooling, and their model uses parameters
+derived from crops.  Given these assumptions, the authors note that
+their work provides an upper boundary for the indirect effect of trees
+citep:akbari_konopacki_2005,huang_e_1987.
+
+USFS studies assume: lookup tables for the effect of tree shade on
+building energy use are reliable (even though they may deviate from
+more detailed simulations by up to 10%, citealp:simpson_2002); wind
+reduction only affects heating use in the winter, even though we know
+cooling use is also affected, and they also use an overfit summertime
+leaf-on equation from cite:heisler_1990. Evergreen trees are modeled
+as if they are windbreaks for rural farmhouses in winter, even in suburban
+neighborhoods where other buildings and trees already block
+significant winds; and estimated evapotranspirative cooling is optimistically
+high, higher even than the self declared upper limit of
+cite:huang_e_1987 citep:mcpherson_simpson_99.
+
+The consequence of these assumptions is that simulations may
+overestimate the energy reducing power of trees.  What little
+validation we have has confirmed the general effects of trees on
+energy use that we expect in hot climates, but also highlight the
+imprecision of simulations as well as occasional discrepancies from
+empirical observations. Simulations of cite:akbari_e_1997 were off by
+2-fold, though trees were about twice as beneficial as predicted for
+the two houses studied. cite:donovan_Butry_2009 found trees to the
+north actually increasing electricity use, unlike the predictions of
+cite:mcpherson_simpson_99.
+
+Despite providing estimates for the effects of trees on building
+energy use and ACE for anywhere in the country
+citep:akbari_konopacki_2005 and the entire country citep:nowak_e_2017,
+we still have no empirical validation of the effect of urban trees in
+a cool climate.  More than 3 out of every 4 people in the U.S. live in
+places with more heating degree days than cooling degree days, and
+Americans use much more energy for heating than for cooling
+citep:USEIA_2009. To properly assess simulations of the role of urban
+trees in the C budget, comprehensive analyses are needed to test the
+relationship between tree location and energy usage (both heating and
+cooling).  Our work in Madison, WI was the first to address this need.
+
+#+name:soltice_shadow_building
+#+attr_latex: :height 8in
+#+caption: Simulated shadows of trees on a house at the latitude of Madison, WI.  In the summer, trees to the west of buildings provide the most effective shade since solar angles are lower and cooling demand highest in the afternoon.  In winter, even deciduous trees can significantly reduce solar gain.
+[[file:figs/soltice_shadow_building.png]]
+
+* Results
+** Effect of trees on building associated C emissions
+Trees increased C emissions associated with residential building
+energy use (*ACE*) in Madison, WI.  This effect was the result of a
+trade-off between their electricity (cooling) saving and gas (heating)
+penalty.  We estimated that 100m^2 of tree cover within 20m of a house
+increased ACE from gas use by 0.77% (95% CI: 0.68%, 0.85%), and
+decreased ACE from electricity use by 0.21% (95% CI: 0.34%,
+0.080%). Our model for net ACE estimated that 100m^2 of tree cover
+increased ACE by 0.17% (95% CI: .09%, .27%).
+
+The magnitude and direction of the effect depended on tree location
+relative to the building. Figure [[fig:tree_effect]] shows the percent
+change in the ACE from 100m^2 of tree cover.  Trees reduced ACE from
+electricity for all near regions except the east.  Trees increased ACE
+from gas for all regions, especially in the near south and east.  For
+net ACE, tree cover in the near east was the most important, having
+the only estimate with a 95% CI that excluded 0.
+
+#+name: fig:tree_effect
+#+caption: The percent effect of 100m^2 tree cover in different locations on C emissions from residential building energy use. n = 25095, bars indicate standard errors.
+[[file:../figs/carbon_Percent_coef.png]]
+
+** Effect of existing tree cover on a typical house
+The median house in our sample was responsible for 1084 and 954 kg C
+annual emissions due to electricity use and gas use, respectively.
+Multiplying the median tree cover in each region (see table
+[[tab:tree_cover_summary]])  by its coefficient we
+estimated the effects of typical tree cover on a typical house in
+Madison: electricity C emissions were reduced by 33.8 kg C / yr (95%
+CI: 14.7, 52.7), but gas C emissions were increased by 102.3 kg C / year
+(95% CI: 92.9, 111.8).  Our combined model estimated the net effect of
+existing tree cover is to increase C emissions by about 62 kg C/year
+(95% CI: 38.7, 85.3) for a typical house.  This is 2.5% of the median
+house's annual ACE.
+
+#+name: tab:tree_cover_summary
+#+caption: Summary statistics for amount of tree cover (m^2) in each region around houses in Madison, WI. 
+| Region     | min | mean | median |  max |
+|------------+-----+------+--------+------|
+| near west  |   0 |  193 |    179 |  742 |
+| near south |   0 |  372 |    363 | 1443 |
+| near north |   0 |  357 |    345 | 1197 |
+| near east  |   0 |  193 |    179 |  764 |
+| far west   |   0 |  974 |    960 | 2640 |
+| far south  |   0 | 1676 |   1653 | 4376 |
+| far north  |   0 | 1673 |   1661 | 4602 |
+| far east   |   0 |  967 |    955 | 2677 |
+
+While tree cover in far regions had smaller per unit area effects than
+in near regions, there was more tree cover in farther regions, so when
+median tree cover was multiplied by the smaller coefficients some of
+the farther regions had larger typical effects than near ones (figure
+[[fig:median_tree_effect]]).  Typical tree cover in the far east and far
+west regions had a greater estimated effect than cover in the near
+north and near west.
+#+name: fig:median_tree_effect
+#+caption: Effect of typical tree cover on a typical building's C emissions.
+[[file:../figs/mediantree_netC_effect_spatial_l.png]]
+** Comparing C emissions from energy use due to trees to C stored and sequestered.
+For comparison, consider a green ash tree with a crown area of
+100m^2.  This tree would store approximately 1360 kg C in above ground
+biomass and it could sequester around 34 kg C / year.  That same tree in
+the near east region of a typical house in Madison was estimated to
+increase C emissions by 9.8 kg C/yr (95% CI: 6.7, 12.9).  In the near
+west the estimated effect was 1.0 kg C/yr (95% CI: -2.1, 4.1).
+
+* Discussion
+** Interpreting Tree Effects
+
+The effect of trees on ACE had strong statistical significance: trees
+increased ACE from gas use more than they decreased ACE from
+electricity use, resulting in a net increase in ACE.  This result
+suggests that shading was the most important process and that whatever
+gas savings trees may have provided in winter by reducing wind speeds
+was swamped by the penalty in reduced solar radiation.
+
+By separating tree cover into different locations, it appeared that
+for the most regions, the beneficial effects of trees on electricity
+ACE /mostly/ canceled out the detrimental effects of trees on gas ACE,
+with the exception of the near east.  This suggests that trees to the
+east may have been responsible for most of the net increase in
+ACE. Eastern trees did not provide electricity savings since houses
+require less cooling in the morning hours, but still caused an
+increased gas use in winter.  This agrees with cite:donovan_Butry_2009
+who also found trees to the east had no effect on electricity use.
+
+As expected, trees to the near south had a strong effect on
+electricity savings, but they also had a stronger gas penalty.
+Trees in the near west and near north had the weakest gas penalty,
+which may have been due to the savings they provided by reducing
+wind speed. Somewhat surprising was the weakness of the estimated
+electricity savings of trees in the near west, which all simulations
+have predicted has the strongest effect.
+
+** Comparing to past work
+
+Our findings agreed with some though not all of the past simulation
+studies, and the modeling of wind is the main cause of
+discrepancies. cite:thayer_maeda_1985 modeled the shading effects of
+south trees on building energy use and reported that trees increased
+emissions in cities with more heating degree days than cooling degree
+days.  cite:mcpherson_e_1988 investigated the shading and wind effects
+on building energy use in 4 cities, one of which was Madison, WI.
+Converting their results into C, trees in Madison caused a small
+increase in emissions, though their method for modeling wind was later
+criticized and abandoned citep:simpson_mcpherson_1998.
+cite:akbari_konopacki_2005 developed a method to predict the effect of
+a tree planting program and increasing roof albedo for any city in the
+U.S. Figure [[fig:akbari_konopacki_2005]] illustrates an application of
+their method to every census tract in the conterminous US for
+pre-1980s houses using updated energy emission factors.  About 40% of
+the US population live in areas where the cite:akbari_konopacki_2005
+model predicts that trees increase C emissions.  While their methods
+were limited as mentioned above, and they modeled theoretical, not
+existing, tree cover, their work suggests that many large cities
+especially in New England, the Northwest, the Mountains and the Upper
+Midwest would need to carefully consider the C implications of large
+tree planting programs.
+
+#+name: fig:akbari_konopacki_2005
+#+caption: Each census tract in the conterminous US shaded by magnitude of building C emissions effect of trees planted to west and south of a pre-1980's home and increasing roof albedo.  Differences in regional emission factors (C/kWh) cause deviations from climate trend.  New England has especially high ACE for the climate because their electricity is cleaner (low C/kWh).  About 40% of Americans live in places where trees increase ACE. Model based on cite:akbari_konopacki_2005.
+[[file:../figs/akbari_konopacki_2005_netkgC_wCities_3.png]]
+
+Our empirical findings disagree with those simulation studies that
+model the relationship between tree cover and wind speed following
+cite:heisler_1990 and cite:mcpherson_simpson_99. When the beneficial
+effects of wind are excluded for models of several cool climate
+cities: Toronto citep:akbari_taha_1992, Chicago
+citep:jo_mcpherson_2001, Minneapolis, Sacramento, and Washington
+citep:huang_e_1990, trees either have no effect or increase energy use
+and ACE, which agrees with our general findings.  The iTree model of
+cite:mcpherson_simpson_99 predicts that the shading effects of a large
+deciduous tree in the Norther Tier, North Central, Mountains, Pacific
+Northwest, and California Coast regions increases ACE of a 1950-1980
+vintage house by 0.136 to 9.52 kg, depending on the region.  This is
+comparable to our results.  However, the wind effect in the iTree
+model of that same tree on the same house decreases heating ACE by
+1.23 to 66.14 kg depending on the region and existing canopy: an order
+of magnitude greater savings for gas ACE from wind reduction than the
+penalty from shading.  However, our model coefficients derived from
+measured gas use suggest shading is a more important process than wind
+shielding.  cite:mcpherson_simpson_99 note that the uncertainty in
+their methods was high, and, given our contradictory findings, it is
+clear that more data and improved models are needed to better
+parameterize the complex and uncertain relationship between tree
+cover, wind, and building energy use.
+
+** Considering the larger C cycle
+
+The effect on ACE of a tree with a 100 m^2 canopy area is an order of
+magnitude smaller than that tree's C sequestration.  However, it is
+important to make the distinction between different pools of C.
+Discounting increased ACE as irrelevant because C sequestration more
+than compensates, fails to recognize that ACE is an input of
+fossilized C while sequestration is a temporary transfer of C from the
+atmosphere to biosphere.  Unless forested land is permanently expanded
+or wood products are forever prevented from decay, in the long run
+(hundreds of years) sequestration by trees can never offset fossil C
+emissions.  Indeed this same conclusion was made for fossilized C
+emissions due to tree management citep:nowak_e_02.  The avoided ACE
+from trees had been estimated to more than offset these management
+emissions in a life-cycle analysis of the Million Trees Los Angeles
+program citep:mcpherson_kendall_2014.  However, our results suggest
+that for cool climate communities in much of the US, trees actually
+increase ACE and, especially when combined with the C emissions from
+management, are atmospheric C sources.
+
+*** COMMENT cite:nowak_etal_2010 failed to make this distinction.
+
+** Trees relative to other factors that affect ACE and the ACE effect of trees relative to other ecosystem services/disservices.
+
+Considering all of the factors that determine building energy use and
+ACE, trees play a very minor role, which we estimated to be about 2.5%
+of the ACE of a median house.  Far greater ACE savings are possible
+with improved construction and savvy occupant behavior.  However, the
+effect of trees on energy use and ACE is one of the most often cited
+ecosystem services of trees citep:roy_etal_2012, and evidence that ACE
+is increased by trees highlights the large uncertainty in software
+used by thousands of communities to justify urban forest costs.
+
+Still, effects on ACE are just one of the ecosystem effects that trees
+have in cities.  Trees may also improve air quality, reduce stormwater
+runoff, reduce noise, and provide wildlife habitat.  The aesthetic
+value of trees is often far greater than the value of the ecosystem
+services or disservices provided citep:mcpherson_e_05.  Even after
+publishing that trees reduced ACE on average, cite:akbari_2002 noted
+that this benefit alone may not justify the cost of tree planting.
+Our opposing results have a similar caveat: even after finding the
+detrimental impacts of trees on ACE in cool climates, management
+decisions need to consider these results as just one of the many
+benefits and costs of trees.  Our results suggest that trees planted
+on all but the near east side of a house are net neutral in terms of
+ACE, so that the other benefits of tree planting, such as aesthetics,
+could be accomplished in cool climates through careful selection of
+planting locations.
+
+** Future work
+
+Using actual energy use data from over 25,000 houses, we provide a
+much needed complement to simulation models of tree effects on ACE in
+cool climates.  However, there is need for continuing work to address
+remaining shortcomings.  The observational nature of our data is
+strengthed by the size of the dataset, but ultimately causal inference
+depends on our physical knowledge of how trees alter building energy
+use.  More experimental studies are needed especially in cool climate
+cities to better understand that relationship.  Not all coefficients
+in our model agree with our existing physical understanding of how
+trees affect building energy use.  For example, it is surprising that
+trees to the near west have such a weak effect on electricity use. Our
+data on tree cover was also limited by a lack of information about
+tree height, which means we could not address how adjusting the size
+of trees planted in an urban area affects ACE. Incorporating lidar
+could provide more accurate estimates of tree shading and wind
+reduction.  Furthermore, the scale of the effects that our study could
+detect is much smaller than the city-wide effects many simulation
+studies address.  Ultimately, this work is a sample of one year from
+one city with the accompanying limitations.  The warm December during
+the sampling period may mean the effect of trees is even more
+detrimental than we report, but more years are needed to say.  The
+location of Madison near the boundary that cite:akbari_konopacki_2005
+identified between trees being a sink and a source is useful, but more
+cities are needed to empiracally determine this boundary.
+
+Our work reveals a blind spot in urban forest ecosystem studies.  In
+an extensive review of the effect of the urban forest on CO_2
+emissions, cite:weissert_etal_2014 did not consider that trees could
+increase ACE.  In a paper critical of many ecosystem services provided
+by trees, cite:pataki_etal_2011 nevertheless state that trees reduce energy
+use and ACE.  While this may be true in most of the US, and the
+potential ACE reduction is larger than the potential ACE increase, it
+ignores geographical nuance citep:akbari_konopacki_2005.  In many ways
+it is not surprising, given the climatic diversity across the country,
+that the effects of trees on ACE might also vary and that our
+prescriptions for how to plant trees to minimize ACE could be
+different between Los Angeles and New York City.  However our study is
+only the first study to use both gas and electric energy use
+observations, and the first study of its kind in a cool climate.  Much
+more work with observed energy use is needed to identify the border
+between atmospheric C sink and source.
+
+*** COMMENT What about evapotranspirative cooling? the issue of scale.
+What about evapotranspirative cooling?  We may have a bit of a scale
+issue here.  I doubt we'd have enough independent observations at the
+scale necessary to assess this.  Also the newer houses with fewer
+trees still have grass (maybe even better irrigated) and they are
+closer to the rural areas (farther from the built up interior of the
+city).  I think the results show that we don't see at the local scale
+an effect that is stronger than the detrimental effect on heating.
+But the larger scale question is still oppen.  Also, the itree model
+has the trees having a local scale effect.
+
+* Conclusion
+Using observed energy use data, we have shown that trees near
+residential houses in Madison, WI increase energy use and associated C
+emissions and near east tree cover has the strongest net effect.  Extending
+past simulation studies, we show that this is likely the case for a
+large area of the US.  The magnitude and direction of the effect is dependent on
+tree location relative to buildings, climate, building
+characteristics, occupant behavior, and the C content of electricity.
+Disagreements between our results and past work is due to how wind
+effects are modeled and much more work is needed to better understand
+this process.  We add critical geographic nuance to research that
+could have major implications for tree planting programs in cool
+climates.
+
+* Methods
+** Building Energy Use
+In April 2016, we obtained the annual energy use summary table (April
+2015 - April 2016) from Madison Gas and Electric's publicly available
+website for approximately 32 thousand single family residential houses
+in Madison, WI.  This included average monthly gas and electricity
+use.  This period exhibited a much warmer than average December (about
+6º C) and had low snowfall.  We removed from our sample outliers that
+used fewer than 120 therms (which is less than the 0.5% quantile) or
+fewer than 240 kWh (which is less than the 0.05% quantile) annually.
+We included only buildings that used natural gas for heating and had
+central air conditioning.  Our final sample size used to build models
+was 25095.
+
+** Carbon Emissions
+
+We converted energy use to C emissions using emission factors
+published by the US EPA's Emissions & Generation Resource Integrated
+Database, eGRID citep:eGRID.  100% of the carbon in natural gas is
+oxidized to CO_2 when burned for heating. The carbon coefficient for
+natural gas is 1.446 kg C / therm citep:epa_a2_2017.  For electricity,
+Madison, WI is a part of the Midwest Reliability Organization East
+(MROE) region of the North American electric grid.  The estimated
+carbon coefficient for power generated in this region is 0.2063698 kg
+C/kWh citep:eGRID. We had originally used emission factor for MROE
+from 2012 (.1567988 kg C / kWh) and by switching to the updated and
+higher 2016 emission factor (0.2063698 kg C/kWh), the overall
+detrimental effects of trees on ACE was diminished from about 3.4% to
+2.5%.
+
+** Building Characteristics
+
+Energy use is strongly determined by building characteristics.  For
+every address in the city, the City of Madison releases the assessor's
+property information, which includes information on building age,
+size, materials, type of heating and cooling, as well as which schools
+serve the address.  We removed any houses that had bad or missing
+data.  Many of the covariates, such as size and price, were strongly
+correlated.  Given that our primary interest was how tree cover
+affected building energy use, not how building characteristics affect
+building energy use, we reduced the dimensionality of building
+characteristics using principal components analysis.  This reduced the
+number of building covariates from 20 (Lot area, length of water
+frontage, year built, number of stories, number of bedrooms, number of
+bathrooms (full and half), number of fireplaces, living area on each
+floor, finished attic area, finished basement area, total basement
+area, crawl space area, year roof was replaced, number of stalls in
+each garage, land value, improvement value) to 5 orthogonal vectors,
+accounting for 55% of the variance.
+
+** Tree Canopy
+For tree cover we used a 1m resolution landcover map derived from 2013 National
+Agriculture Inventory Program (NAIP) visible and near-infrared digital
+aerial imagery (Erker et. al, in review).  Using building footprints
+from the Dane county, for each house for which we had energy use data,
+we divided the space around it into 8 regions defined by 2 buffers
+around the house of distance 20 m and 60m and 4 rays from the
+building's centroid.  Tree cover closer than 20m was considered near,
+tree cover farther than 20m and closer than 60m was considered
+far. These buffers were subdivided into north, west, south, and east
+regions by rays of angles 57, 123, 237, 303 degrees from north.  These
+angles are within 1 degree of the azimuth angle of sunrise and sunset
+at the two solstices.  This defines the south region as the region
+that is exposed to direct sunlight year-round, and the north region as
+the region that is never exposed to direct sunlight (this relationship
+is approximate and complicated by individual building geometry).
+Within each of the eight regions we summed the area covered by trees,
+and then use the tree cover in each region as predictors in our
+models.
+
+We tested buffers of different widths (every 3m from 3m to 60m), but
+found because of the observational nature of our data that we needed
+to aggregate regions to remove multicollinearity that caused
+unstable coefficient estimates.  Using a distance of 18, 21, or 24 m
+instead of 20m to separate "near" from "far" cover only slightly
+changed coefficient estimates.
+
+** Building Cover
+
+Nearby buildings likely also affect the energy use of a building.  To
+test this hypothesis we calculated the area of buildings in each of
+the eight regions around every building and included these as
+covariates in our modeling.
+
+** Modeling
+
+We fit linear models where the response was log transformed annual ACE
+for gas use, for electricity use, or for gas and electricity combined
+(net).  Because a separate model was built to explain net C emissions,
+coefficient estimates for the net model were not precisely the sum of
+the coefficients from the electricity and gas models. ACE was log
+transformed to meet assumptions of normality and diagnostic plots were
+assessed to check other model assumptions and potential sensitivity to
+influential observations.  Variables in our model were: 5 principal
+components of building characteristics, building cover in each of the 8
+regions, tree cover in each of the 8 regions and a random effect for
+elementary school which might capture neighborhood characteristics such
+as culture.  We used AIC as a variable selection criterion and in our
+final models only used the first 5 building characteristics principal
+components and we dropped all the building cover covariates.
+Estimates for the coefficients of tree cover were not sensitive to the
+inclusion or removal of these covariates, but model fit improved.
+Although some tree cover covariates increased AIC, we kept all tree
+cover covariates in the model because we wanted estimates of their
+effects, however uncertain they might be.  We fit models using the R
+package lme4 citep:bates_e_2015.
+
+** Interpreting coefficients
+To improve interpretability of coefficients, we back transformed them
+to the original scale and expressed the multiplicative effects as a
+percentage citep:gelman_hill_2007.  We then multiplied this percent
+change by the median ACE (a better estimator of the central tendency
+because of the right skew in our data) to estimate the typical effect
+in absolute C terms.  To get typical effects of tree cover, we
+multiplied median tree cover in each region by its coefficient
+estimate and back transformed to the original scale.
+
+** Estimating C storage and sequestration of a green ash with 100m^2 canopy
+To estimate C storage and sequestration by a single green ash tree with a
+ canopy cover of 100m^2, we used allometric equations to estimate that
+ tree's diameter at breast height (DBH) and mass and then, assuming an
+ annual DBH growth of 0.61 cm, predicted the change in mass to get C
+ sequestration cite:nowak_crane_2002,mcpherson_e_2016.
+
+** Extending Analyses from Published Literature
+
+To compare our work to past simulation studies we converted results
+that were in Therms or kWh to kg C.  We did this for
+cite:thayer_maeda_1985, cite:mcpherson_e_1988, and cite:huang_e_1990
+using updated emission factors corresponding to each study city's
+eGrid subregion citep:eGRID.  To extend cite:akbari_konopacki_2005, we
+joined climate data (heating and cooling degree days) from the nearest
+NOAA weather station to census tract centroids
+cite:tract_centroids,arguez_e_2012.  Then for each census tract we
+predicted the effect of trees and increasing roof albedo on the energy
+use of a pre-1980's building with gas heating following their table
+that bins houses according to heating degree-days and using emission
+factors corresponding to the eGrid subregion containing the census
+tract centroid. Separating out the indirect effects of trees from the
+indirect effects of increasing roof albedo was not possible because
+these were not modeled separately. However, the general trend would be
+similar, but with a decreased electricity savings and a decreased
+heating penalty.  cite:akbari_konopacki_2005 found the effect of tree
+shade to be stronger than the indirect effects of increased roof
+albedo and transpirative cooling.  We also used the join of climate
+and census tract data to estimate approximately 77% of the
+U.S. population lives in places with more heating than cooling
+degree-days.
+
+** Code
+
+All of the code and data for these analyses are present on
+Github (https://github.com/TedwardErker/energy).  Code is provisional
+pending review.
+
+* bibliography                                                       :ignore:
+bibliography:~/git/notes/references.bib
+bibliographystyle:apa
+
+* Acknowledgments
+Steve Carpenter, Bret Larget and the Fall 2017 Statistical Consulting
+Class at UW-Madison for comments on early drafts; Madison Gas and
+Electric; Chris Kucharik; Jun Zhu; NASA Fellowship Award NNX15AP02H,
+Wisconsin DNR Contract 37000-0000002995
+
+
+cite:mcpherson_simpson_99
+
+cite:heisler_1990
