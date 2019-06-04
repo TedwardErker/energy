@@ -1,4 +1,4 @@
-#+TITLE:Trees in many US cities may indirectly increase atmospheric carbon 
+#+TITLE:By altering building energy use, trees in many US cities may indirectly increase atmospheric carbon 
 #+AUTHOR: Tedward Erker^*, Philip A. Townsend
 #+email: erker@wisc.edu
 #+PROPERTY: header-args:R :session *R* :cache no :results output :exports both :tangle yes :eval yes
