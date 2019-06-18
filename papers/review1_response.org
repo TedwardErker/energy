@@ -28,8 +28,7 @@
 
 ** Referee: 1 
 
-
-See the separate file. [Review report ERC-100072.pdf] 
+Review report ERC-100072.pdf
 
 Comments:
 1. The results of yours are so strongly dependent on the number of
@@ -78,7 +77,6 @@ Comments:
 11. You are making several assumptions yourselves, but don’t discuss
     much this aspect of your study (you point out some weak
     assumptions in previous studies).
-
 
 ** Referee: 2 
 
