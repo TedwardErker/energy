@@ -82,7 +82,7 @@ cooling energy use. This is largely mediated by the location of tree
 cover, the prevailing climate (e.g. number of heating- and cooling-
 degree days), building characteristics, occupant behavior and the
 carbon content of a kWh, which varies across the country depending on
-the fuel mix in the electrical grid.
+the fuel mix in the electrical grid.  
 
 Decades worth of research primarily by two research groups, the US
 Forest Service's ([[https://www.fs.fed.us/psw/topics/urban_forestry/][USFS]]) Southwest Research Station Urban Ecosystems
@@ -245,12 +245,14 @@ west the estimated effect was 1.0 kg C/yr (95% CI: -2.1, 4.1).
 * Discussion
 ** Interpreting Tree Effects
 
-The effect of trees on ACE had strong statistical significance: trees
-increased ACE from gas use more than they decreased ACE from
-electricity use, resulting in a net increase in ACE.  This result
-suggests that shading was the most important process and that whatever
-gas savings trees may have provided in winter by reducing wind speeds
-was swamped by the penalty in reduced solar radiation.
+In the cool climate city of Madison, with 7283 HDD and 597 CDD and a
+electricity emission factor of 0.206 kg C / kwh, the effect of trees
+on ACE was clear: trees increased ACE from gas use more than they
+decreased ACE from electricity use, resulting in a net increase in
+ACE.  This result suggests that shading was the most important process
+and that whatever gas savings trees may have provided in winter by
+reducing wind speeds was swamped by the penalty in reduced solar
+radiation.
 
 By separating tree cover into different locations, it appeared that
 for the most regions, the beneficial effects of trees on electricity
