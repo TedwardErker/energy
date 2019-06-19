@@ -74,7 +74,9 @@ decrease convective heat loss, which is beneficial for winter heating
 but detrimental for summer cooling, 2) decrease air infiltration which
 decreases both heating and cooling energy use, and 3) decrease natural
 ventilation, increasing the need for mechanical cooling
-citep:huang_e_1990.
+citep:huang_e_1990.  The strength of the effect of a tree on ACE
+attenuates with distance to a building.  Only trees far from a house
+have little affect on ACE via shading and wind
 
 Whether the net effect of trees is to increase or decrease ACE depends
 on the balance of beneficial and detrimental effects on heating and
