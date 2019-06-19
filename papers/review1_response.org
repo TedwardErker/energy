@@ -18,6 +18,11 @@
 #+RESULTS:
 
 * Summary of Changes
+- 3's comments about big picture.  My stance should be more
+  collaborative.  highlight the complementary nature of my work to the
+  modeling approaches.
+- I need to show that many papers 
+
 
 * Response to Reviewer Comments
 
@@ -37,6 +42,13 @@ Comments:
 2. You should not satisfy with your case results, but look at the
    conditions in which the balance is turned other way round
    (referring to the first comment).
+
+   1. This is what I attempted to do by updating Akbari and Konopacki
+      2005 model.  I think that a proper analysis that could
+      accurately identify the thresholds in climate and other
+      important contributing factors is beyond the scope of this
+      paper.  My aim was to present our case results and identify that
+      
 
 3. You should discuss the distance issue in the introduction. Now you
    are sort of partially discussing all urban trees, but then
