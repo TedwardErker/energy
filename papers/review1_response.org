@@ -37,7 +37,7 @@ Comments:
    presenting the results without this information presented first.
 
    1. I mention this in the 4th paragraph on page 3, lines 44-45.  I
-      will add emphasis to this point in the discussion section.
+      will add emphasis to this point at the start of the discussion section.
 
 2. You should not satisfy with your case results, but look at the
    conditions in which the balance is turned other way round
