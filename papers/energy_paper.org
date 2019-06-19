@@ -75,8 +75,10 @@ but detrimental for summer cooling, 2) decrease air infiltration which
 decreases both heating and cooling energy use, and 3) decrease natural
 ventilation, increasing the need for mechanical cooling
 citep:huang_e_1990.  The strength of the effect of a tree on ACE
-attenuates with distance to a building.  Only trees far from a house
-have little affect on ACE via shading and wind
+attenuates with distance to a building.  Trees far from a house have
+little affect on ACE via shading and wind reduction, but they likely affect ACE
+via evapotranspiration and the associated reduction in temperature
+cite:ziter_e_2019.
 
 Whether the net effect of trees is to increase or decrease ACE depends
 on the balance of beneficial and detrimental effects on heating and
@@ -86,7 +88,7 @@ degree days), building characteristics, occupant behavior and the
 carbon content of a kWh, which varies across the country depending on
 the fuel mix in the electrical grid.  
 
-* Previous work 
+* Previous research 
 
 Decades worth of research primarily by two research groups, the US
 Forest Service's ([[https://www.fs.fed.us/psw/topics/urban_forestry/][USFS]]) Southwest Research Station Urban Ecosystems
