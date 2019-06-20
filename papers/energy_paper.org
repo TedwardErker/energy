@@ -88,7 +88,7 @@ degree days), building characteristics, occupant behavior and the
 carbon content of a kWh, which varies across the country depending on
 the fuel mix in the electrical grid.  
 
-* Previous research 
+* Previous research
 
 Decades worth of research primarily by two research groups, the US
 Forest Service's ([[https://www.fs.fed.us/psw/topics/urban_forestry/][USFS]]) Southwest Research Station Urban Ecosystems
