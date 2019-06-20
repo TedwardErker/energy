@@ -64,7 +64,14 @@ Comments:
    suggest splitting up the section to a shorter and simpler
    introduction and previous literature gap analysis.
 
+   1. Good idea. Thanks.
+
 3. Don’t limit your generalizability discussion to just the U.S.
+
+   1. Thanks for the suggestion.  I'll change "cool climate
+      communities in the US" to "cool climate communities".  For the
+      part of my work that builds on Akbari and Konopacki 2005, I will
+      keep the US centric view.
 
 4. I wonder why you don’t mention building types at all in the
    introduction. It is not uniform how the shading effect works with
@@ -176,3 +183,4 @@ Comments on pdf (lines are from original submission):
 
 Letter reference: DSMa01
 
+* COMMENT latex diff

@@ -347,7 +347,7 @@ emissions due to tree management citep:nowak_e_02.  The avoided ACE
 from trees had been estimated to more than offset these management
 emissions in a life-cycle analysis of the Million Trees Los Angeles
 program citep:mcpherson_kendall_2014.  However, our results suggest
-that for cool climate communities in much of the US, trees actually
+that for cool climate communities, trees actually
 increase ACE and, especially when combined with the C emissions from
 management, are atmospheric C sources.
 
