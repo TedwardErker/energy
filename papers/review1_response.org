@@ -88,6 +88,8 @@ Comments:
    placing the methods and data descriptions to the end, you must
    briefly tell to the reader what was done.
 
+   1. OK, I will add text there.
+
 6. Please explain better how only north side cover can lead to an
    increase in the need for warming. Shouldn’t tree coverage lead to
    lower heat loss through the north wall?
