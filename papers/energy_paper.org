@@ -176,7 +176,10 @@ trees in the C budget, comprehensive analyses are needed to test the
 relationship between tree location and energy usage (both heating and
 cooling).  Our work in Madison, WI was the first to begin address this
 need. We downloaded actual energy use data for approximately 32
-thousand single family residential homes 
+thousand single family residential homes and built a regression model
+between the amount of tree cover near each house and the C produced
+from electricity and natural gas use, controlling for other factors
+such as building characteristics.
 
 #+name:soltice_shadow_building
 #+attr_latex: :height 8in
