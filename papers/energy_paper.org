@@ -344,19 +344,18 @@ important to make the distinction between different pools of C.
 Discounting increased ACE as irrelevant because C sequestration more
 than compensates, fails to recognize that ACE is an input of
 fossilized C while sequestration is a temporary transfer of C from the
-atmosphere to biosphere.  Unless forested land is permanently expanded
-or wood products are forever prevented from decay, in the long run
-(hundreds of years) sequestration by trees can never offset fossil C
-emissions.  Indeed this same conclusion was made for fossilized C
-emissions due to tree management citep:nowak_e_02.  Though, in the short-term, the
-greater atmospheric C sequestration at the expense of a smaller
-magnitude fossilized C emission may be beneficial The avoided ACE
-from trees had been estimated to more than offset these management
-emissions in a life-cycle analysis of the Million Trees Los Angeles
-program citep:mcpherson_kendall_2014.  However, our results suggest
-that for cool climate communities, trees actually
+atmosphere to biosphere.  In the short term, sequestration may assist
+in climate change mitigation, but unless forested land is permanently
+expanded or wood products are forever prevented from decay, in the
+long run (hundreds of years) sequestration by trees can never offset
+fossil C emissions.  Indeed this same conclusion was made for
+fossilized C emissions due to tree management citep:nowak_e_02.  The
+avoided ACE from trees had been estimated to more than offset these
+management emissions in a life-cycle analysis of the Million Trees Los
+Angeles program citep:mcpherson_kendall_2014.  However, our results
+suggest that for cool climate communities, shade trees actually
 increase ACE and, especially when combined with the C emissions from
-management, are atmospheric C sources.
+management, are atmospheric C sources in the long term.
 
 *** COMMENT cite:nowak_etal_2010 failed to make this distinction.
 
