@@ -174,7 +174,9 @@ Americans use much more energy for heating than for cooling
 citep:USEIA_2009. To properly assess simulations of the role of urban
 trees in the C budget, comprehensive analyses are needed to test the
 relationship between tree location and energy usage (both heating and
-cooling).  Our work in Madison, WI was the first to address this need.
+cooling).  Our work in Madison, WI was the first to begin address this
+need. We downloaded actual energy use data for approximately 32
+thousand single family residential homes 
 
 #+name:soltice_shadow_building
 #+attr_latex: :height 8in
