@@ -97,6 +97,10 @@ Comments:
 7. Extend the C storage comparison section with the actual outcome
    numbers and meaning.
 
+   1. I'm sorry I don't know what you mean here.  I thought that a
+      green ash with crown area of 100m^2 would give readers a sense
+      of the numbers.  What other numbers should I provide?
+
 8. In the “considering the larger C cycle”, I would find it
    appropriate to notice that hundreds of years of storage can be
    very important in mitigating climate change now and allowing for
