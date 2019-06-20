@@ -84,9 +84,9 @@ Whether the net effect of trees is to increase or decrease ACE depends
 on the balance of beneficial and detrimental effects on heating and
 cooling energy use. This is largely mediated by the location of tree
 cover, the prevailing climate (e.g. number of heating- and cooling-
-degree days), building characteristics, occupant behavior and the
-carbon content of a kWh, which varies across the country depending on
-the fuel mix in the electrical grid.  
+degree days), building characteristics (orientation, insulation,
+size), occupant behavior and the carbon content of a kWh, which varies
+depending on the fuel mix in the electrical grid.
 
 * Previous research
 
@@ -357,12 +357,14 @@ management, are atmospheric C sources.
 
 Considering all of the factors that determine building energy use and
 ACE, trees play a very minor role, which we estimated to be about 2.5%
-of the ACE of a median house.  Far greater ACE savings are possible
-with improved construction and savvy occupant behavior.  However, the
-effect of trees on energy use and ACE is one of the most often cited
-ecosystem services of trees citep:roy_etal_2012, and evidence that ACE
-is increased by trees highlights the large uncertainty in software
-used by thousands of communities to justify urban forest costs.
+of the ACE of a median house.  As buildings become better built and
+insulated the effect of trees on ACE will decrease.  Far greater ACE
+savings are possible with improved construction and savvy occupant
+behavior. However, the effect of trees on energy use and ACE is one of
+the most often cited ecosystem services of trees citep:roy_etal_2012,
+and evidence that ACE is increased by trees highlights the large
+uncertainty in software used by thousands of communities to justify
+urban forest costs.
 
 Still, effects on ACE are just one of the ecosystem effects that trees
 have in cities.  Trees may also improve air quality, reduce stormwater
