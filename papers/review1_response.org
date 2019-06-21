@@ -234,13 +234,21 @@ Comments on pdf (lines are from original submission):
 - line 185. "Northern"
   - Thanks for the catch.
 - line 188. "How did you separate out shade effects?"
-  - 
+  - I did not, but our work agrees with the shade effects proposed by other
+    studies (that trees increase gas use for heating) not the wind
+    effects (that trees reduce gas use for heating).
 - line 192. "I am confused as to how you can separate or did separate wind from shading effects"
+  - see above and added text that seeks to clarify this confusion.
 - line 218. "It might good to note that this information can also be
   used to improve planting designs, particularly in colder climates to
   reduce energy use and carbon emissions"
+  - 
 - line 235. "Good"
-- line 267. "Again, I do not see how you conclude this difference between wind and shade."
+- line 267. "Again, I do not see how you conclude this difference
+  between wind and shade."
+  - I hope my clarifications above and in the text helped.  Please let
+    me know if I need to do more.  Changed text here to "may be due
+    to" rather than "is due to".  Apologies for undue certainty.
 - line 309. "What is the accuracy of the tree cover data?"
 - line 327. "What is the accuracy of the building cover data?"
 - line 374. "This is confusing text as to what was actually done. Are

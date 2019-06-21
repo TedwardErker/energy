@@ -358,13 +358,17 @@ depending on the region.  This is comparable to our results.  However,
 the wind effect in the iTree model of that same tree on the same house
 decreases heating ACE by 1.23 to 66.14 kg depending on the region and
 existing canopy: an order of magnitude greater savings for gas ACE
-from wind reduction than the penalty from shading.  However, our model
-coefficients derived from measured gas use suggest shading is a more
-important process than wind shielding.  cite:mcpherson_simpson_99 note
-that the uncertainty in their methods was high, and, given our
-contradictory findings, it is clear that more data and improved models
-are needed to better parameterize the complex and uncertain
-relationship between tree cover, wind, and building energy use.
+from wind reduction than the penalty from shading.  Given that our
+model coefficients show that trees increases ACE, it suggests that
+shading is a more important process than wind speed reduction.  In
+other words, our results agree with the shading but not wind reduction
+effects proposed by others, and therefore may suggest that shading is
+being more accurately modeled than wind in existing simulations.
+cite:mcpherson_simpson_99 note that the uncertainty in their methods
+was high, and, given our contradictory findings, it is clear that more
+data and improved models are needed to better parameterize the complex
+and uncertain relationship between tree cover, wind, and building
+energy use.
 
 ** Considering the larger C cycle
 
@@ -481,7 +485,7 @@ past simulation studies, we show that this is likely the case for a
 large area of the US.  The magnitude and direction of the effect is dependent on
 tree location relative to buildings, climate, building
 characteristics, occupant behavior, and the C content of electricity.
-Disagreements between our results and past work is due to how wind
+Disagreements between our results and past work may be due to how wind
 effects are modeled and much more work is needed to better understand
 this process.  We add critical geographic nuance to research that
 could have major implications for tree planting programs in cool
