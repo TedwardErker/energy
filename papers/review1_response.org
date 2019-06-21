@@ -208,8 +208,10 @@ Comments on pdf (lines are from original submission):
   - Determining the role of wind, shade, and evapotranspiration is not
     possible with my data, but I attempted to interpret my results in
     light of past work.  I used the word "suggests" because I do not
-    know the cause.  I need to be more precise with my language to
-    indicate this and will add additional text to clarify.
+    know the cause, but am building on what others have suggested the
+    mechanisms are.  I need to be more precise with my language to
+    indicate this and will add additional text to clarify.  Please let
+    me know if I have not adequately addressed this issue
 - line 153. "Good"
 - line 161. "Why might this be?"
 - line 178. "Although I agree with this conclusion, I find it somewhat
@@ -225,6 +227,10 @@ Comments on pdf (lines are from original submission):
   emissions as is tree location."
   - 
 - line 184. "McPherson and Simpson methods are used in iTree, but it is not the model."
+  - Could you please clarify this more?  When I emailed the folks at
+    iTree I was pointed to McPherson and Simpson.  Do you know of
+    important ways in which they differ?  I adjusted text so that it
+    doesn't look like they own it.
 - line 185. "Northern"
 - line 188. "How did you separate out shade effects?"
 - line 192. "I am confused as to how you can separate or did separate wind from shading effects"
