@@ -196,6 +196,7 @@ Comments on pdf (lines are from original submission):
 - line 126. This difference also has to do with the ratio of emission to the
   fuel source. If one changes the fuel, the C emissions will change
   but the energy effect will stay the same.
+  - Yes, I mention this in other places of the text.
 - line 142. "So the tree is a net reduction in C? Maybe report the net effect of both to be clear"
 - line 147. "How do you know shading was the driving factor, vs
   transpiration or wind? Also how does comparing winter vs summer
@@ -213,6 +214,7 @@ Comments on pdf (lines are from original submission):
   known that trees can increase winter energy use. Use past studies to
   back your findings. Also note that fuel mix is important in carbon
   emissions as is tree location."
+  - 
 - line 184. "McPherson and Simpson methods are used in iTree, but it is not the model."
 - line 185. "Northern"
 - line 188. "How did you separate out shade effects?"
@@ -239,11 +241,11 @@ Letter reference: DSMa01
 * COMMENT latex diff
 #+BEGIN_SRC sh
 cd ~/git/energy/papers/
-latexdiff -t CFONT review1_response_raw.tex review1_response.tex > diff.tex
-pdflatex -interaction nonstopmode diff.tex
+latexdiff -t CFONT review1_response_raw.tex review1_response.tex > review_diff.tex
+pdflatex -interaction nonstopmode review_diff.tex
 bibtex diff.aux
-pdflatex -interaction nonstopmode diff.tex
-pdflatex -interaction nonstopmode diff.tex
+pdflatex -interaction nonstopmode review_diff.tex
+pdflatex -interaction nonstopmode review_diff.tex
 #+END_SRC
 
 #+RESULTS:
