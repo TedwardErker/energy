@@ -283,7 +283,9 @@ wind speed. Somewhat surprising was the weakness of the estimated
 electricity savings of trees in the near west, which all simulations
 have predicted has the strongest effect.
 
-Trees to the north and gas use.......
+Trees to the north and gas use.......  doesn't make much sense, and
+could be wrong.  But consider that over buildings is included,
+evapotranspiration possible effect?
 
 
 ** Comparing to past work
@@ -535,7 +537,11 @@ found because of the observational nature of our data that we needed
 to aggregate regions to remove multicollinearity that caused
 unstable coefficient estimates.  Using a distance of 18, 21, or 24 m
 instead of 20m to separate "near" from "far" cover only slightly
-changed coefficient estimates.
+changed coefficient estimates.  By fitting a model with all tree cover
+close to a house aggregated into one variable and then a model with
+the tree cover separated into 8 variables defined by distance and
+direction we tested the overall association of ACE with tree cover and
+then tested for specific associations by distance and direction.
 
 ** Building Cover
 
@@ -555,22 +561,20 @@ transformed to meet assumptions of normality and diagnostic plots were
 assessed to check other model assumptions and potential sensitivity to
 influential observations.  Our first models aggregated all tree cover
 near buildings into one variable, and subsequent models separated tree
-cover based on direction and distance into eight variables.  The first
-models tested the overall association of tree cover with energy use,
-the second models sought to parse out distance and directional
-effects.  In addition to tree cover, variables in our model were: 5
-principal components of building characteristics, building cover in
-each of the 8 regions, and a random effect for elementary school which
-might capture neighborhood characteristics such as culture.  We used
-AIC as a variable selection criterion and in our final models only
-used the first 5 building characteristics principal components and we
-dropped all the building cover covariates.  Estimates for the
-coefficients of tree cover were not sensitive to the inclusion or
-removal of these covariates, but model fit improved.  Although some
-tree cover covariates increased AIC, we kept all tree cover covariates
-in the model because we wanted estimates of their effects, however
-uncertain they might be.  We also fit models We fit models using the R
-package lme4 citep:bates_e_2015.
+cover based on direction and distance into eight variables.  In
+addition to tree cover, variables in our model were: 5 principal
+components of building characteristics, building cover in each of the
+8 regions, and a random effect for elementary school which might
+capture neighborhood characteristics such as culture.  We used AIC as
+a variable selection criterion and in our final models only used the
+first 5 building characteristics principal components and we dropped
+all the building cover covariates.  Estimates for the coefficients of
+tree cover were not sensitive to the inclusion or removal of these
+covariates, but model fit improved.  Although some tree cover
+covariates increased AIC, we kept all tree cover covariates in the
+model because we wanted estimates of their effects, however uncertain
+they might be.  We also fit models We fit models using the R package
+lme4 citep:bates_e_2015.
 
 ** Interpreting coefficients
 To improve interpretability of coefficients, we back transformed them
