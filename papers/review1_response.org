@@ -188,6 +188,12 @@ other modeling approach results; and both have limitations.  Bottom
 line is that trees in more northern climates could increase carbon
 emissions and more research is needed as to how much and why. 
 
+- Thanks for your comments.  I think you have summarized the main
+  point of my work well, and I will try to incorporate all your
+  suggestions.  Do you have citations for the other studies that have
+  found trees are associated with an increase in building energy use
+  and C emissions (or are they just increased energy use in winter)?  
+
 Comments on pdf (lines are from original submission):
 - Title. Maybe add "due to altered energy use" in the title as your findings
   indicate that if sequestration is included, carbon has a net
@@ -242,8 +248,9 @@ Comments on pdf (lines are from original submission):
 - line 218. "It might good to note that this information can also be
   used to improve planting designs, particularly in colder climates to
   reduce energy use and carbon emissions"
-  - 
+  - I will put this in future work and the conclusions.
 - line 235. "Good"
+  - thanks
 - line 267. "Again, I do not see how you conclude this difference
   between wind and shade."
   - I hope my clarifications above and in the text helped.  Please let

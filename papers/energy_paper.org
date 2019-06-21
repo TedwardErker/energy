@@ -181,6 +181,12 @@ regression model between the amount of tree cover near each house and
 the C produced from electricity and natural gas use, controlling for
 other factors such as building characteristics.
 
+In an extensive review of the effect of the urban forest on CO_2
+emissions, cite:weissert_etal_2014 did not consider that trees could
+increase ACE.  In a paper critical of many ecosystem services provided
+by trees, cite:pataki_etal_2011 nevertheless state that trees reduce energy
+use and ACE
+
 #+name:soltice_shadow_building
 #+attr_latex: :height 8in
 #+caption: Simulated shadows of trees on a house at the latitude of Madison, WI.  In the summer, trees to the west of buildings provide the most effective shade since solar angles are lower and cooling demand highest in the afternoon.  In winter, even deciduous trees can significantly reduce solar gain.
@@ -447,7 +453,7 @@ the sampling period may mean the effect of trees is even more
 detrimental than we report, but more years are needed to say.  The
 location of Madison near the boundary that cite:akbari_konopacki_2005
 identified between trees being a sink and a source is useful, but more
-cities are needed to empiracally determine this boundary.
+cities are needed to empirically determine this boundary.
 
 Our work reveals a blind spot in urban forest ecosystem studies.  In
 an extensive review of the effect of the urban forest on CO_2
