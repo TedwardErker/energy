@@ -305,6 +305,7 @@ transpiration possible effect?  there are leaves on trees for
 part of the heating season and there are some evergreen trees that can
 transpire for much of year.  
 
+More here a la reviewer 3
 
 
 ** Comparing to past work
@@ -470,7 +471,7 @@ different between Los Angeles and New York City.  However our study is
 only the first study to use both gas and electric energy use
 observations, and the first study of its kind in a cool climate.  Much
 more work with observed energy use is needed to identify the border
-between atmospheric C sink and source.
+between atmospheric C sink and source.  Planners and designers should 
 
 *** COMMENT What about evapotranspirative cooling? the issue of scale.
 What about evapotranspirative cooling?  We may have a bit of a scale
@@ -496,6 +497,9 @@ effects are modeled and much more work is needed to better understand
 this process.  We add critical geographic nuance to research that
 could have major implications for tree planting programs in cool
 climates.
+
+Add that I don't necessarily invalidate other studies (a la reviewer 3)
+
 
 * Methods
 ** Building Energy Use
@@ -550,7 +554,7 @@ accounting for 55% of the variance.
 ** Tree Canopy
 For tree cover we used a 1m resolution landcover map derived from 2013 National
 Agriculture Inventory Program (NAIP) visible and near-infrared digital
-aerial imagery (Erker et. al, in review).  Using building footprints
+aerial imagery with an accuracy of 85% citep:erker_e_2018.  Using building footprints
 from the Dane county, for each house for which we had energy use data,
 we divided the space around it into 8 regions defined by 2 buffers
 around the house of distance 20 m and 60m and 4 rays from the
