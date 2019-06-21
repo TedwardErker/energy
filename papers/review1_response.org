@@ -94,6 +94,10 @@ Comments:
    increase in the need for warming. Shouldn’t tree coverage lead to
    lower heat loss through the north wall?
 
+   1. I agree, this result is highly suspect and I'm honestly not sure
+      why the coefficient is positive.  Please see the 
+
+
 7. Extend the C storage comparison section with the actual outcome
    numbers and meaning.
 

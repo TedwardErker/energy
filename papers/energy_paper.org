@@ -284,8 +284,12 @@ electricity savings of trees in the near west, which all simulations
 have predicted has the strongest effect.
 
 Trees to the north and gas use.......  doesn't make much sense, and
-could be wrong.  But consider that over buildings is included,
-evapotranspiration possible effect?
+could be wrong.  But consider that over buildings is included, so
+there is some shading.  it's north of the building's centroid.
+transpiration possible effect?  there are leaves on trees for
+part of the heating season and there are some evergreen trees that can
+transpire for much of year.  
+
 
 
 ** Comparing to past work
