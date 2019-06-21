@@ -350,8 +350,8 @@ cities: Toronto citep:akbari_taha_1992, Chicago
 citep:jo_mcpherson_2001, Minneapolis, Sacramento, and Washington
 citep:huang_e_1990, trees either have no effect or increase energy use
 and ACE, which agrees with our general findings.  The iTree model
-which uses methods of cite:mcpherson_simpson_99 predicts that the
-shading effects of a large deciduous tree in the Norther Tier, North
+which uses the methods of cite:mcpherson_simpson_99 predicts that the
+shading effects of a large deciduous tree in the Northern Tier, North
 Central, Mountains, Pacific Northwest, and California Coast regions
 increases ACE of a 1950-1980 vintage house by 0.136 to 9.52 kg,
 depending on the region.  This is comparable to our results.  However,

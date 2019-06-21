@@ -232,7 +232,9 @@ Comments on pdf (lines are from original submission):
     important ways in which they differ?  I adjusted text so that it
     doesn't look like they own it.
 - line 185. "Northern"
+  - Thanks for the catch.
 - line 188. "How did you separate out shade effects?"
+  - 
 - line 192. "I am confused as to how you can separate or did separate wind from shading effects"
 - line 218. "It might good to note that this information can also be
   used to improve planting designs, particularly in colder climates to
