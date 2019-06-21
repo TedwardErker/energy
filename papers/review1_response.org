@@ -117,6 +117,17 @@ Comments:
    much this aspect of your study (you point out some weak
    assumptions in previous studies).
 
+   1. Do you have any specific critiques of my assumptions?  I don't
+      think other studies assumptions are weak.  For example, results
+      in cool climates are highly sensitive to how wind is modelled.  
+      The effect of trees on wind around buildings is a highly complex
+      relationship (and therefore very difficult to get right), but
+      existing models all depend (as far as I know) on just 4 data
+      points from one place over a short time period with low wind
+      events removed.  This creates huge uncertainty.  Are you aware
+      of sensitivity studies that assess how important various
+      assumptions are in these studies?
+
 ** Referee: 2 
 
 COMMENTS TO THE AUTHOR(S) 
