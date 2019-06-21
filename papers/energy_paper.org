@@ -251,7 +251,9 @@ For comparison, consider a green ash tree with a crown area of
 biomass and it could sequester around 34 kg C / year.  That same tree in
 the near east region of a typical house in Madison was estimated to
 increase C emissions by 9.8 kg C/yr (95% CI: 6.7, 12.9).  In the near
-west the estimated effect was 1.0 kg C/yr (95% CI: -2.1, 4.1).
+west the estimated effect was 1.0 kg C/yr (95% CI: -2.1, 4.1).  The
+the transfer of carbon from atmosphere to the biosphere is an order of
+magnitude larger than the transfer from the lithosphere to atmosphere.
 
 * Discussion
 ** Interpreting Tree Effects
@@ -260,7 +262,14 @@ In the cool climate city of Madison, with 7283 HDD and 597 CDD and a
 electricity emission factor of 0.206 kg C / kwh, the effect of trees
 on ACE was clear: trees increased ACE from gas use more than they
 decreased ACE from electricity use, resulting in a net increase in
-ACE.  This result suggests that shading was the most important process
+ACE.  
+
+In simulation studies, if shade were the only affect on ACE
+(winter wind speed reduction was not included) trees in cool climate
+cities would cause an increase in ACE.  Since we found an increase in
+ACE with increased tree cover
+
+This result suggests that shading was the most important process
 and that whatever gas savings trees may have provided in winter by
 reducing wind speeds was swamped by the penalty in reduced solar
 radiation.
@@ -340,22 +349,22 @@ effects of wind are excluded for models of several cool climate
 cities: Toronto citep:akbari_taha_1992, Chicago
 citep:jo_mcpherson_2001, Minneapolis, Sacramento, and Washington
 citep:huang_e_1990, trees either have no effect or increase energy use
-and ACE, which agrees with our general findings.  The iTree model of
-cite:mcpherson_simpson_99 predicts that the shading effects of a large
-deciduous tree in the Norther Tier, North Central, Mountains, Pacific
-Northwest, and California Coast regions increases ACE of a 1950-1980
-vintage house by 0.136 to 9.52 kg, depending on the region.  This is
-comparable to our results.  However, the wind effect in the iTree
-model of that same tree on the same house decreases heating ACE by
-1.23 to 66.14 kg depending on the region and existing canopy: an order
-of magnitude greater savings for gas ACE from wind reduction than the
-penalty from shading.  However, our model coefficients derived from
-measured gas use suggest shading is a more important process than wind
-shielding.  cite:mcpherson_simpson_99 note that the uncertainty in
-their methods was high, and, given our contradictory findings, it is
-clear that more data and improved models are needed to better
-parameterize the complex and uncertain relationship between tree
-cover, wind, and building energy use.
+and ACE, which agrees with our general findings.  The iTree model
+which uses methods of cite:mcpherson_simpson_99 predicts that the
+shading effects of a large deciduous tree in the Norther Tier, North
+Central, Mountains, Pacific Northwest, and California Coast regions
+increases ACE of a 1950-1980 vintage house by 0.136 to 9.52 kg,
+depending on the region.  This is comparable to our results.  However,
+the wind effect in the iTree model of that same tree on the same house
+decreases heating ACE by 1.23 to 66.14 kg depending on the region and
+existing canopy: an order of magnitude greater savings for gas ACE
+from wind reduction than the penalty from shading.  However, our model
+coefficients derived from measured gas use suggest shading is a more
+important process than wind shielding.  cite:mcpherson_simpson_99 note
+that the uncertainty in their methods was high, and, given our
+contradictory findings, it is clear that more data and improved models
+are needed to better parameterize the complex and uncertain
+relationship between tree cover, wind, and building energy use.
 
 ** Considering the larger C cycle
 

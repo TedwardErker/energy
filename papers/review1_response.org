@@ -198,9 +198,18 @@ Comments on pdf (lines are from original submission):
   but the energy effect will stay the same.
   - Yes, I mention this in other places of the text.
 - line 142. "So the tree is a net reduction in C? Maybe report the net effect of both to be clear"
+  - I was hesitant to discuss net C because the C is being moved from
+    different pools.  While C in atmosphere is decreasing in the short
+    term, C in the atmosphere-biosphere system is increasing.  That
+    said, I will add text to make it clear that sequestration is greater.
 - line 147. "How do you know shading was the driving factor, vs
   transpiration or wind? Also how does comparing winter vs summer
   effects lead to the conclusion for winter effects?"
+  - Determining the role of wind, shade, and evapotranspiration is not
+    possible with my data, but I attempted to interpret my results in
+    light of past work.  I used the word "suggests" because I do not
+    know the cause.  I need to be more precise with my language to
+    indicate this and will add additional text to clarify.
 - line 153. "Good"
 - line 161. "Why might this be?"
 - line 178. "Although I agree with this conclusion, I find it somewhat
