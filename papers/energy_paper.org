@@ -551,22 +551,22 @@ the coefficients from the electricity and gas models. ACE was log
 transformed to meet assumptions of normality and diagnostic plots were
 assessed to check other model assumptions and potential sensitivity to
 influential observations.  Our first models aggregated all tree cover
-near buildings, and subsequent models separated tree cover based on
-direction and distance.  The first models tested the
-overall association of tree cover with energy use, the second tried to
-parse out directional effects.  In addition to tree cover, variables
-in our model were: 5 principal components of building characteristics,
-building cover in each of the 8 regions, and a random effect for
-elementary school which might capture neighborhood characteristics
-such as culture.  We used AIC as a variable selection criterion and in
-our final models only used the first 5 building characteristics
-principal components and we dropped all the building cover covariates.
-Estimates for the coefficients of tree cover were not sensitive to the
-inclusion or removal of these covariates, but model fit improved.
-Although some tree cover covariates increased AIC, we kept all tree
-cover covariates in the model because we wanted estimates of their
-effects, however uncertain they might be.  We also fit models We fit
-models using the R package lme4 citep:bates_e_2015.
+near buildings into one variable, and subsequent models separated tree cover based on
+direction and distance into eight variables.  The first models tested the overall
+association of tree cover with energy use, the second models sought to
+parse out distance and directional effects.  In addition to tree
+cover, variables in our model were: 5 principal components of building
+characteristics, building cover in each of the 8 regions, and a random
+effect for elementary school which might capture neighborhood
+characteristics such as culture.  We used AIC as a variable selection
+criterion and in our final models only used the first 5 building
+characteristics principal components and we dropped all the building
+cover covariates.  Estimates for the coefficients of tree cover were
+not sensitive to the inclusion or removal of these covariates, but
+model fit improved.  Although some tree cover covariates increased
+AIC, we kept all tree cover covariates in the model because we wanted
+estimates of their effects, however uncertain they might be.  We also
+fit models We fit models using the R package lme4 citep:bates_e_2015.
 
 ** Interpreting coefficients
 To improve interpretability of coefficients, we back transformed them
