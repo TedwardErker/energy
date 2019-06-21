@@ -95,8 +95,8 @@ Comments:
    lower heat loss through the north wall?
 
    1. I agree, this result is highly suspect and I'm honestly not sure
-      why the coefficient is positive.  Please see the 
-
+      why the coefficient is positive.  Please see the additional
+      paragraph in Discussion > Interpreting Tree Effects.
 
 7. Extend the C storage comparison section with the actual outcome
    numbers and meaning.
@@ -137,11 +137,30 @@ Comments:
 COMMENTS TO THE AUTHOR(S) 
 - The paper summarizes the results of a statistical analysis. 
 
-- No data or results are shown and the reader has to rely on the authors for their conclusions. 
+- No data or results are shown and the reader has to rely on the authors for their conclusions.
 
-- The physics of the claim that trees increase CO2 emission is not explained and modeled. 
+  - I provided data and all the code for the analysis in a github
+    repository.  
 
-- One cannot understand the basis of the conclusions with supporting data. 
+- The physics of the claim that trees increase CO2 emission is not explained and modeled.
+
+  - Please see the introduction, especially the third paragraph.  How
+    trees can affect energy use of buildings is well covered in many
+    of the papers that I cite.  I provide a short explanations and the
+    citations for readers. The linear model I use is simple but a
+    clear empirical demonstration of the link between greater tree
+    cover and greater C emissions for residential buildings in
+    Madison.  My aim is not to model the physics of the relationship,
+    but to provide an empirical demonstration of the link between tree
+    cover and building energy use and the associated C emissions.  I
+    use my results to question the validity of the commonly cited
+    ecosystem service that trees reduce ACE even in cool climates.
+
+- One cannot understand the basis of the conclusions with supporting data.
+
+  - Do you have suggestions for how I can be more clear?  Is there a
+    part of the text that is confusing or do you have a suggestion for
+    an additional section of text that would help make things more clear?
 
 ** Referee: 3 
 
@@ -172,7 +191,8 @@ emissions and more research is needed as to how much and why.
 Comments on pdf (lines are from original submission):
 - Title. Maybe add "due to altered energy use" in the title as your findings
   indicate that if sequestration is included, carbon has a net
-  positive sequestration. 
+  positive sequestration.
+  - see edits to title
 - line 126. This difference also has to do with the ratio of emission to the
   fuel source. If one changes the fuel, the C emissions will change
   but the energy effect will stay the same.
