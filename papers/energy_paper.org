@@ -283,6 +283,9 @@ wind speed. Somewhat surprising was the weakness of the estimated
 electricity savings of trees in the near west, which all simulations
 have predicted has the strongest effect.
 
+Trees to the north and gas use.......
+
+
 ** Comparing to past work
 
 Our findings agreed with some though not all of the past simulation
