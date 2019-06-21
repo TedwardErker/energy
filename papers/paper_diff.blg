@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: paper_diff.aux
+The style file: apa.bst
+Database file #1: ../../notes/references.bib
+I was expecting a `,' or a `}'---line 3666 of file ../../notes/references.bib
+ :   
+ :   url={https://www.nrs.fs.fed.us/pubs/jrnl/1991/nrs_1991_heisler_001.pdf}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty booktitle in heisler_1990
+Warning--can't use both volume and number fields in heisler_1990
+Warning--empty booktitle in huang_e_1990
+Warning--can't use both volume and number fields in huang_e_1990
+Warning--empty journal in nowak_e_02
+Warning--empty journal in epa_a2_2017
+Warning--there's a number but no volume in epa_a2_2017
+Warning--empty journal in USEIA_2009
+You've used 37 entries,
+            1940 wiz_defined-function locations,
+            693 strings with 10340 characters,
+and the built_in function-call counts, 14713 in all, are:
+= -- 1396
+> -- 631
+< -- 22
++ -- 226
+- -- 212
+* -- 1394
+:= -- 2578
+add.period$ -- 109
+call.type$ -- 37
+change.case$ -- 288
+chr.to.int$ -- 37
+cite$ -- 45
+duplicate$ -- 507
+empty$ -- 1007
+format.name$ -- 269
+if$ -- 2813
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 35
+newline$ -- 183
+num.names$ -- 111
+pop$ -- 232
+preamble$ -- 1
+purify$ -- 291
+quote$ -- 0
+skip$ -- 377
+stack$ -- 0
+substring$ -- 1040
+swap$ -- 70
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 220
+warning$ -- 8
+while$ -- 106
+width$ -- 0
+write$ -- 465
+(There was 1 error message)
