@@ -269,7 +269,18 @@ Comments on pdf (lines are from original submission):
   assumptions, why use these models for national extrapolation. I may
   be misreading these methods, but either way, these methods needs to
   be clarified."
-  - 
+  - I will work to make this more clear.
+  - Determining that 77% of the population lives in an area with more
+    heating degree days than cooling degree days is a completely
+    separate analysis that just depending on finding the climate at
+    each census tract.  It should be a separate paragraph, but was
+    just one sentence.  This has nothing to do with Akbari and
+    Konopacki 2005.
+  - My primary aim of mapping the work by akbari and konopacki was to
+    show that while there work from 2002 "Shade trees reduce building
+    energy use and CO_2 emissions from power plants" is true on
+    average, the headline does not apply to much of the country and
+    their own work shows this cite:akbari_2002.
 
 Letter reference: DSMa01
 
