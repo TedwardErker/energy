@@ -208,7 +208,21 @@ Comments on pdf (lines are from original submission):
   trees in the east and far west? Also why do tree to the north
   increase gas usage? The why is the most important question. I see
   you address the east question later, but why the north finding?
-  - 
+  - I try pretty hard in the text to make sure I only talk about
+    associations/correlations between tree cover and ACE, because I
+    can't possibly demonstrate causation with the study design.  Given
+    what we know about trees, I think it's likely there is some
+    causation. But there is no way to experimentally manipulate a city
+    to determine causation.  And, as I mention in the text, simulation
+    studies are wrong (all models are), but we don't know how wrong
+    they are until we assess them with empirical data.  This has never
+    been done before.  
+  - You say that McPherson and Akbari show winter time increases in
+    energy use due to trees.  As far as I can tell (please correct me
+    if I'm wrong), McPherson always shows that the wind reduction from
+    trees in winter reduces gas use far more than shading increases it.
+  - All that said, your point is a good one.  Our study 
+
 - line 126. This difference also has to do with the ratio of emission to the
   fuel source. If one changes the fuel, the C emissions will change
   but the energy effect will stay the same.
