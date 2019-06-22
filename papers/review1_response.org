@@ -208,6 +208,8 @@ Comments on pdf (lines are from original submission):
   trees in the east and far west? Also why do tree to the north
   increase gas usage? The why is the most important question. I see
   you address the east question later, but why the north finding?
+  - This is unfortunately the nature of an observational study, but
+    there is still great value is having actual data.
   - I try pretty hard in the text to make sure I only talk about
     associations/correlations between tree cover and ACE, because I
     can't possibly demonstrate causation with the study design.  Given
@@ -228,7 +230,8 @@ Comments on pdf (lines are from original submission):
     given our current understanding and they may be wrong.  My hope is
     that with a different type of study we can move closer to the
     truth and put more emphasis on how this is a complex relationship
-    and the ulimate direction of the effect is context dependent.
+    and the ulimate direction of the effect is context dependent. 
+  - 
 
 - line 126. This difference also has to do with the ratio of emission to the
   fuel source. If one changes the fuel, the C emissions will change

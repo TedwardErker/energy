@@ -269,7 +269,7 @@ on ACE was clear: trees increased ACE from gas use more than they
 decreased ACE from electricity use, resulting in a net increase in
 ACE.  
 
-In simulation studies, if shade were the only affect on ACE
+In simulation studies, if shade were the only effect on ACE
 (winter wind speed reduction was not included) trees in cool climate
 cities would cause an increase in ACE.  Since we found an increase in
 ACE with increased tree cover
@@ -436,12 +436,17 @@ cool climates.  However, there is need for continuing work to address
 remaining shortcomings.  The observational nature of our data is
 strengthed by the size of the dataset, but ultimately causal inference
 depends on our physical knowledge of how trees alter building energy
-use.  More experimental studies are needed especially in cool climate
-cities to better understand that relationship.  Not all coefficients
-in our model agree with our existing physical understanding of how
-trees affect building energy use.  For example, it is surprising that
-trees to the near west have such a weak effect on electricity use. Our
-data on tree cover was also limited by a lack of information about
+use.  Not all coefficients in our model agree with our existing
+physical understanding of how trees affect building energy use.  For
+example, it is surprising that trees to the near west have such a weak
+effect on electricity use and that trees to the north increase gas
+use.  While the overall association between greater tree cover and
+greater ACE in Madison is clear from our work, how that relationship
+changes with distance and direction is less clear.  Our work is an
+important complement to simulation studies and highlights the need for
+more experimental studies especially in cool climate cities.
+
+Our data on tree cover was also limited by a lack of information about
 tree height, which means we could not address how adjusting the size
 of trees planted in an urban area affects ACE. Incorporating lidar
 could provide more accurate estimates of tree shading and wind
