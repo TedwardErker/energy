@@ -257,7 +257,9 @@ Comments on pdf (lines are from original submission):
     me know if I need to do more.  Changed text here to "may be due
     to" rather than "is due to".  Apologies for undue certainty.
 - line 309. "What is the accuracy of the tree cover data?"
+  - added
 - line 327. "What is the accuracy of the building cover data?"
+  - 
 - line 374. "This is confusing text as to what was actually done. Are
   you interpolating Akbari and Konopacki results to this area with 77%
   of the population? If so, how to do you account for varying tree

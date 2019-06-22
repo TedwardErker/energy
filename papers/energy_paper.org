@@ -552,24 +552,24 @@ each garage, land value, improvement value) to 5 orthogonal vectors,
 accounting for 55% of the variance.
 
 ** Tree Canopy
-For tree cover we used a 1m resolution landcover map derived from 2013 National
-Agriculture Inventory Program (NAIP) visible and near-infrared digital
-aerial imagery with an accuracy of 85% citep:erker_e_2018.  Using building footprints
-from the Dane county, for each house for which we had energy use data,
-we divided the space around it into 8 regions defined by 2 buffers
-around the house of distance 20 m and 60m and 4 rays from the
-building's centroid.  Tree cover closer than 20m was considered near,
-tree cover farther than 20m and closer than 60m was considered
-far. These buffers were subdivided into north, west, south, and east
-regions by rays of angles 57, 123, 237, 303 degrees from north.  These
-angles are within 1 degree of the azimuth angle of sunrise and sunset
-at the two solstices.  This defines the south region as the region
-that is exposed to direct sunlight year-round, and the north region as
-the region that is never exposed to direct sunlight (this relationship
-is approximate and complicated by individual building geometry).
-Within each of the eight regions we summed the area covered by trees,
-and then use the tree cover in each region as predictors in our
-models.
+For tree cover we used a 1m resolution landcover map derived from 2013
+National Agriculture Inventory Program (NAIP) visible and
+near-infrared digital aerial imagery with an accuracy of 85%
+citep:erker_e_2018.  Using building footprints from the Dane county,
+for each house for which we had energy use data, we divided the space
+around it into 8 regions defined by 2 buffers around the house of
+distance 20 m and 60m and 4 rays from the building's centroid.  Tree
+cover closer than 20m was considered near, tree cover farther than 20m
+and closer than 60m was considered far. These buffers were subdivided
+into north, west, south, and east regions by rays of angles 57, 123,
+237, 303 degrees from north.  These angles are within 1 degree of the
+azimuth angle of sunrise and sunset at the two solstices.  This
+defines the south region as the region that is exposed to direct
+sunlight year-round, and the north region as the region that is never
+exposed to direct sunlight (this relationship is approximate and
+complicated by individual building geometry).  Within each of the
+eight regions we summed the area covered by trees, and then use the
+tree cover in each region as predictors in our models.
 
 We tested buffers of different widths (every 3m from 3m to 60m), but
 found because of the observational nature of our data that we needed
@@ -587,7 +587,13 @@ then tested for specific associations by distance and direction.
 Nearby buildings likely also affect the energy use of a building.  To
 test this hypothesis we calculated the area of buildings in each of
 the eight regions around every building and included these as
-covariates in our modeling.
+covariates in our modeling.  We used building footprints from Dane
+County which consists of structures the size of a single car garage or
+larger. The horizontal accuracy is +/- 6.6 feet for well-defined
+points, at a ninety percent confidence level. 
+
+*** COMMENT accuracy information
+https://lio.countyofdane.com/metadata/BuildingFootprints2005_faq.htm
 
 ** Modeling
 
