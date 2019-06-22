@@ -259,7 +259,7 @@ Comments on pdf (lines are from original submission):
 - line 309. "What is the accuracy of the tree cover data?"
   - added
 - line 327. "What is the accuracy of the building cover data?"
-  - 
+  - added
 - line 374. "This is confusing text as to what was actually done. Are
   you interpolating Akbari and Konopacki results to this area with 77%
   of the population? If so, how to do you account for varying tree
@@ -269,6 +269,7 @@ Comments on pdf (lines are from original submission):
   assumptions, why use these models for national extrapolation. I may
   be misreading these methods, but either way, these methods needs to
   be clarified."
+  - 
 
 Letter reference: DSMa01
 
