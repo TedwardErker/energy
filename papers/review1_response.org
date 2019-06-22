@@ -214,14 +214,21 @@ Comments on pdf (lines are from original submission):
     what we know about trees, I think it's likely there is some
     causation. But there is no way to experimentally manipulate a city
     to determine causation.  And, as I mention in the text, simulation
-    studies are wrong (all models are), but we don't know how wrong
-    they are until we assess them with empirical data.  This has never
-    been done before.  
+    studies are foundational to our understanding but they are wrong
+    (all models are). We don't know how wrong they are until we
+    assess them with empirical data.  This has never been done
+    before.  
   - You say that McPherson and Akbari show winter time increases in
     energy use due to trees.  As far as I can tell (please correct me
     if I'm wrong), McPherson always shows that the wind reduction from
     trees in winter reduces gas use far more than shading increases it.
-  - All that said, your point is a good one.  Our study 
+  - All that said, your point is a good one.  Our study is certainly
+    not a perfect validation of the simulation studies and I agree
+    that some of the coefficents do not have an obvious explanation
+    given our current understanding and they may be wrong.  My hope is
+    that with a different type of study we can move closer to the
+    truth and put more emphasis on how this is a complex relationship
+    and the ulimate direction of the effect is context dependent.
 
 - line 126. This difference also has to do with the ratio of emission to the
   fuel source. If one changes the fuel, the C emissions will change
