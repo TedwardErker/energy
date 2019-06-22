@@ -658,10 +658,7 @@ these were not modeled separately. However, the general trend would be
 similar, but with a decreased electricity savings and a decreased
 heating penalty.  cite:akbari_konopacki_2005 found the effect of tree
 shade to be stronger than the indirect effects of increased roof
-albedo and transpirative cooling.  We also used the join of climate
-and census tract data to estimate approximately 77% of the
-U.S. population lives in places with more heating than cooling
-degree-days.
+albedo and transpirative cooling.  
 
 ** Code
 

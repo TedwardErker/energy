@@ -281,6 +281,11 @@ Comments on pdf (lines are from original submission):
     energy use and CO_2 emissions from power plants" is true on
     average, the headline does not apply to much of the country and
     their own work shows this cite:akbari_2002.
+  - In this context I think it's possible to build on their work
+    (despite all the limitations I mention) to show that there likely
+    are places where trees increase ACE.  Where those places are
+    exactly is unknown, but our work provides strong evidence that
+    Madison is one of them.
 
 Letter reference: DSMa01
 
