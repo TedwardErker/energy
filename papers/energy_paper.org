@@ -91,8 +91,7 @@ depending on the fuel mix in the electrical grid.
 * Previous research
 
 Decades worth of research primarily by two research groups, the US
-Forest Service's ([[https://www.fs.fed.us/psw/topics/urban_forestry/][USFS]]) Southwest Research Station Urban Ecosystems
-and Processes group and the Lawrence Berkeley National Lab Heat Island
+Forest Service ([[https://www.fs.fed.us/psw/topics/urban_forestry/][USFS]]) and the Lawrence Berkeley National Lab Heat Island
 Group ([[https://heatisland.lbl.gov/][LBNL]]), have reported that, on average, trees reduce C
 emissions.  In 2002, citeauthor:akbari_2002 published a paper
 summarizing their group's findings: "Shade trees reduce building
@@ -647,18 +646,22 @@ using updated emission factors corresponding to each study city's
 eGrid subregion citep:eGRID.  To extend cite:akbari_konopacki_2005, we
 joined climate data (heating and cooling degree days) from the nearest
 NOAA weather station to census tract centroids
-cite:tract_centroids,arguez_e_2012.  Then for each census tract we
-predicted the effect of trees and increasing roof albedo on the energy
-use of a pre-1980's building with gas heating following their table
-that bins houses according to heating degree-days and using emission
-factors corresponding to the eGrid subregion containing the census
-tract centroid. Separating out the indirect effects of trees from the
-indirect effects of increasing roof albedo was not possible because
-these were not modeled separately. However, the general trend would be
-similar, but with a decreased electricity savings and a decreased
-heating penalty.  cite:akbari_konopacki_2005 found the effect of tree
-shade to be stronger than the indirect effects of increased roof
-albedo and transpirative cooling.  
+cite:tract_centroids,arguez_e_2012.  It was from this join of climate
+and census data that we determined that 77% of the U.S. population
+lives in places with more heating than cooling degree days. Then for
+each census tract we predicted the effect of trees and increasing roof
+albedo on the energy use of a pre-1980's building with gas heating
+following their table that bins houses according to heating
+degree-days and using emission factors corresponding to the eGrid
+subregion containing the census tract centroid. Separating out the
+indirect effects of trees from the indirect effects of increasing roof
+albedo was not possible because these were not modeled
+separately. However, the general trend would be similar, but with a
+decreased electricity savings and a decreased heating penalty.
+cite:akbari_konopacki_2005 found the effect of tree shade to be
+stronger than the indirect effects of increased roof albedo and
+transpirative cooling.
+
 
 ** Code
 
