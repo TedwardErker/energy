@@ -268,9 +268,9 @@ magnitude larger than the transfer from the lithosphere to atmosphere.
 * Discussion
 ** Interpreting Tree Effects
 
-In the cool climate city of Madison with 7283 heating degree days,
-597 cooling degree days and a electricity emission factor of 0.206 kg
-C / kwh, the effect of trees on ACE was clear: trees increased ACE
+In the cool climate city of Madison with 7283 heating degree days, 597
+cooling degree days and a electricity emission factor of 0.206 kg C /
+kwh, the relationship of trees with ACE was clear: trees increased ACE
 from gas use more than they decreased ACE from electricity use,
 resulting in a net increase in ACE.
 
@@ -307,10 +307,9 @@ that there could be some transpirative cooling occuring during the
 early spring and late fall when trees have their leaves and it is
 still the heating season in Madison.  
 
-
-The lack of a clear mechanism to
-understand this coefficient is one the the shortcomings of an
-observational study.
+The lack of clear mechanisms to understand each of the coefficients is
+one the the shortcomings of this observational study.  While the
+overall association between tree cover and ACE is clear, 
 
 
 finish this secion with something like: when the tree cover is aggregated the
