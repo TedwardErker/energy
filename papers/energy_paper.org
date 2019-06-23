@@ -293,28 +293,25 @@ increased gas use in winter.  This agrees with cite:donovan_Butry_2009
 who also found trees to the east had no effect on electricity use.
 
 As expected, trees to the near south had a strong effect on
-electricity savings, but they also had a stronger gas penalty.
-Trees in the near west and near north had the weakest gas penalty,
-which may have been due to the savings they provided by reducing
-wind speed. Somewhat surprising was the weakness of the estimated
+electricity savings, but they also had a stronger gas penalty.  Trees
+in the near west and near north had the weakest gas penalty, which may
+have been due to the savings they provided by reducing wind
+speed. Somewhat surprising was the weakness of the estimated
 electricity savings of trees in the near west, which all simulations
 have predicted has the strongest effect.  Also surprising was that
-trees to the north are associated with an increase in gas use.  Since
-tree cover is measured north of each building's centroid, it could be
-there there is still 
+trees to the north are associated with an increase in gas use,
+something no other study has predicted.  Since tree cover is measured
+north of each building's centroid, it could be that there is still
+some shading from trees on the northern roof.  It is also possible
+that there could be some transpirative cooling occuring during the
+early spring and late fall when trees have their leaves and it is
+still the heating season in Madison.  
 
-No
-other studies predict this
 
+The lack of a clear mechanism to
+understand this coefficient is one the the shortcomings of an
+observational study.
 
-Trees to the north and gas use.......  doesn't make much sense, and
-could be wrong.  But consider that over buildings is included, so
-there is some shading.  it's north of the building's centroid.
-transpiration possible effect?  there are leaves on trees for
-part of the heating season and there are some evergreen trees that can
-transpire for much of year.  
-
-More here a la reviewer 3
 
 finish this secion with something like: when the tree cover is aggregated the
 association is clear, but when the relationship is parsed further it's
