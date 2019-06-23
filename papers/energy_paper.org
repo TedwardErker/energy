@@ -103,6 +103,9 @@ the urban forest on CO_2 emissions, cite:weissert_etal_2014 did not
 consider that trees could increase ACE.  In a paper critical of many
 ecosystem services provided by trees, cite:pataki_etal_2011
 nevertheless state that trees reduce energy use and ACE.  Our work 
+
+
+
 builds on past simulation studies 
 
 
