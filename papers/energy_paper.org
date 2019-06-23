@@ -88,6 +88,21 @@ degree days), building characteristics (orientation, insulation,
 size), occupant behavior and the carbon content of a kWh, which varies
 depending on the fuel mix in the electrical grid.
 
+
+While our current understanding of how trees affects
+
+trees can be negative in cold climates, but existing literature
+doesn't know that.
+
+gap in
+
+In an extensive review of the effect of the urban forest on CO_2
+emissions, cite:weissert_etal_2014 did not consider that trees could
+increase ACE.  In a paper critical of many ecosystem services provided
+by trees, cite:pataki_etal_2011 nevertheless state that trees reduce energy
+use and ACE
+
+
 * Previous research
 
 Decades worth of research primarily by two research groups, the US
@@ -180,11 +195,6 @@ regression model between the amount of tree cover near each house and
 the C produced from electricity and natural gas use, controlling for
 other factors such as building characteristics.
 
-In an extensive review of the effect of the urban forest on CO_2
-emissions, cite:weissert_etal_2014 did not consider that trees could
-increase ACE.  In a paper critical of many ecosystem services provided
-by trees, cite:pataki_etal_2011 nevertheless state that trees reduce energy
-use and ACE
 
 #+name:soltice_shadow_building
 #+attr_latex: :height 8in
