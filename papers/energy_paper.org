@@ -25,7 +25,7 @@ to make our growing cities more sustainable in an era of climate
 change.  The potential for urban trees to modify microclimates and
 thereby reduce building energy use and the associated carbon emissions
 is a commonly cited ecosystem service used to justify million tree
-planting campaigns across the country.  However, what we know of this
+planting campaigns across the US.  However, what we know of this
 ecosystem service comes primarily from unvalidated simulation studies.
 
 Using the first dataset of actual heating and cooling energy use
@@ -36,9 +36,9 @@ energy use. This is driven primarily by near east (< 20m from
 building) tree cover. Further analysis of urban areas in the US shows
 that this is likely the case in cool climates throughout the country,
 encompassing approximately 39% of the US population and 62% of its
-area (56%, excluding Alaska). Our results add geographic nuance to
-quantification of the effect of urban trees on the carbon budget and
-could have major implications for tree planting programs in cool
+area (56%, excluding Alaska). Our work adds geographic nuance to the
+understanding of how urban shade trees affect the carbon budget, and
+it could have major implications for tree planting programs in cool
 climates.
 
 \pagebreak
@@ -95,30 +95,10 @@ not mentioned in the literature.  In an extensive review of the effect
 of the urban forest on CO_2 emissions, cite:weissert_etal_2014 did not
 consider that trees could increase ACE.  In a paper critical of many
 ecosystem services provided by trees, cite:pataki_etal_2011
-nevertheless state that trees reduce energy use and ACE.  
-
-Our work here builds on past simulation studies and uses empirical
-energy use data from a city to demonstrate that
-trees may actually increase ACE in cool climate cities.
-
-
-
-likely cool climate places where trees
-generally increase ACE.  Consider places like the northern parts of
-the US where air conditioning is not used in the summer and heating is
-required for much of the year.  If shade from trees increases building
-heat use more than the wind speed reduction from trees decreases
-building heat use, then planting trees could increase heating loads
-while having no effect on cooling requirements.
-
-
-
-
-builds on past simulation studies 
-
-
-OUr work builds past simulation studies and provides case study to
-show that this may not be the case in cool parts of the country.
+nevertheless state that trees reduce energy use and ACE.  Our work
+here builds on past simulation studies and uses empirical energy use
+data from a city to demonstrate that trees may actually increase ACE
+in cool climate cities.
 
 * Previous research
 
@@ -370,6 +350,14 @@ existing, tree cover, their work suggests that many large cities
 especially in New England, the Northwest, the Mountains and the Upper
 Midwest would need to carefully consider the C implications of large
 tree planting programs.  
+
+the 2002 paper
+"Shade trees reduce building
+energy use and CO_2 emissions from power plants"
+
+this is on average
+
+it seems the nuance is known that it could exist 
 
 #+name: fig:akbari_konopacki_2005
 #+caption: Each census tract in the conterminous US shaded by magnitude of building C emissions effect of trees planted to west and south of a pre-1980's home and increasing roof albedo.  Differences in regional emission factors (C/kWh) cause deviations from climate trend.  New England has especially high ACE for the climate because their electricity is cleaner (low C/kWh).  About 40% of Americans live in places where trees increase ACE. Model based on cite:akbari_konopacki_2005.
