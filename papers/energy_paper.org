@@ -309,13 +309,9 @@ still the heating season in Madison.
 
 The lack of clear mechanisms to understand each of the coefficients is
 one the the shortcomings of this observational study.  While the
-overall association between tree cover and ACE is clear, 
-
-
-finish this secion with something like: when the tree cover is aggregated the
-association is clear, but when the relationship is parsed further it's
-less so.  See what I wrote the the reviewer.
-
+overall association between tree cover and ACE is clear, uncertainty
+increases when distance and direction of tree cover are considered.
+Where our coefficients disagree with past studies more work needed.
 
 ** Comparing to past work
 
