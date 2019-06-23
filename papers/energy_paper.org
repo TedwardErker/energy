@@ -98,8 +98,8 @@ ecosystem services provided by trees, cite:pataki_etal_2011
 nevertheless state that trees reduce energy use and ACE.  
 
 Our work here builds on past simulation studies and uses empirical
-energy use data from a city in a cool climate to demonstrate that
-trees ....
+energy use data from a city to demonstrate that
+trees may actually increase ACE in cool climate cities.
 
 
 
