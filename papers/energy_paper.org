@@ -268,19 +268,19 @@ magnitude larger than the transfer from the lithosphere to atmosphere.
 * Discussion
 ** Interpreting Tree Effects
 
-In the cool climate city of Madison, with 7283 HDD and 597 CDD and a
-electricity emission factor of 0.206 kg C / kwh, the effect of trees
-on ACE was clear: trees increased ACE from gas use more than they
-decreased ACE from electricity use, resulting in a net increase in
-ACE.  
+In the cool climate city of Madison with 7283 heating degree days,
+597 cooling degree days and a electricity emission factor of 0.206 kg
+C / kwh, the effect of trees on ACE was clear: trees increased ACE
+from gas use more than they decreased ACE from electricity use,
+resulting in a net increase in ACE.
 
-According to past simulation studies, if shade were the only effect on
+According to past studies, if shade were the only effect on
 ACE (winter wind speed reduction was not included) trees in cool
 climate cities would cause an increase in ACE.  Since we found an
 increase in ACE with increased tree cover this suggests that
 shading was the most important process and that whatever gas savings
 trees may have provided in winter by reducing wind speeds was swamped
-by the penalty in reduced solar radiation.
+by the penalty of reduced solar radiation.
 
 By separating tree cover into different locations, it appeared that
 for the most regions, the beneficial effects of trees on electricity
@@ -298,7 +298,13 @@ Trees in the near west and near north had the weakest gas penalty,
 which may have been due to the savings they provided by reducing
 wind speed. Somewhat surprising was the weakness of the estimated
 electricity savings of trees in the near west, which all simulations
-have predicted has the strongest effect.
+have predicted has the strongest effect.  Also surprising was that
+trees to the north are associated with an increase in gas use.  Since
+tree cover is measured north of each building's centroid, it could be
+there there is still 
+
+No
+other studies predict this
 
 
 Trees to the north and gas use.......  doesn't make much sense, and
@@ -309,6 +315,10 @@ part of the heating season and there are some evergreen trees that can
 transpire for much of year.  
 
 More here a la reviewer 3
+
+finish this secion with something like: when the tree cover is aggregated the
+association is clear, but when the relationship is parsed further it's
+less so.  See what I wrote the the reviewer.
 
 
 ** Comparing to past work

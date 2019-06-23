@@ -1768,3 +1768,43 @@ have moved the field forwards.
 
 #+END_QUOTE
 
+
+* old intro bit
+:PROPERTIES:
+:ARCHIVE_TIME: 2019-06-23 Sun 13:45
+:ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+:ARCHIVE_OLPATH: Introduction
+:ARCHIVE_CATEGORY: energy_paper
+:END:
+likely cool climate places where trees
+generally increase ACE.  Consider places like the northern parts of
+the US where air conditioning is not used in the summer and heating is
+required for much of the year.  If shade from trees increases building
+heat use more than the wind speed reduction from trees decreases
+building heat use, then planting trees could increase heating loads
+while having no effect on cooling requirements.
+
+builds on past simulation studies 
+
+
+OUr work builds past simulation studies and provides case study to
+show that this may not be the case in cool parts of the country.
+
+
+* COMMENT What about evapotranspirative cooling? the issue of scale.
+:PROPERTIES:
+:ARCHIVE_TIME: 2019-06-23 Sun 14:14
+:ARCHIVE_FILE: ~/git/energy/papers/energy_paper.org
+:ARCHIVE_OLPATH: Discussion/Future work
+:ARCHIVE_CATEGORY: energy_paper
+:END:
+What about evapotranspirative cooling?  We may have a bit of a scale
+issue here.  I doubt we'd have enough independent observations at the
+scale necessary to assess this.  Also the newer houses with fewer
+trees still have grass (maybe even better irrigated) and they are
+closer to the rural areas (farther from the built up interior of the
+city).  I think the results show that we don't see at the local scale
+an effect that is stronger than the detrimental effect on heating.
+But the larger scale question is still oppen.  Also, the itree model
+has the trees having a local scale effect.
+
