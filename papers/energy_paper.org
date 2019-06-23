@@ -36,10 +36,9 @@ energy use. This is driven primarily by near east (< 20m from
 building) tree cover. Further analysis of urban areas in the US shows
 that this is likely the case in cool climates throughout the country,
 encompassing approximately 39% of the US population and 62% of its
-area (56%, excluding Alaska). Our work adds geographic nuance to the
-understanding of how urban shade trees affect the carbon budget, and
-it could have major implications for tree planting programs in cool
-climates.
+area (56%, excluding Alaska). Our work adds geographic nuance to how
+urban shade trees affect the carbon budget, and it could have major
+implications for tree planting programs in cool climates.
 
 \pagebreak
 
@@ -156,7 +155,7 @@ USFS studies assume: lookup tables for the effect of tree shade on
 building energy use are reliable (even though they may deviate from
 more detailed simulations by up to 10%, citealp:simpson_2002); wind
 reduction only affects heating use in the winter, even though we know
-cooling use is also affected, and they also use an overfit summertime
+cooling use is also affected; and they also use an overfit summertime
 leaf-on equation from cite:heisler_1990. Evergreen trees are modeled
 as if they are windbreaks for rural farmhouses in winter, even in suburban
 neighborhoods where other buildings and trees already block
@@ -191,7 +190,6 @@ approximately 32 thousand single family residential homes and built a
 regression model between the amount of tree cover near each house and
 the C produced from electricity and natural gas use, controlling for
 other factors such as building characteristics.
-
 
 #+name:soltice_shadow_building
 #+attr_latex: :height 8in
@@ -276,15 +274,13 @@ on ACE was clear: trees increased ACE from gas use more than they
 decreased ACE from electricity use, resulting in a net increase in
 ACE.  
 
-In simulation studies, if shade were the only effect on ACE
-(winter wind speed reduction was not included) trees in cool climate
-cities would cause an increase in ACE.  Since we found an increase in
-ACE with increased tree cover
-
-This result suggests that shading was the most important process
-and that whatever gas savings trees may have provided in winter by
-reducing wind speeds was swamped by the penalty in reduced solar
-radiation.
+According to past simulation studies, if shade were the only effect on
+ACE (winter wind speed reduction was not included) trees in cool
+climate cities would cause an increase in ACE.  Since we found an
+increase in ACE with increased tree cover this suggests that
+shading was the most important process and that whatever gas savings
+trees may have provided in winter by reducing wind speeds was swamped
+by the penalty in reduced solar radiation.
 
 By separating tree cover into different locations, it appeared that
 for the most regions, the beneficial effects of trees on electricity
@@ -303,6 +299,7 @@ which may have been due to the savings they provided by reducing
 wind speed. Somewhat surprising was the weakness of the estimated
 electricity savings of trees in the near west, which all simulations
 have predicted has the strongest effect.
+
 
 Trees to the north and gas use.......  doesn't make much sense, and
 could be wrong.  But consider that over buildings is included, so
@@ -475,33 +472,20 @@ location of Madison near the boundary that cite:akbari_konopacki_2005
 identified between trees being a sink and a source is useful, but more
 cities are needed to empirically determine this boundary.
 
-Our work reveals a blind spot in urban forest ecosystem studies.  In
-an extensive review of the effect of the urban forest on CO_2
-emissions, cite:weissert_etal_2014 did not consider that trees could
-increase ACE.  In a paper critical of many ecosystem services provided
-by trees, cite:pataki_etal_2011 nevertheless state that trees reduce energy
-use and ACE.  While this may be true in most of the US, and the
-potential ACE reduction is larger than the potential ACE increase, it
-ignores geographical nuance citep:akbari_konopacki_2005.  In many ways
-it is not surprising, given the climatic diversity across the country,
-that the effects of trees on ACE might also vary and that our
-prescriptions for how to plant trees to minimize ACE could be
-different between Los Angeles and New York City.  However our study is
-only the first study to use both gas and electric energy use
-observations, and the first study of its kind in a cool climate.  Much
-more work with observed energy use is needed to identify the border
-between atmospheric C sink and source.  Planners and designers should 
-
-*** COMMENT What about evapotranspirative cooling? the issue of scale.
-What about evapotranspirative cooling?  We may have a bit of a scale
-issue here.  I doubt we'd have enough independent observations at the
-scale necessary to assess this.  Also the newer houses with fewer
-trees still have grass (maybe even better irrigated) and they are
-closer to the rural areas (farther from the built up interior of the
-city).  I think the results show that we don't see at the local scale
-an effect that is stronger than the detrimental effect on heating.
-But the larger scale question is still oppen.  Also, the itree model
-has the trees having a local scale effect.
+Our work reveals a blind spot in urban forest ecosystem studies.  Many
+studies only report that trees reduce ACE
+citep:pataki_etal_2011,weissert_etal_2014. While this may be true in
+most of the US, and the potential ACE reduction is larger than the
+potential ACE increase, it ignores geographic variation
+citep:akbari_konopacki_2005.  In many ways it is not surprising, given
+the climatic diversity across the country, that the effects of trees
+on ACE might also vary and that our prescriptions for how to plant
+trees to minimize ACE could be different between Los Angeles and New
+York City.  However our study is only the first study to use both gas
+and electric energy use observations, and the first study of its kind
+in a cool climate.  Much more work with observed energy use is needed
+to identify the border between atmospheric C sink and source.
+Planners and designers should
 
 * Conclusion
 Using observed energy use data, we have shown that trees near
