@@ -691,9 +691,6 @@ Electric; Chris Kucharik; Jun Zhu; NASA Fellowship Award NNX15AP02H,
 Wisconsin DNR Contract 37000-0000002995
 
 
-cite:mcpherson_simpson_99
-
-cite:heisler_1990
 * COMMENT diff
 
 #+BEGIN_SRC sh
