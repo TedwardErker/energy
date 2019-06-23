@@ -46,8 +46,8 @@ climates.
 * Introduction
 
 Two global trends of the 21st century, climate change and increasing
-urbanization, have deepened our need to make cities more sustainable,
-and urban trees are championed as a means to that end. Several large
+urbanization, have deepened our need to make cities more sustainable.
+Urban trees are often championed as a means to that end. Several large
 cities in the U.S. have recently committed to large tree planting
 programs (see Million Trees New York City and Million Trees Los
 Angeles). Spending hundreds of millions of dollars, these cities hope
@@ -56,14 +56,14 @@ building energy use and the associated carbon (*C*) emissions from
 power plants, will outweigh the cost citep:young_2011.
 
 A single urban tree has a much stronger impact on the carbon cycle
-than a non-urban counterpart because an urban tree induces or
-reduces more C emitting human behaviors than a rural one does.  Both
-trees sequester carbon from the atmosphere, but the urban tree
-requires more management (planting, watering, pruning, removal,
-chipping) and, by modifying the microclimate, it can alter building
-energy use and the associated C emissions (*ACE*) from power plants.
+than a non-urban counterpart because an urban tree induces or reduces
+more C emitting human behaviors than a rural one does.  Both trees
+sequester C from the atmosphere, but the urban tree requires more
+management (planting, watering, pruning, removal, chipping) and, by
+modifying the microclimate, it can alter building energy use and the
+associated C emissions (*ACE*) from power plants.
 
-Trees primarily alter micro climates by 1) shading, 2) reducing wind
+Trees primarily alter microclimates by 1) shading, 2) reducing wind
 speed, and 3) cooling via transpiration.  With the exception of
 transpirative cooling, which is mostly active in summer, these effects
 can both increase or decrease ACE.  Shading to the west of buildings
