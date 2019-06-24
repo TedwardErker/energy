@@ -683,7 +683,6 @@ Class at UW-Madison for comments on early drafts; Madison Gas and
 Electric; Chris Kucharik; Jun Zhu; NASA Fellowship Award NNX15AP02H,
 Wisconsin DNR Contract 37000-0000002995
 
-
 * COMMENT diff
 
 #+BEGIN_SRC sh
@@ -1459,9 +1458,7 @@ pdflatex -interaction nonstopmode paper_diff.tex
 | r/sftt1200.pfb>                                                                 |                                                                          |                                                     |                                    |                                   |            |                                         |             |              |                    |                   |                            |
 | Output                                                                          | written                                                                  | on                                                  | paper_diff.pdf                     | (27                               | pages,     | 1543819                                 | bytes).     |              |                    |                   |                            |
 | Transcript                                                                      | written                                                                  | on                                                  | paper_diff.log.                    |                                   |            |                                         |             |              |                    |                   |                            |
-
-
-*  Bibtex entries
+*  COMMENT Bibtex entries
 
 #+BEGIN_SRC bibtex :tangle references.bib
 @article{young_2011,
