@@ -78,7 +78,7 @@ citep:huang_e_1990.  The strength of the effect of a tree on ACE
 attenuates with distance to a building.  Trees far from a house have
 little affect on ACE via shading and wind reduction, but they likely
 affect ACE via evapotranspiration and the associated reduction in
-temperature cite:ziter_e_2019.
+temperature citep:ziter_e_2019.
 
 Whether the net effect of trees is to increase or decrease ACE depends
 on the balance of beneficial and detrimental effects on heating and
@@ -97,8 +97,8 @@ consider that trees could increase ACE.  In a paper critical of many
 ecosystem services provided by trees, cite:pataki_etal_2011
 nevertheless state that trees reduce energy use and ACE.  Our work
 here builds on past simulation studies and uses empirical energy use
-data from a city to demonstrate that trees may actually increase ACE
-in cool climate cities.
+data from thousands of houses in a city to demonstrate that trees may
+actually increase ACE in cool climate cities.
 
 * Previous research
 
