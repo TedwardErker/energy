@@ -503,7 +503,6 @@ for more research.  We add critical geographic nuance to research that
 could have major implications for tree planting programs in cool
 climates.
 
-
 * Methods
 ** Building Energy Use
 In April 2016, we obtained the annual energy use summary table (April
