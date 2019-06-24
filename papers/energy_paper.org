@@ -330,34 +330,28 @@ cite:akbari_konopacki_2005 developed a method to predict the effect of
 a tree planting program and increasing roof albedo for any city in the
 U.S. Figure [[fig:akbari_konopacki_2005]] illustrates an application of
 their method to every census tract in the conterminous US for
-pre-1980s houses using updated energy emission factors.  Clearly
-climate largely drives the relationship between ACE and trees at large
-scales, but there is significant regional variation due to differences
-in electricity C emission factors.  For example, despite its cool
-climate, trees in Chicago reduce ACE because the electricity reduction
-benefit is larger with more C per kwh.  
+pre-1980s houses using updated energy emission factors.  They identify
+places where trees increase ACE and others where trees decrease ACE,
+however it is most often cited for the average effect: "Shade trees
+reduce building energy use and CO_2 emissions from power plants", the
+title of from Akbari's 2002 paper.  Clearly climate largely drives the
+relationship between ACE and trees at large scales, but there is
+significant regional variation due to differences in electricity C
+emission factors.  Trees are more beneficial in places with "dirtier"
+(more C per kWh) electricity and less beneficial in places with
+"cleaner" (less C per kWh) electricity.  For example, despite its cool
+climate, trees in Chicago reduce ACE because the electricity has more
+C per kWh and therefore the electricity reduction benefit of trees
+leads to a greater reduction in C than in places with cleaner
+electricity.
 
-while 
-
-across
-the rust 
-
-About 40% of
-the US population live in areas where the cite:akbari_konopacki_2005
-model predicts that trees increase C emissions.  While their methods
-were limited as mentioned above, and they modeled theoretical, not
-existing, tree cover, their work suggests that many large cities
-especially in New England, the Northwest, the Mountains and the Upper
-Midwest would need to carefully consider the C implications of large
-tree planting programs.  
-
-the 2002 paper
-"Shade trees reduce building
-energy use and CO_2 emissions from power plants"
-
-this is on average
-
-it seems the nuance is known that it could exist 
+About 40% of the US population live in areas where the
+cite:akbari_konopacki_2005 model predicts that trees increase C
+emissions.  While their methods were limited as mentioned above, and
+they modeled theoretical, not existing, tree cover, their work
+suggests that many large cities especially in New England, the
+Northwest, the Mountains and the Upper Midwest would need to carefully
+consider the C implications of large tree planting programs.
 
 #+name: fig:akbari_konopacki_2005
 #+caption: Each census tract in the conterminous US shaded by magnitude of building C emissions effect of trees planted to west and south of a pre-1980's home and increasing roof albedo.  Differences in regional emission factors (C/kWh) cause deviations from climate trend.  New England has especially high ACE for the climate because their electricity is cleaner (low C/kWh).  About 40% of Americans live in places where trees increase ACE. Model based on cite:akbari_konopacki_2005.
