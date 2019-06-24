@@ -486,19 +486,21 @@ Planners and designers should
 
 * Conclusion
 Using observed energy use data, we have shown that trees near
-residential houses in Madison, WI increase energy use and associated C
-emissions and near east tree cover has the strongest net effect.  Extending
-past simulation studies, we show that this is likely the case for a
-large area of the US.  The magnitude and direction of the effect is dependent on
-tree location relative to buildings, climate, building
+residential houses in Madison, WI are associated with increased energy
+use and ACE. Near east tree cover appears to have the strongest net
+relationship.  Extending past simulation studies, we show that this is
+likely the case for a large area of the US and cool climate regions
+generally.  The magnitude and direction of the association is
+dependent on tree location relative to buildings, climate, building
 characteristics, occupant behavior, and the C content of electricity.
 Disagreements between our results and past work may be due to how wind
 effects are modeled and much more work is needed to better understand
-this process.  We add critical geographic nuance to research that
+this process.  While we do not invalidate past simulation studies of
+how trees affect building energy use and ACE, our empirical results
+raise questions about simulation assumptions and highlight the need
+for more research.  We add critical geographic nuance to research that
 could have major implications for tree planting programs in cool
 climates.
-
-Add that I don't necessarily invalidate other studies (a la reviewer 3)
 
 
 * Methods

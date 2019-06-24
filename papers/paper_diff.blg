@@ -16,45 +16,45 @@ Warning--empty journal in nowak_e_02
 Warning--empty journal in epa_a2_2017
 Warning--there's a number but no volume in epa_a2_2017
 Warning--empty journal in USEIA_2009
-You've used 37 entries,
+You've used 38 entries,
             1940 wiz_defined-function locations,
-            693 strings with 10340 characters,
-and the built_in function-call counts, 14713 in all, are:
-= -- 1396
-> -- 631
+            698 strings with 10528 characters,
+and the built_in function-call counts, 15118 in all, are:
+= -- 1431
+> -- 659
 < -- 22
-+ -- 226
-- -- 212
-* -- 1394
-:= -- 2578
-add.period$ -- 109
-call.type$ -- 37
-change.case$ -- 288
-chr.to.int$ -- 37
-cite$ -- 45
-duplicate$ -- 507
-empty$ -- 1007
-format.name$ -- 269
-if$ -- 2813
++ -- 238
+- -- 222
+* -- 1431
+:= -- 2654
+add.period$ -- 112
+call.type$ -- 38
+change.case$ -- 298
+chr.to.int$ -- 38
+cite$ -- 46
+duplicate$ -- 520
+empty$ -- 1027
+format.name$ -- 280
+if$ -- 2885
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 35
-newline$ -- 183
-num.names$ -- 111
-pop$ -- 232
+missing$ -- 36
+newline$ -- 188
+num.names$ -- 114
+pop$ -- 242
 preamble$ -- 1
-purify$ -- 291
+purify$ -- 301
 quote$ -- 0
-skip$ -- 377
+skip$ -- 387
 stack$ -- 0
-substring$ -- 1040
-swap$ -- 70
+substring$ -- 1054
+swap$ -- 72
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 220
+type$ -- 226
 warning$ -- 8
-while$ -- 106
+while$ -- 108
 width$ -- 0
-write$ -- 465
+write$ -- 477
 (There was 1 error message)
