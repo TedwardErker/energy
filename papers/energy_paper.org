@@ -307,13 +307,12 @@ that there could be some transpirative cooling occuring during the
 early spring and late fall when trees have their leaves and it is
 still the heating season in Madison.  
 
-The inability to discern causation from this observational study
-
-The lack of clear mechanisms to understand each of the coefficients is
-one the the shortcomings of this observational study.  While the
-overall association between tree cover and ACE is clear, uncertainty
-increases when distance and direction of tree cover are considered.
-Where our coefficients disagree with past studies more work needed.
+The inability to discern causation and identify clear mechanisms is
+one of the limitations of this observational study.  While the overall
+association between tree cover and ACE is clear, uncertainty increases
+when distance and direction of tree cover are considered.  Where our
+coefficients disagree with past studies, they should be considered
+cautiously.
 
 ** Comparing to past work
 
