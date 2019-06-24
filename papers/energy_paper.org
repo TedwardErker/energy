@@ -331,11 +331,11 @@ a tree planting program and increasing roof albedo for any city in the
 U.S. Figure [[fig:akbari_konopacki_2005]] illustrates an application of
 their method to every census tract in the conterminous US for
 pre-1980s houses using updated energy emission factors.  Clearly
-climate largely drives the relationship between ACE and
-trees at large scales, but there is significant regional variation due
-to differences in electricity C emission factors.  For example,
-despite its cool climate, trees in Chicago reduce ACE because the
-electricity reduction benefit is larger with more C per kwh.
+climate largely drives the relationship between ACE and trees at large
+scales, but there is significant regional variation due to differences
+in electricity C emission factors.  For example, despite its cool
+climate, trees in Chicago reduce ACE because the electricity reduction
+benefit is larger with more C per kwh.  
 
 while 
 
