@@ -17,13 +17,6 @@
 
 #+RESULTS:
 
-* Summary of Changes
-- 3's comments about big picture.  My stance should be more
-  collaborative.  highlight the complementary nature of my work to the
-  modeling approaches.
-- I need to show that many papers 
-
-
 * Response to Reviewer Comments
 
 ** Referee: 1 
