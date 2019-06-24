@@ -333,18 +333,18 @@ U.S. Figure [[fig:akbari_konopacki_2005]] illustrates an application of
 their method to every census tract in the conterminous US for
 pre-1980s houses using updated energy emission factors.  They identify
 places where trees increase ACE and others where trees decrease ACE,
-however it is most often cited for the average effect: "Shade trees
-reduce building energy use and CO_2 emissions from power plants", the
-title of from Akbari's 2002 paper.  Clearly climate largely drives the
-relationship between ACE and trees at large scales, but there is
-significant regional variation due to differences in electricity C
-emission factors.  Trees are more beneficial in places with "dirtier"
-(more C per kWh) electricity and less beneficial in places with
-"cleaner" (less C per kWh) electricity.  For example, despite its cool
-climate, trees in Chicago reduce ACE because the electricity has more
-C per kWh and therefore the electricity reduction benefit of trees
-leads to a greater reduction in C than in places with cleaner
-electricity.
+however they are most often cited for the average effect found: "Shade
+trees reduce building energy use and CO_2 emissions from power
+plants", the title of from Akbari's 2002 paper.  Clearly climate
+largely drives the relationship between ACE and trees at large scales,
+but there is significant regional variation due to differences in
+electricity C emission factors.  Trees are more beneficial in places
+with "dirtier" (more C per kWh) electricity and less beneficial in
+places with "cleaner" (less C per kWh) electricity.  For example,
+despite its cool climate, trees in Chicago reduce ACE because the
+electricity has more C per kWh and therefore the electricity reduction
+benefit of trees leads to a greater reduction in C than in places with
+cleaner electricity.
 
 About 40% of the US population live in areas where the
 cite:akbari_konopacki_2005 model predicts that trees increase C
