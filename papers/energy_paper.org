@@ -91,8 +91,9 @@ which varies depending on the fuel mix in the electrical grid.
 Our current understanding of how trees affect building energy use and
 ACE suggests that there are contexts in which trees may increase ACE.
 But despite this potentially detrimental effect of trees, it is often
-not mentioned in the literature.  In an extensive review of the effect
-of the urban forest on CO_2 emissions, cite:weissert_etal_2014 did not
+not mentioned in the literature (a gray literature exception is
+cite:nowak_etal_2010).  In an extensive review of the effect of the
+urban forest on CO_2 emissions, cite:weissert_etal_2014 did not
 consider that trees could increase ACE.  In a paper critical of many
 ecosystem services provided by trees, cite:pataki_etal_2011
 nevertheless state that trees reduce energy use and ACE.  Our work
