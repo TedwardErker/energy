@@ -1459,7 +1459,8 @@ pdflatex -interaction nonstopmode paper_diff.tex
 | r/sftt1200.pfb>                                                                 |                                                                          |                                                     |                                    |                                   |            |                                         |             |              |                    |                   |                            |
 | Output                                                                          | written                                                                  | on                                                  | paper_diff.pdf                     | (27                               | pages,     | 1543819                                 | bytes).     |              |                    |                   |                            |
 | Transcript                                                                      | written                                                                  | on                                                  | paper_diff.log.                    |                                   |            |                                         |             |              |                    |                   |                            |
-*  COMMENT Bibtex entries
+
+*  Bibtex entries
 
 #+BEGIN_SRC bibtex :tangle references.bib
 @article{young_2011,
@@ -1474,6 +1475,8 @@ pdflatex -interaction nonstopmode paper_diff.tex
   url =          {https://doi.org/10.1080/01944363.2011.616996},
   DATE_ADDED =   {Mon Jul 9 11:17:32 2018},
 }
+
+
 
 
 
@@ -1494,6 +1497,8 @@ pdflatex -interaction nonstopmode paper_diff.tex
 
 
 
+
+
 @inproceedings{huang_e_1990,
   title={The wind-shielding and shading effects of trees on residential heating and cooling requirements},
   author={Huang, Y Joe and Akbari, Hashem and Taha, Heider},
@@ -1504,6 +1509,8 @@ pdflatex -interaction nonstopmode paper_diff.tex
   url ={https://pubarchive.lbl.gov/islandora/object/ir%3A90282},
   date_added = {Tue Jun 19 16:44:29 2018},
 }
+
+
 
 
 
@@ -1526,6 +1533,21 @@ pdflatex -interaction nonstopmode paper_diff.tex
 
 
 
+
+
+@article{nowak_etal_2010,
+  title={Assessing urban forest effects and values, Chicago's urban forest},
+  author={Nowak, David J and Robert III, E and Crane, Daniel E and Stevens, Jack C and Fisher, Cherie Leblanc},
+  year={2010},
+  journal = {Northern Research Station Resource Bull.},
+  volume = {NRS-37},
+  url = {https://www.nrs.fs.fed.us/pubs/rb/rb_nrs37.pdf}
+}
+
+
+
+
+
 @article{weissert_etal_2014,
   author =       {L.F. Weissert and J.A. Salmond and L. Schwendenmann},
   title =        {A Review of the Current Progress in Quantifying the
@@ -1540,6 +1562,8 @@ pdflatex -interaction nonstopmode paper_diff.tex
   url =          {https://doi.org/10.1016/j.uclim.2014.01.002},
   DATE_ADDED =   {Tue Mar 7 09:11:53 2017},
 }
+
+
 
 
 
@@ -1563,6 +1587,8 @@ pdflatex -interaction nonstopmode paper_diff.tex
 
 
 
+
+
 @article{akbari_2002,
   author =       {H. Akbari},
   title =        {Shade Trees Reduce Building Energy Use and \ch{CO_2}
@@ -1579,12 +1605,16 @@ pdflatex -interaction nonstopmode paper_diff.tex
 
 
 
+
+
 @article{mcpherson_simpson_99,
   title={Carbon dioxide reduction through urban forestry},
   author={McPherson, E Gregory and Simpson, James R},
   journal={Gen. Tech. Rep. PSW-171, USDA For. Serv., Pacific Southwest Research Station, Albany, CA},
   year={1999}
 }
+
+
 
 
 
@@ -1597,6 +1627,8 @@ pdflatex -interaction nonstopmode paper_diff.tex
   year={2017},
   publisher={Elsevier}
 }
+
+
 
 
 
@@ -1619,6 +1651,8 @@ pdflatex -interaction nonstopmode paper_diff.tex
 
 
 
+
+
 @article{akbari_e_1997,
   title={Peak power and cooling energy savings of shade trees},
   author={Akbari, Hashem and Kurn, Dan M and Bretz, Sarah E and Hanford, James W},
@@ -1629,6 +1663,8 @@ pdflatex -interaction nonstopmode paper_diff.tex
   year={1997},
   publisher={Elsevier}
 }
+
+
 
 
 
@@ -1648,6 +1684,8 @@ pdflatex -interaction nonstopmode paper_diff.tex
 
 
 
+
+
 @article{dewalle_e_1983,
 author = {DeWalle, David R. and Heisler, Gordon M. and Jacobs, Robert E.},
 title = {Forest Home Sites Influence Heating and Cooling Energy},
@@ -1663,6 +1701,8 @@ eprint = {/oup/backfile/content_public/journal/jof/81/2/10.1093_jof_81.2.84/2/jo
 
 
 
+
+
 @article{parker_1983,
   title={Landscaping to reduce the energy used in cooling buildings},
   author={Parker, John H},
@@ -1673,6 +1713,8 @@ eprint = {/oup/backfile/content_public/journal/jof/81/2/10.1093_jof_81.2.84/2/jo
   year={1983},
   publisher={Society of American Foresters}
 }
+
+
 
 
 
@@ -1694,6 +1736,8 @@ eprint = {/oup/backfile/content_public/journal/jof/81/2/10.1093_jof_81.2.84/2/jo
 
 
 
+
+
 @article{akbari_konopacki_2005,
   author =       {H. Akbari and S. Konopacki},
   title =        {Calculating Energy-Saving Potentials of Heat-Island
@@ -1711,6 +1755,8 @@ eprint = {/oup/backfile/content_public/journal/jof/81/2/10.1093_jof_81.2.84/2/jo
 
 
 
+
+
 @inproceedings{heisler_1990,
   title={Mean wind speed below building height in residential neighborhoods with different tree densities},
   author={Heisler, Gordon M},
@@ -1720,6 +1766,8 @@ eprint = {/oup/backfile/content_public/journal/jof/81/2/10.1093_jof_81.2.84/2/jo
   number = 1,
   url = {https://www.nrs.fs.fed.us/pubs/jrnl/1990/nrs_1990_heisler_001.pdf},
 }
+
+
 
 
 
@@ -1742,6 +1790,8 @@ eprint = {/oup/backfile/content_public/journal/jof/81/2/10.1093_jof_81.2.84/2/jo
 
 
 
+
+
 @article{simpson_2002,
   author =       {James R Simpson},
   title =        {Improved Estimates of Tree-Shade Effects on
@@ -1758,6 +1808,8 @@ eprint = {/oup/backfile/content_public/journal/jof/81/2/10.1093_jof_81.2.84/2/jo
 
 
 
+
+
 @article{USEIA_2009,
 author = {U.S. Department of Energy, Energy Information Administration},
 title = {Wisconsin Household Energy Report},
@@ -1767,12 +1819,16 @@ url = {https://www.eia.gov/consumption/residential/reports/2009/state_briefs/pdf
 
 
 
+
+
 @article{thayer_maeda_1985,
   title={Measuring street tree impact on solar performance: a five-climate computer modeling study},
   author={Thayer Jr, Robert L and Maeda, Bruce T},
   journal={Journal of arboriculture (USA)},
   year={1985}
 }
+
+
 
 
 
@@ -1787,6 +1843,8 @@ url = {https://www.eia.gov/consumption/residential/reports/2009/state_briefs/pdf
   year={1988},
   publisher={Elsevier}
 }
+
+
 
 
 
@@ -1807,6 +1865,8 @@ url = {https://www.eia.gov/consumption/residential/reports/2009/state_briefs/pdf
 
 
 
+
+
 @article{akbari_taha_1992,
 title = "The impact of trees and white surfaces on residential heating and cooling energy use in four Canadian cities",
 journal = "Energy",
@@ -1819,6 +1879,8 @@ doi = "https://doi.org/10.1016/0360-5442(92)90063-6",
 url = "http://www.sciencedirect.com/science/article/pii/0360544292900636",
 author = "Hashem Akbari and Haider Taha"
 }
+
+
 
 
 
@@ -1839,11 +1901,15 @@ author = "Hashem Akbari and Haider Taha"
 
 
 
+
+
 @article{nowak_e_02,
   title={Effects of urban tree management and species selection on atmospheric carbon dioxide},
   author={Nowak, David J and Stevens, Jack C and Sisinni, Susan M and Luley, Christopher J},
   year={2002}
 }
+
+
 
 
 
@@ -1864,15 +1930,6 @@ author = "Hashem Akbari and Haider Taha"
 
 
 
-@article{nowak_etal_2010,
-  title={Assessing urban forest effects and values, Chicago's urban forest},
-  author={Nowak, David J and Robert III, E and Crane, Daniel E and Stevens, Jack C and Fisher, Cherie Leblanc},
-  year={2010},
-  journal = {Northern Research Station Resource Bull.},
-  volume = {NRS-37},
-  url = {https://www.nrs.fs.fed.us/pubs/rb/rb_nrs37.pdf}
-}
-
 
 
 @article{roy_etal_2012,
@@ -1892,6 +1949,8 @@ author = "Hashem Akbari and Haider Taha"
 
 
 
+
+
 @article{mcpherson_e_05,
   title={Municipal forest benefits and costs in five US cities},
   author={McPherson, Greg and Simpson, James R and Peper, Paula J and Maco, Scott E and Xiao, Qingfu},
@@ -1905,6 +1964,8 @@ author = "Hashem Akbari and Haider Taha"
 
 
 
+
+
 @misc{eGRID,
   author        = "{Emissions \& Generation Resource Integrated Database}",
   organization  = "United States Environmental Protection Agency",
@@ -1912,6 +1973,8 @@ author = "Hashem Akbari and Haider Taha"
   url           = "https://www.epa.gov/energy/emissions-generation-resource-integrated-database-egrid-questions-and-answers",
   note          = "Accessed Jul. 24, 2018",
 }
+
+
 
 
 
@@ -1925,12 +1988,16 @@ author = "Hashem Akbari and Haider Taha"
 
 
 
+
+
 @article{erker_e_2018,
   author =       {Tedward Erker and Philip A. Townsend and Lei Wang and Laura Lorentz and Andrew Stoltman},
   title =        {A Statewide Urban Tree Canopy Mapping Method},
   journal =      {Remote Sensing of Environment (in review)},
   year =         2018,
 }
+
+
 
 
 
@@ -1950,6 +2017,8 @@ author = "Hashem Akbari and Haider Taha"
 
 
 
+
+
 @book{gelman_hill_2007,
   title={Data Analysis Using Regression and Multilevel/Hierarchical Models},
   author={Gelman, A. and Hill, J.},
@@ -1960,6 +2029,8 @@ author = "Hashem Akbari and Haider Taha"
   year={2007},
   publisher={Cambridge University Press}
 }
+
+
 
 
 
@@ -1979,11 +2050,15 @@ author = "Hashem Akbari and Haider Taha"
 
 
 
+
+
 @misc{mcpherson_e_2016,
   title={Urban tree database and allometric equations},
   author={McPherson, E Gregory and van Doorn, Natalie S and Peper, Paula J},
   year=2016
 }
+
+
 
 
 
@@ -1994,6 +2069,8 @@ author = "Hashem Akbari and Haider Taha"
   url           = "https://www.baruch.cuny.edu/confluence/display/geoportal/US+Census+Population+Centroids",
   note          = "Accessed Jul. 24, 2018",
 }
+
+
 
 
 
@@ -2011,7 +2088,5 @@ author = "Hashem Akbari and Haider Taha"
   url =          {https://doi.org/10.1175/bams-d-11-00197.1},
   DATE_ADDED =   {Wed Jul 25 12:49:02 2018},
 }
-
-
 
 #+END_SRC
