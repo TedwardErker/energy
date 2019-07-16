@@ -258,14 +258,15 @@ north and near west.
 #+caption: Effect of typical tree cover on a typical building's C emissions.
 [[file:../figs/mediantree_netC_effect_spatial_l.png]]
 ** Comparing C emissions from energy use due to trees to C stored and sequestered.
-For comparison, consider a green ash tree with a crown area of
-100m^2.  This tree would store approximately 1360 kg C in above ground
-biomass and it could sequester around 34 kg C / year.  That same tree in
-the near east region of a typical house in Madison was estimated to
+For comparison, consider a green ash tree with a crown area of 100m^2.
+This tree would store approximately 1360 kg C in above ground biomass
+and it could sequester around 34 kg C / year.  That same tree in the
+near east region of a typical house in Madison was estimated to
 increase C emissions by 9.8 kg C/yr (95% CI: 6.7, 12.9).  In the near
-west the estimated effect was 1.0 kg C/yr (95% CI: -2.1, 4.1).  The
-the transfer of carbon from atmosphere to the biosphere is an order of
-magnitude larger than the transfer from the lithosphere to atmosphere.
+west the estimated effect was 1.0 kg C/yr (95% CI: -2.1, 4.1).
+Therefore, the transfer of carbon from atmosphere to the biosphere
+(sequestration) is an order of magnitude larger than the transfer from
+the lithosphere to atmosphere (emissions).
 
 * Discussion
 ** Interpreting Tree Effects
@@ -289,7 +290,7 @@ for the most regions, the beneficial effects of trees on electricity
 ACE /mostly/ canceled out the detrimental effects of trees on gas ACE,
 with the exception of the near east.  This suggests that trees to the
 east may have been responsible for most of the net increase in
-ACE. Eastern trees did not provide electricity savings since houses
+ACE. Eastern trees did not provide electricity savipngs since houses
 require less cooling in the morning hours, but still caused an
 increased gas use in winter.  This agrees with cite:donovan_Butry_2009
 who also found trees to the east had no effect on electricity use.
@@ -471,10 +472,10 @@ location of Madison near the boundary that cite:akbari_konopacki_2005
 identified between trees being a sink and a source is useful, but more
 cities are needed to empirically determine this boundary.
 
-Our work reveals a blind spot in urban forest ecosystem studies.  Many
-studies only report that trees reduce ACE
-citep:pataki_etal_2011,weissert_etal_2014. While this may be true in
-most of the US, and the potential ACE reduction is larger than the
+Our work presents more evidence for a known, but too often overlooked,
+result in urban ecology.  Many studies only report that trees reduce
+ACE citep:pataki_etal_2011,weissert_etal_2014. While this may be true
+in most of the US, and the potential ACE reduction is larger than the
 potential ACE increase, it ignores geographic variation
 citep:akbari_konopacki_2005.  In many ways it is not surprising, given
 the climatic diversity across the country, that the effects of trees
