@@ -18,6 +18,13 @@
 #+RESULTS:
 \setrunninglinenumbers \modulolinenumbers[1] \linenumbers
 
+* Affliations
+Department of Forest and Wildlife Ecology. University of
+Wisconsin-Madison 
+226 Russell Labs 
+1630 Linden Drive 
+Madison, WI 53706-1598. USA.
+
 * Abstract
 
 Urban trees are a critical part of the "green infrastructure" intended
@@ -1460,7 +1467,7 @@ pdflatex -interaction nonstopmode paper_diff.tex
 | Output                                                                          | written                                                                  | on                                                  | paper_diff.pdf                     | (27                               | pages,     | 1543819                                 | bytes).     |              |                    |                   |                            |
 | Transcript                                                                      | written                                                                  | on                                                  | paper_diff.log.                    |                                   |            |                                         |             |              |                    |                   |                            |
 
-*  Bibtex entries
+*  COMMENT Bibtex entries
 
 #+BEGIN_SRC bibtex :tangle references.bib
 @article{young_2011,
