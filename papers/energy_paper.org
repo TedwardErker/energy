@@ -19,10 +19,10 @@
 \setrunninglinenumbers \modulolinenumbers[1] \linenumbers
 
 * Affliations
-Department of Forest and Wildlife Ecology. University of
-Wisconsin-Madison 
-226 Russell Labs 
-1630 Linden Drive 
+Department of Forest and Wildlife Ecology \\
+University of Wisconsin-Madison \\
+226 Russell Labs \\
+1630 Linden Drive \\
 Madison, WI 53706-1598. USA.
 
 * Abstract
