@@ -32,14 +32,7 @@
 #+RESULTS:
 #+begin_example
 
-Attaching package: ‘tidyr’
-
-The following object is masked from ‘package:ascii’:
-
-    expand
-
-Warning message:
-package ‘stringr’ was built under R version 3.4.4
+Error in library(ascii) : there is no package called ‘ascii’
 
 Loading required package: sp
 
@@ -49,25 +42,19 @@ The following object is masked from ‘package:tidyr’:
 
     extract
 
-rgeos version: 0.3-26, (SVN revision 560)
- GEOS runtime version: 3.6.1-CAPI-1.10.1 r0 
- Linking to sp version: 1.2-5 
+rgeos version: 0.5-2, (SVN revision 621)
+ GEOS runtime version: 3.6.2-CAPI-1.10.2 
+ Linking to sp version: 1.3-1 
  Polygon checking: TRUE
 
-rgdal: version: 1.2-18, (SVN revision 718)
+rgdal: version: 1.4-6, (SVN revision 841)
  Geospatial Data Abstraction Library extensions to R successfully loaded
- Loaded GDAL runtime: GDAL 2.1.3, released 2017/20/01
- Path to GDAL shared files: /Library/Frameworks/R.framework/Versions/3.4/Resources/library/rgdal/gdal
- GDAL binary built with GEOS: FALSE 
+ Loaded GDAL runtime: GDAL 2.2.3, released 2017/11/20
+ Path to GDAL shared files: /usr/share/gdal/2.2
+ GDAL binary built with GEOS: TRUE 
  Loaded PROJ.4 runtime: Rel. 4.9.3, 15 August 2016, [PJ_VERSION: 493]
- Path to PROJ.4 shared files: /Library/Frameworks/R.framework/Versions/3.4/Resources/library/rgdal/proj
- Linking to sp version: 1.2-7 
-Warning message:
-package ‘rgdal’ was built under R version 3.4.4
-
-foreach: simple, scalable parallel programming from Revolution Analytics
-Use Revolution R for scalability, fault tolerance and more.
-http://www.revolutionanalytics.com
+ Path to PROJ.4 shared files: (autodetected)
+ Linking to sp version: 1.3-1
 
 Loading required package: iterators
 Loading required package: parallel
@@ -95,17 +82,15 @@ The following objects are masked from ‘package:base’:
 
     intersect, setdiff, setequal, union
 
-Warning message:
-package ‘dplyr’ was built under R version 3.4.4
+Registered S3 method overwritten by 'GGally':
+  method from   
+  +.gg   ggplot2
 
 Attaching package: ‘GGally’
 
 The following object is masked from ‘package:dplyr’:
 
     nasa
-
-Warning message:
-package ‘GGally’ was built under R version 3.4.4
 
 Checking rgeos availability: TRUE
 #+end_example
@@ -1045,8 +1030,6 @@ Remove houses with "0" current value - missing data
 #+end_src
 
 #+RESULTS:
-: Warning message:
-: package ‘bindrcpp’ was built under R version 3.4.4
 
 
 Roof Replace Year and year built to numeric
@@ -1147,6 +1130,7 @@ Only Gas Heating:
 #+end_src
 
 #+RESULTS:
+
 *** remove a few more not useful covariates
 #+begin_src R
 
@@ -1159,12 +1143,28 @@ Only Gas Heating:
 #+end_src
 
 #+RESULTS:
+
 *** rescale tree and building area divide by 100
 #+begin_src R
   df <- df %>% mutate_at(vars(starts_with("d")), funs(./100))
 #+end_src
 
 #+RESULTS:
+#+begin_example
+Warning message:
+funs() is soft deprecated as of dplyr 0.8.0
+Please use a list of either functions or lambdas: 
+
+  # Simple named list: 
+  list(mean = mean, median = median)
+
+  # Auto named with `tibble::lst()`: 
+  tibble::lst(mean, median)
+
+  # Using lambdas
+  list(~ mean(., trim = .2), ~ median(., na.rm = TRUE))
+[90mThis warning is displayed once per session.[39m
+#+end_example
 
 It's possible to fit about 5, 100m^2 trees in the near east or near
 west regions I created.  So multiply the coefficient by 5 and that's
@@ -1194,17 +1194,16 @@ library(lme4)
 #+end_src
 
 #+RESULTS:
+: 
+: Error in (function (classes, fdef, mtable)  : 
+:   unable to find an inherited method for function ‘select’ for signature ‘"data.frame"’
+: 
+: Error in checkFormulaData(formula, data, checkLHS = control$check.formula.LHS ==  : 
+:   bad 'data': object 'df.treecombined' not found
 
 #+begin_src R :results org
   ascii.nowarn.print(glance(C.avg.lmer.log.treecombined))
 #+end_src
-
-#+RESULTS:
-#+BEGIN_SRC org
-|   | sigma |   logLik |      AIC |      BIC | deviance | df.residual |
-|---+-------+----------+----------+----------+----------+-------------|
-| 1 |  0.30 | -5026.95 | 10071.91 | 10144.93 |  9977.51 |    24674.00 |
-#+END_SRC
 
 #+begin_src R :results org
   ascii.nowarn.print(tidy(C.avg.lmer.log.treecombined), digits = 3)
@@ -1306,6 +1305,35 @@ xlab("Total C emissions effect") +
 #+RESULTS:
 [[file:../figs/treeCombined_avg_C_coefs_dark_pct.png]]
 
+#+begin_src R :exports results :results graphics :file ../figs/treeCombined_avg_C_coefs_light_pct.png :height 350 :width 700 :bg transparent :res 170
+    a <- tidy(C.avg.lmer.log.treecombined) %>% filter(grepl(".*tree",term)) %>% mutate(response = "kwh.avg")
+  a$term <- "Near Tree Cover"
+
+
+    library(ggthemes)
+    ggplot(a, aes(x = 100 * (exp(estimate) - 1), y = term)) + 
+        geom_point(color = "black") +
+        geom_errorbarh(aes(xmin = 100 * (exp(estimate - std.error) - 1), xmax = 100 * (exp(estimate + std.error) - 1)), height = .4, color = "black") +
+        geom_vline(xintercept = 0, color = "#dc322f") +
+        scale_y_discrete("") +
+xlab("Total C emissions effect") +
+#        scale_x_continuous() +
+              theme(text = element_text(family="serif", color = "black"),
+                    axis.text = element_text(color = "black"),
+                    axis.ticks = element_line(color = "black"),
+                    rect = element_rect(fill = "transparent"),
+                    plot.background = element_rect(colour = NA),
+                    panel.border = element_rect(color = "black", size = .1),
+                    panel.background = element_rect(fill = "transparent"),
+                    panel.grid = element_blank(),
+                    legend.position = "none",
+                    strip.text = element_text(color = "black"))
+
+#+end_src
+
+#+RESULTS:
+[[file:../figs/treeCombined_avg_C_coefs_light_pct.png]]
+
 
 #+begin_src R
   lower <- exp(a$estimate - 1.96 * a$std)
@@ -1369,9 +1397,7 @@ xlab("Total C emissions effect") +
 
 #+RESULTS:
 #+BEGIN_SRC org
-|   | sigma |   logLik |      AIC |      BIC | deviance | df.residual |
-|---+-------+----------+----------+----------+----------+-------------|
-| 1 |  0.30 | -5067.27 | 10166.54 | 10296.36 |  9971.51 |    24667.00 |
+Error in ascii(x, ...) : could not find function "ascii"
 #+END_SRC
 
 #+begin_src R :results org
@@ -1451,9 +1477,7 @@ xlab("Total C emissions effect") +
 
 #+RESULTS:
 #+BEGIN_SRC org
-|   | sigma |   logLik |     AIC |     BIC | deviance | df.residual |
-|---+-------+----------+---------+---------+----------+-------------|
-| 1 |  0.28 | -3936.22 | 7890.43 | 7963.46 |  7795.88 |    24674.00 |
+Error in ascii(x, ...) : could not find function "ascii"
 #+END_SRC
 
 #+begin_src R :results org
@@ -1552,9 +1576,7 @@ xlab("Total C emissions effect") +
 
 #+RESULTS:
 #+BEGIN_SRC org
-|   | sigma |   logLik |     AIC |     BIC | deviance | df.residual |
-|---+-------+----------+---------+---------+----------+-------------|
-| 1 |  0.28 | -3963.38 | 7958.76 | 8088.58 |  7762.93 |    24667.00 |
+Error in ascii(x, ...) : could not find function "ascii"
 #+END_SRC
 
 #+begin_src R :results org
@@ -1633,9 +1655,7 @@ xlab("Total C emissions effect") +
 
 #+RESULTS:
 #+BEGIN_SRC org
-|   | sigma |    logLik |      AIC |      BIC | deviance | df.residual |
-|---+-------+-----------+----------+----------+----------+-------------|
-| 1 |  0.43 | -14292.56 | 28603.11 | 28676.14 | 28514.29 |    24674.00 |
+Error in ascii(x, ...) : could not find function "ascii"
 #+END_SRC
 
 #+begin_src R :results org
@@ -1733,9 +1753,7 @@ xlab("Total C emissions effect") +
 
 #+RESULTS:
 #+BEGIN_SRC org
-|   | sigma |    logLik |      AIC |      BIC | deviance | df.residual |
-|---+-------+-----------+----------+----------+----------+-------------|
-| 1 |  0.43 | -14330.96 | 28693.93 | 28823.75 | 28509.74 |    24667.00 |
+Error in ascii(x, ...) : could not find function "ascii"
 #+END_SRC
 
 #+begin_src R :results org
@@ -1808,6 +1826,19 @@ xlab("Total C emissions effect") +
 #+end_src
 
 #+RESULTS:
+#+begin_example
+Warning messages:
+1: In bind_rows_(x, .id) :
+  binding factor and character vector, coercing into character vector
+2: In bind_rows_(x, .id) :
+  binding character and factor vector, coercing into character vector
+
+Warning messages:
+1: In bind_rows_(x, .id) :
+  binding factor and character vector, coercing into character vector
+2: In bind_rows_(x, .id) :
+  binding character and factor vector, coercing into character vector
+#+end_example
 
 #+begin_src R :exports results :results graphics :file ../figs/tree_coefs.png :height 200
 
@@ -1857,6 +1888,25 @@ xlab("Total C emissions effect") +
 #+end_src
 
 #+RESULTS:
+#+begin_example
+Warning messages:
+1: In bind_rows_(x, .id) :
+  binding factor and character vector, coercing into character vector
+2: In bind_rows_(x, .id) :
+  binding character and factor vector, coercing into character vector
+
+Warning messages:
+1: In bind_rows_(x, .id) :
+  binding factor and character vector, coercing into character vector
+2: In bind_rows_(x, .id) :
+  binding character and factor vector, coercing into character vector
+
+Warning messages:
+1: In bind_rows_(x, .id) :
+  binding factor and character vector, coercing into character vector
+2: In bind_rows_(x, .id) :
+  binding character and factor vector, coercing into character vector
+#+end_example
 
 #+begin_src R :exports results :results graphics :file ../figs/carbon_coef.png :height 200 :width 800
   ggplot(cc.coef, aes(x = estimate, y = tree_location)) + geom_point() +
@@ -1874,21 +1924,22 @@ xlab("Total C emissions effect") +
 
 [[file:../figs/carbon_cost_coef.png]]
 
-#+begin_src R :exports results :results graphics :file ../figs/carbon_Percent_coef.png :height 600 :width 1300 :res 300
-      ggplot(cc.coef, aes(x = percent_effect, y = tree_location)) + geom_point(size = .3) +
-          geom_errorbarh(aes(xmin = xmn, xmax = xmx), height = .4, size = .3) +
-          scale_x_continuous(breaks = c(-.4,0,.4,.8)) +
-          scale_y_discrete(labels = rev(c("near west", "near south", "near north", "near east", "far west", "far south", "far north", "far east"))) +
-          geom_vline(xintercept = 0, color = "#dc322f", size = .2) +
-          facet_wrap(~response,ncol = 4) +
-          labs(x = bquote('Percent effect of 100'~ m^2~'tree cover'), y = "Tree location") +
-          theme_base() +
-          theme(axis.title = element_text(size = 10),
-                axis.text  = element_text(size = 6),
-                strip.text  = element_text(size = 8),
-                axis.ticks.length=unit(.1, "cm"),
-                axis.ticks = element_line(size = .3),
-                text = element_text(family="serif"))
+#+begin_src R :exports results :results graphics :file ../figs/carbon_Percent_coef.png :height 600 :width 1300 :res 300 :bg transparent
+        ggplot(cc.coef, aes(x = percent_effect, y = tree_location)) + geom_point(size = .3) +
+            geom_errorbarh(aes(xmin = xmn, xmax = xmx), height = .4, size = .3) +
+            scale_x_continuous(breaks = c(-.4,0,.4,.8)) +
+            scale_y_discrete(labels = rev(c("near west", "near south", "near north", "near east", "far west", "far south", "far north", "far east"))) +
+            geom_vline(xintercept = 0, color = "#dc322f", size = .2) +
+            facet_wrap(~response,ncol = 4) +
+            labs(x = bquote('Percent effect of 100'~ m^2~'tree cover'), y = "Tree location") +
+            theme_base() +
+            theme(axis.title = element_text(size = 10),
+                  axis.text  = element_text(size = 6),
+                  strip.text  = element_text(size = 8),
+                  axis.ticks.length=unit(.1, "cm"),
+                  axis.ticks = element_line(size = .3),
+                  text = element_text(family="serif"),
+                  plot.background = element_blank())
 
 #+end_src
 
@@ -3655,7 +3706,7 @@ https://www2.census.gov/geo/tiger/GENZ2017/shp/
 #+RESULTS:
 
 downloaded [2018-07-11 Wed]
-#+begin_src sh :eval no
+#+begin_src sh :eval yes
   wget -O ~/git/energy/papers/data/tracts_wHDDCDD.csv https://raw.githubusercontent.com/TedwardErker/us_energy_climate_population/master/data/census_climate/tracts_wHDDCDD.csv
 #+end_src
 
@@ -3710,6 +3761,22 @@ from :
 #+end_src
 
 #+RESULTS:
+#+begin_example
+
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file '../papers/data/tracts_wHDDCDD.csv': No such file or directory
+
+Error: object 'tracts' not found
+
+Error in coordinates(tracts) <- ~LONGITUDE + LATITUDE : 
+  object 'tracts' not found
+
+Error in .local(x, ...) : file.exists(extension(x, ".shp")) is not TRUE
+
+Error in proj4string(subregions) : object 'subregions' not found
+#+end_example
 
 #+begin_src R
   d <-over(tracts, subregions, df = T)
@@ -4071,6 +4138,33 @@ indirect separately.
   p
 #+end_src
 
+#+begin_src R :exports results :results graphics :file ../figs/akbari_konopacki_2005_netkgC_wCities_3.png :height 1000 :width 1500 :res 300
+    p <-        ggplot(defC.sum.f, aes(x = x, y = y)) +
+        geom_point(alpha = .5, aes(color = kgC.total.tree.effect), size = .2) +
+        geom_point(data = cities, size = 1) +
+        geom_point(data = madison, size = 2) +
+        geom_text(data = cities, aes(label = city),check_overlap = F, vjust = 0, nudge_y = 0.005, size = 2, family="serif") +
+        geom_text(data = madison, aes(label = city),size = 3, vjust = 0, nudge_y = 0.007, family="serif") +
+                coord_equal() +
+#                scale_color_gradient2(low = "#4dac26", mid = "#f7f7f7", high = "#d01c8b", name = "Effect of Trees\non Residential\nBuilding Emissions (kg C)",
+         scale_color_gradient2(low = "#008080", mid = "#f6edbd", high = "#ca562c", name = "Effect of Trees\non Residential\nBuilding Emissions (kg C/yr)",
+                                      guide = guide_legend(
+                                          direction = "horizontal",
+                                          title.position = "top",
+                                          nrow = 1,
+                                          override.aes = list(alpha = 1, size = 1),
+                                          label.position = "bottom")
+                                          #label.hjust = 0.5,
+                                          #label.vjust = 1,
+                                          #label.theme = element_text(angle = 90)
+                                      ) +
+                theme_void() +
+                theme(legend.position = c(.2,.15),
+                      text = element_text(size = 8, family="serif"),
+                      legend.key.size = unit(.3, "line"))
+  p
+#+end_src
+
 #+RESULTS:
 [[file:../figs/akbari_konopacki_2005_netkgC_wCities_3.png]]
 
@@ -4202,6 +4296,7 @@ exclude alaska
 
 #+begin_src R :var df=wind_reduce
   library(ggplot2)
+library(ggthemes)
   str(df)
 
 #+end_src
@@ -4213,21 +4308,14 @@ exclude alaska
 :  $ tree_and_building_density: int  7 36 78 88
 
 #+begin_src R :exports results :results graphics :file ../figs/heisler_1990_windreduceredo_1.png :bg transparent :res 170 :width 700
-p1 <-   ggplot(df, aes(x = tree_and_building_density, y = wind_reduction)) +
-    geom_point(color = "white") +
-      scale_x_continuous("Tree and Building Cover (%)", limits = c(0,100)) +
-      scale_y_continuous("Wind Speed Reduction (%)", limits = c(0,100)) +
-            theme(text = element_text(color = "white"),
-                  axis.text = element_text(color = "white"),
-                  axis.ticks = element_line(color = "white"),
-                  rect = element_rect(fill = "transparent"),
-                  plot.background = element_rect(colour = NA),
-                  panel.border = element_rect(color = "white", size = .1),
-                  panel.background = element_rect(fill = "transparent"),
-                  panel.grid = element_blank(),
-                  legend.position = "none",
-                  strip.text = element_text(color = "white"))
-p1
+  p1 <-   ggplot(df, aes(x = tree_and_building_density, y = wind_reduction)) +
+      geom_point(color = "black") +
+        scale_x_continuous("Tree and Building Cover (%)", limits = c(0,100)) +
+        scale_y_continuous("Wind Speed Reduction (%)", limits = c(0,100)) +
+        geom_rangeframe() +
+        theme_tufte(base_size = 14) 
+
+  p1
 #+end_src
 
 #+RESULTS:
@@ -4240,7 +4328,7 @@ p1
   predline <- data.frame(tree_and_building_density = x, wind_reduction = y)
 
 p2 <- p1 +
-      geom_line(data = predline, color ="white", size = .3)
+      geom_line(data = predline, color ="black", size = .3)
 p2
 #+end_src
 
@@ -4250,7 +4338,7 @@ p2
 #+begin_src R :exports results :results graphics :file ../figs/heisler_1990_windreduceredo_3.png :bg transparent :res 170 :width 700
 
 p3 <- p2 +
-      annotate("text", x = 50, y = 25, label = "y = 100x / (24 * 1.1x)", color = "white")
+      annotate("text", x = 50, y = 25, label = "y = 100x / (24 + 1.1x)", color = "black", family = "serif")
 p3
 #+end_src
 

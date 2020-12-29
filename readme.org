@@ -5,7 +5,6 @@ Code for the project is in =code/=.  =energy.org= is the plain text
 version, but can be viewed nicely in github.  =energy.html= is easy to read and
 review if one downloads it (along with the figures).
 
-
 [[file:figs/longer_summer_solstice_gray.gif]]
 
 [[file:figs/longer_winter_solstice_gray.gif]]
